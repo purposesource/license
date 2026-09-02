@@ -1,0 +1,42 @@
+{
+  "$comment": "Every {{TOKEN}} that may appear anywhere in drafts/**, ANNOTATIONS.md, FAQ-OSPO.md or decisions/** must be declared here. scripts/check-drafts.mjs fails the build on an undeclared token AND on a declared token nobody uses, so this file is the complete, auditable list of everything in the draft texts that is not yet decided. Decision D10 (one canonical text, zero per-project parameters) means the SHIPPED text must resolve every token below to a literal constant — the tokens exist because the constants are not chosen yet, never because the text is meant to be filled in per project.",
+  "tokens": {
+    "STEWARD_ORG_LEGAL_NAME": {
+      "value": null,
+      "status": "pending",
+      "blockedBy": "D4 (coined steward-organization name, after a knock-out trademark search) + LEG-060 (the entity does not exist yet)",
+      "meaning": "Registered legal name of the Steward Organization, named in the licence text itself as a licence-wide constant (LEG-027).",
+      "note": "Working prose calls it \"the Steward Organization\". The name must avoid the word \"Open\" entirely (D4/D25)."
+    },
+    "STEWARD_ORG_SHORT_NAME": {
+      "value": null,
+      "status": "pending",
+      "blockedBy": "D4",
+      "meaning": "Short display form of the Steward Organization used in prose after first mention."
+    },
+    "STEWARD_REGISTRY_URL": {
+      "value": "https://purposesource.org/registry",
+      "status": "proposed",
+      "blockedBy": "OPEN-02 (naming) — the apex domain purposesource.org is owned; the path is a build decision",
+      "meaning": "Canonical steward registry URL that appears on the Purpose Notice line (GH-009)."
+    },
+    "LICENSE_ID": {
+      "value": "PurposeSource-1.0",
+      "status": "working-form",
+      "blockedBy": "OPEN-20 (final canonical identifier string, pending D4/OPEN-02); SPDX listing is separately \"requested\" at launch (LEG-029)",
+      "meaning": "SPDX-style identifier on the Purpose Notice line (GH-009). Must grep uniquely (VS-06)."
+    },
+    "LICENSE_TEXT_URL": {
+      "value": "https://purposesource.org/license/PurposeSource-1.0.txt",
+      "status": "proposed",
+      "blockedBy": "OPEN-20 + the website build (VS-12: the byte-exact .txt endpoint must hash-match the canonical file in this repository)",
+      "meaning": "Byte-exact canonical text endpoint."
+    },
+    "GITHUB_ORG": {
+      "value": "purposesource",
+      "status": "proposed",
+      "blockedBy": "D4 / OPEN-02 — the org name is proposed, not confirmed",
+      "meaning": "GitHub organization that hosts this repository and the registry repositories."
+    }
+  }
+}

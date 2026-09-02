@@ -1,0 +1,56 @@
+name: Question for counsel
+description: A legal question the drafts have not spotted, or have not isolated properly.
+title: "[counsel] <one-line question>"
+labels: ["counsel-question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accepted questions become `[COUNSEL: …]` markers in the text and rows in a draft's counsel agenda. That is the whole mechanism: a question nobody wrote down is a question nobody answers.
+
+        **This is not a request for advice and not a place to give it.** Nothing here is operative or counsel-issued, and filing or answering an issue creates no lawyer-client relationship. Please do not paste confidential or privileged material.
+  - type: input
+    id: question
+    attributes:
+      label: The question, in one sentence
+      description: Phrased so a lawyer could answer it without reading this whole tracker.
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where it arises
+      description: Which draft and section the question attaches to, or "nowhere yet — the drafts are silent on it", which is itself the most valuable kind of report.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: What goes wrong if it is answered one way rather than the other. Concrete consequences beat doctrine.
+    validations:
+      required: true
+  - type: dropdown
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction the question is about
+      description: The three memos prerequisite to publication cover US, Switzerland, and Germany. Questions about other jurisdictions are still welcome and get recorded.
+      options:
+        - United States
+        - Switzerland
+        - Germany
+        - European Union generally
+        - United Kingdom
+        - Other / several
+        - Jurisdiction-independent
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Please confirm
+      options:
+        - label: This issue contains no confidential or privileged material.
+          required: true
+        - label: I understand that nothing in this repository is operative or counsel-issued, that no lawyer has reviewed any of it, and that filing this issue creates no lawyer-client relationship in either direction.
+          required: true

@@ -1,0 +1,15 @@
+# Only the two structured templates below. Blank issues are disabled because every issue
+# here should say which text it is about — an untraceable comment on a legal draft cannot be
+# actioned, and a drafting record whose issues cannot be traced is not a record.
+#
+# The two URLs below are the only place in this repository where the GitHub organization name
+# is hardcoded: GitHub requires literal absolute URLs in contact_links, so the {{GITHUB_ORG}}
+# token cannot be used here. If the organization name changes, these two lines change with it.
+blank_issues_enabled: false
+contact_links:
+  - name: Read the drafts first
+    url: https://github.com/purposesource/license#what-is-in-here
+    about: The licence draft, the contribution instrument, the annotated walkthrough, and the legal-review pack. Most questions are answered there, and answered honestly where the answer is uncomfortable.
+  - name: Status — nothing here is operative
+    url: https://github.com/purposesource/license#status-nothing-here-is-counsel-issued
+    about: No counsel has drafted or reviewed any text in this repository, no version is published, and the steward organization does not exist. Please read this before filing.

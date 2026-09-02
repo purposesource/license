@@ -1,0 +1,85 @@
+name: license-ci
+
+on:
+  push: { branches: [main] }
+  pull_request:
+
+# This repository is text. The workflow only reads and gates: it never writes to the
+# repository, publishes nothing, and needs no secrets — there is nothing here a secret could
+# be needed for. No PATs, no tokens, OIDC not required because nothing is deployed.
+permissions:
+  contents: read
+
+# A second push to the same branch cancels the first: these gates take about a second, and a
+# queue of them on a busy drafting day tells nobody anything.
+concurrency:
+  group: license-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+
+      - name: Install
+        # There are no dependencies, by design: a gate that cannot run offline is a gate that
+        # goes inert the first time a registry is slow. `npm ci` verifies the lockfile is
+        # still empty and honest.
+        run: npm ci
+
+      - name: Copy lint
+        # copy-lint/banned.txt — a hand-synced mirror of the movement's canonical MKT-018
+        # pattern file in the website repository. CI never fetches across repositories, so
+        # the mirror is deliberate; adding a pattern here means adding it there first.
+        run: npm run lint:copy
+
+      - name: Internal links and anchors
+        # Fails on a broken target, an anchor that matches no heading, a non-https external
+        # link, AND on a scanned count of zero — so the gate cannot go inert.
+        run: npm run lint:links
+
+      - name: Honesty gate — banners, placeholders, counsel markers
+        # The gate this repository exists to have. No counsel has drafted anything here, so
+        # the failure that would matter most is a draft that stops LOOKING like a draft: a
+        # banner deleted in a tidy-up, a [COUNSEL] marker quietly resolved by someone with no
+        # standing to resolve it, a placeholder replaced by a plausible-looking constant
+        # nobody decided. Each is a one-line diff. Each fails the build.
+        run: npm run lint:drafts
+
+      - name: Every legal text is reachable from the README
+        # A development record whose documents nobody can find is not a record. The link gate
+        # proves the links that exist are good; this proves the ones that must exist do.
+        run: |
+          fail=0
+          for f in \
+            drafts/purpose-source-license-1.0-draft.md \
+            drafts/contributor-sign-off.md \
+            ANNOTATIONS.md \
+            FAQ-OSPO.md \
+            LICENSE-NOTICE.md \
+            CONTRIBUTING.md \
+            decisions/ \
+            placeholders.json
+          do
+            grep -qF "($f)" README.md || { echo "::error::README.md does not link $f"; fail=1; }
+          done
+          [ "$fail" = 0 ] || exit 1
+          echo "every legal text is linked from README.md"
+
+      - name: No banned filenames at the repository root
+        # A file named LICENSE or LICENSE.md at the root of THIS repository would be read by
+        # tooling, and by people, as "the Purpose Source License" — which does not exist yet.
+        # The repository's own licensing lives in LICENSE-NOTICE.md, whose first line says
+        # what it is not.
+        run: |
+          for f in LICENSE LICENSE.md LICENSE.txt COPYING PURPOSE.yml; do
+            if [ -e "$f" ]; then
+              echo "::error::$f exists at the repository root. Nothing here is a usable licence; the repository's own terms live in LICENSE-NOTICE.md."
+              exit 1
+            fi
+          done
+          echo "no file at the root can be mistaken for an operative licence"

@@ -1,0 +1,77 @@
+name: Drafting comment
+description: A concern about the wording, scope, or effect of a draft text.
+title: "[draft] <file> §<section> — <one-line concern>"
+labels: ["drafting-comment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before you write anything:** nothing in this repository is operative, counsel-issued, or legal advice, and nothing on this tracker creates a lawyer-client relationship. Please do not paste confidential, privileged, or internal material from any organization — describe the requirement instead.
+
+        The most useful comments say what a clause *fails to do*, and name the reader it would fail for.
+  - type: dropdown
+    id: document
+    attributes:
+      label: Which text
+      options:
+        - drafts/purpose-source-license-1.0-draft.md (the licence)
+        - drafts/contributor-sign-off.md (the contribution instrument)
+        - ANNOTATIONS.md (the annotated walkthrough)
+        - FAQ-OSPO.md (the legal-review pack)
+        - decisions/ (the decision trace)
+        - Other / across several
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: Section number or heading, e.g. "§4" or "§5 the threshold".
+      placeholder: "§4"
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: The wording you are commenting on
+      description: Quote it, so the comment stays readable after the draft is revised.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: What breaks
+      description: What the wording does that it should not, or fails to do that it should. If it would fail a review at your organization, say which requirement it fails.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording (optional)
+      description: A concrete alternative is worth ten abstractions. It does not have to be perfect.
+    validations:
+      required: false
+  - type: dropdown
+    id: capacity
+    attributes:
+      label: You are writing as
+      description: Context only — it changes how we weigh the comment, never whether we read it.
+      options:
+        - A maintainer considering adoption
+        - Someone doing licence review inside an organization (OSPO, procurement, engineering)
+        - A contributor to a project that might adopt
+        - A lawyer, speaking generally and not as anyone's counsel
+        - Interested observer
+        - Prefer not to say
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Please confirm
+      options:
+        - label: This comment contains no confidential, privileged, or internal material.
+          required: true
+        - label: I understand these are pre-counsel drafts, that nothing here is operative, and that filing this issue creates no lawyer-client relationship in either direction.
+          required: true

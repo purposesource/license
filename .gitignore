@@ -1,0 +1,18 @@
+# Node
+node_modules/
+npm-debug.log*
+.npm/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local scratch — never commit exported or generated legal text
+/tmp/
+/scratch/
+*.local.md
+*.docx
+*.pdf

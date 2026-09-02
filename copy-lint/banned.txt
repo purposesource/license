@@ -1,0 +1,74 @@
+# Banned-copy patterns — VENDORED MIRROR, NOT THE CANONICAL FILE.
+#
+# The canonical, extend-only pattern file for the whole movement is MKT-018's
+# `copy-lint/banned.txt` in the website repository. That rule says no other chapter may
+# maintain a parallel enumeration, so this file is a MIRROR kept in sync by hand: it exists
+# only so this repository's CI can gate its own text without reaching across repositories
+# (the Rendlio O-2 discipline — CI never fetches from another repo). If you add a pattern
+# here, add it there first.
+#
+# Format: one JavaScript regular expression per line, matched case-insensitively against
+# every scanned line. Blank lines and lines starting with '#' are ignored. The comment above
+# each pattern names the rule that bans it. scripts/check-copy.mjs runs this file.
+#
+# What this gate can and cannot do: it catches the mechanical phrasings the record has
+# already ruled out. It cannot police prose — a human reviews that. Deliberately absent are
+# semantic tests ("does this sentence overclaim?") and anything that would fire on the
+# permitted negative forms, which the record requires us to be able to say out loud
+# (MARKETING §3: "This is not open source, and we say so proudly").
+
+# Venture firewall (D2): no cross-venture identifiers in movement text, ever.
+rabten
+
+# Venture firewall + LEGAL-SWISS: the supervised-foundation vehicle is an internal,
+# threshold-triggered option (LEG-072), never movement copy.
+stiftung
+
+# D25/LEG-038: "open source" may be MENTIONED as the predecessor, never used as a
+# descriptor of Purpose Source itself. Negations are permitted, hence the (?!not) guard.
+\b(?:we|it|this|purpose source|the licence|the license|these terms)\s+(?:is|are)\s+(?!not\b)(?:an?\s+|the\s+)?open[-\s]source\b
+# D25: the rejected names and the rejected self-descriptive taglines.
+\bopen[-\s]source\s+(?:on|with)\s+purpose\b
+\bopen[-\s]source,\s*with\s+purpose\b
+\bthe\s+open[-\s]source\s+experience\b
+
+# MARKETING §3: "absolutely all the advantages of Open Source" — false on OSD §6.
+\ball\s+(?:the\s+)?advantages\s+of\s+open[-\s]source\b
+
+# MARKETING §3: "no community costs" — one OSPO screenshot refutes it.
+\bno\s+community\s+costs?\b
+
+# MARKETING §3 / URS VIS-01: "nobody profits" is one paid invoice away from a gotcha.
+# The permitted form is "no distributable private profit — structurally, not by policy".
+\b(?:nobody|no\s+one|no-one)\s+(?:profits|makes\s+(?:a\s+)?profit)\b
+
+# MARKETING §3 / URS VIS-01: the bank and intermediary leg cannot be publicly proven
+# end-to-end. Permitted form: "independently reconcilable".
+\bevery\s+(?:franc|dollar|euro|cent)\s+(?:is\s+)?(?:traceable|visible|tracked|accounted)\b
+
+# D17 / MARKETING §3: uncapped "100% to charity" claims. Operating costs exist and are
+# capped and published; the honest form states the cap.
+\b100\s*%\s*(?:of\s+(?:the\s+)?\w+\s+)?(?:goes\s+|go\s+)?to\s+charit
+\ball\s+(?:proceeds|revenue|fees|money)\s+(?:goes?\s+)?to\s+charit
+
+# D7 as amended / MARKETING §3 (R6): the permanent promise is about copyright, not
+# ceremony. Never promise the absence of an instrument or a signature.
+\bno\s+CLAs?\b
+\bCLA[-\s]free\b
+\bno\s+signature\b
+\bno\s+sign[-\s]?ups?\b
+\bjust\s+a\s+sign[-\s]off\s+line\b
+
+# LEG-045 / MARKETING §3: bare "amnesty on purchase" overstates scope. The canonical
+# wording is "amnesty covenants".
+\bamnesty\s+on\s+purchase\b
+
+# MARKETING §3: stealth framing. Scanners notice at $0; the salvage is size, not attention.
+\b(?:big\s+tech|they|nobody)\s+(?:won'?t|will\s+not|barely)\s+notice\b
+
+# MARKETING §3: never denigrate freely-given work.
+\bdon'?t\s+let\s+your\s+(?:open[-\s]source|repo|code)\s+sleep\b
+
+# D21 / LEG-004: nothing is claimed before it is real. No published impact figure may
+# appear in this repository at all — there is no ledger row yet.
+\b(?:we\s+have\s+)?(?:funded|donated|routed|disbursed)\s+(?:chf|usd|eur|\$)\s*[0-9]

@@ -1,0 +1,14 @@
+# LF in the repository and LF in every working copy, on every platform.
+#
+# This is not a style preference here. The canonical licence text's bytes are load-bearing:
+# the published .txt endpoint must hash-match the file in this repository byte for byte, and a
+# checkout that silently rewrote line endings would make that hash depend on the operating
+# system of whoever last touched the file.
+* text=auto eol=lf
+
+# Nothing in this repository is binary, and nothing should become binary without a reviewer
+# noticing — a legal text delivered as an opaque blob cannot be diffed, and a draft that
+# cannot be diffed is not a development record.
+*.png binary
+*.jpg binary
+*.pdf binary

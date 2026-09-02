@@ -1,0 +1,17 @@
+{
+  "name": "purpose-source-license-record",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Draft text of the Purpose Source License and the public record of its development. Nothing here is operative or counsel-issued.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "npm run check",
+    "check": "npm run lint:copy && npm run lint:links && npm run lint:drafts",
+    "lint:copy": "node scripts/check-copy.mjs",
+    "lint:links": "node scripts/check-links.mjs",
+    "lint:drafts": "node scripts/check-drafts.mjs"
+  }
+}
