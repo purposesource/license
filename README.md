@@ -21,9 +21,9 @@ argued with, and versioned.
 A **source-available** software licence with one idea in it: code stays public and free for
 individuals, non-profits, and small organizations, and organizations above a size threshold
 need a recorded credential — bought from a steward organization that routes the funds to
-charitable recipients with no distributable private profit and with operating costs capped
-and published, or earned by donating that amount directly to a listed charity, or waived by
-the project. Every published version becomes available under Apache-2.0 four years later,
+charitable recipients with no distributable private profit — only the movement's direct
+costs, capped and published to the invoice, are ever charged to those funds — or earned by
+donating that amount directly to a listed charity, or waived by the project. Every published version becomes available under Apache-2.0 four years later,
 guaranteed in the licence text itself.
 
 **It is not an open source licence** under the Open Source Definition, because it restricts

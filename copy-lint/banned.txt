@@ -46,8 +46,11 @@ stiftung
 # end-to-end. Permitted form: "independently reconcilable".
 \bevery\s+(?:franc|dollar|euro|cent)\s+(?:is\s+)?(?:traceable|visible|tracked|accounted)\b
 
-# D17 / MARKETING §3: uncapped "100% to charity" claims. Operating costs exist and are
-# capped and published; the honest form states the cap.
+# D17 / MKT-013 as amended by D29 (2026-09-05) / MARKETING §3: uncapped "100% to charity"
+# claims are prohibited in every channel, forever. Direct costs charged to Purpose Fees are
+# capped and published to the invoice; any cost support is listed by name. Permitted: the
+# canonical pledge string with every qualifier — net, Purpose Fee, capped direct costs,
+# listed cost support, published. "Audited" is no longer a qualifier (D29 §8).
 \b100\s*%\s*(?:of\s+(?:the\s+)?\w+\s+)?(?:goes\s+|go\s+)?to\s+charit
 \ball\s+(?:proceeds|revenue|fees|money)\s+(?:goes?\s+)?to\s+charit
 
