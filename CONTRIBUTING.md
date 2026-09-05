@@ -31,7 +31,10 @@ may never change any of five things:
 1. the free-tier threshold — it may only ever be **widened**;
 2. the conversion delay — it may only ever be **shortened**;
 3. the charity destination and the no-private-profit rule;
-4. the steward organization's character as registrar, never licensor;
+4. the steward organization's character as registrar, never a licensor of code it registers
+   for others (scoped 2026-09-05 per movement decision D29 §6.3 — see
+   [ANNOTATIONS.md](ANNOTATIONS.md) §2; superseded phrase, kept as history: "registrar, never
+   licensor");
 5. the existence of the project steward's waiver power.
 
 A change touching any of those reaches only contributions made after it is published, unless
@@ -81,7 +84,8 @@ request that quietly reverses one will be closed with a pointer to
 pre-registered for revisit, and the register records the disputes rather than hiding them:
 
 - permission scoped by a **condition**, never a payment obligation in the licence;
-- the steward organization as **registrar, never licensor**;
+- the steward organization as **registrar, never a licensor of code it registers for others**
+  (scoped 2026-09-05 per movement decision D29 §6.3 — see [ANNOTATIONS.md](ANNOTATIONS.md) §2);
 - **per-licensor** grants;
 - the dual AND threshold, group-consolidated, self-assessed, with **no audit clause**;
 - the **fixed four-year** Apache-2.0 conversion per version, and the steward-lapse backstop;
