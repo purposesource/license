@@ -24,12 +24,18 @@ is published.
 
 ## The decisions the licence text implements
 
-### D6 — Condition, not covenant; the steward is registrar, never licensor
+### D6 — Condition, not covenant; the steward is registrar, never a licensor of code it registers for others
 
 The licence contains **no payment obligation**. Permissions are scoped by an objective
 condition: below threshold, or a credential recorded in the steward registry. Money moves
 under a separate bilateral contract to which the software's licensors are not parties. The
-steward never holds, sublicenses, or resells anyone's rights.
+steward never holds, sublicenses, or resells anyone else's rights. Where the steward is itself
+the rights-holder of a registered project, it is, for that project, a licensor like any other,
+disclosed as steward-owned wherever the project appears and given no preferential treatment
+*(role phrase aligned 2026-09-05 with movement decision D29 §6.3 — the register's resolution
+of the "never owner" question; the licence text is unchanged, and
+[../ANNOTATIONS.md](../ANNOTATIONS.md) §2 carries the counsel note; superseded phrase, kept
+as history: "registrar, never licensor")*.
 
 - **Implemented by:** licence draft §2 (steward definition), §3 (grants), §4 (the condition)
 - **Requirements:** LEG-010, LEG-013, LEG-016

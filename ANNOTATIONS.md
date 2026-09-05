@@ -103,6 +103,19 @@ sublicensor, not a rights-holder. It records credentials. This is the structural
 whole design, and it is what makes one-file adoption possible — a project adopting these
 terms transfers nothing to anyone and needs no relationship with the steward at all.
 
+> **Note added 2026-09-05 (movement decision D29 §6.3 — for counsel).** The registrar
+> role's "never a licensor" limb is scoped to **code the Steward registers for others**.
+> Where the Steward Organization is itself the rights-holder of a registered project, it
+> acts, for that project, as a Licensor like any other under §3: its grant is per-licensor
+> like everyone else's, the project is marked as steward-owned wherever it appears in the
+> registry, and it receives no schedule, moderation, allocation, waiver or listing treatment
+> unavailable to any other project. The draft text appears to need no change for this to
+> hold — §3 already grants per licensor, and §2's steward definition describes a *role*
+> rather than excluding the legal person from ever holding copyright in anything — but that
+> is a reading, not an opinion. `[COUNSEL: confirm the text needs no change, or draft the
+> scoping limb ("code it registers for others") for the next version.]` Until counsel
+> answers, this note lives here and not in the licence; the licence text is unchanged.
+
 ### §3 Grants — per licensor
 
 The grants read "each licensor grants you", not "the Licensor grants you". Every contributor
