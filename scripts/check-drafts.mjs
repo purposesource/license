@@ -8,7 +8,8 @@
 // for operative legal text. So each is a build failure.
 //
 // Five independent failure modes, all fatal:
-//   1. a legal text whose first non-empty lines are not the byte-identical banner from
+//   1. a legal text — a draft, a decision note, or a canonical rendering under canonical/ —
+//      whose first non-empty lines are not the byte-identical banner from
 //      copy-lint/required-banner.md,
 //   2. README.md missing either the pre-launch status banner or the draft banner,
 //   3. a {{TOKEN}} that is not declared in placeholders.json, or a declared token that
@@ -28,8 +29,15 @@ const LICENSE_DRAFT = 'drafts/purpose-source-license-1.0-draft.md';
 // listed in the draft's own counsel-agenda section.
 const MIN_COUNSEL_MARKERS = 9;
 
+// canonical/*.txt is a legal text like any other here. It is MACHINE-produced from a draft
+// (scripts/render-canonical.mjs), which is exactly why it must be gated the same way: a
+// rendering is the artefact a reader is most likely to meet on its own, stripped of the
+// markdown that made the draft look provisional, and the banner and the markers are all that
+// remain to say what it is. The renderer carries the banner through byte-for-byte, so this
+// check costs nothing and would catch a renderer that stopped doing so.
 const isLegalText = (rel) =>
-  (rel.startsWith('drafts/') || rel.startsWith('decisions/')) && rel.endsWith('.md')
+  ((rel.startsWith('drafts/') || rel.startsWith('decisions/')) && rel.endsWith('.md')) ||
+  (rel.startsWith('canonical/') && rel.endsWith('.txt'))
     ? true
     : rel === 'ANNOTATIONS.md' || rel === 'FAQ-OSPO.md';
 

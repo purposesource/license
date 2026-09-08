@@ -50,6 +50,13 @@ jobs:
         # nobody decided. Each is a one-line diff. Each fails the build.
         run: npm run lint:drafts
 
+      - name: The canonical rendering is what the draft renders to
+        # canonical/*.txt is a FUNCTION of a draft, not a second copy of it. The failure this
+        # catches is not "somebody edited the licence" — that one is loud — but "somebody
+        # edited the draft and forgot to re-render", which would leave two texts claiming to
+        # be the same licence, one of them tagged, hashed and vendored by the website.
+        run: npm run check:canonical
+
       - name: Every legal text is reachable from the README
         # A development record whose documents nobody can find is not a record. The link gate
         # proves the links that exist are good; this proves the ones that must exist do.

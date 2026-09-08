@@ -1,0 +1,421 @@
+> **WORKING DRAFT FOR COUNSEL — NOT OPERATIVE, NOT ISSUED BY COUNSEL, NOT LEGAL ADVICE.**
+> No lawyer has drafted, reviewed, or approved any text in this repository. Nothing here
+> grants a permission, creates an obligation, or may be relied on, adopted, quoted as
+> operative, or applied to any software or organization. Do not commit any file from this
+> repository into a project as its licence. Every point that needs legal judgement is
+> marked inline as `[COUNSEL: …]`.
+
+PURPOSE SOURCE LICENSE 1.0 — WORKING DRAFT
+
+Draft status: pre-counsel working paper · This draft: 1.0-draft.0 · Date of this revision: 2026-09-02
+
+What this file is. A structural draft that turns the movement's recorded decisions
+(D6–D10, D23, D25, and D7 as amended — see ../decisions/) into clause
+skeletons, so that counsel receives a specification with the architecture already settled
+and the open questions already isolated. It is the input to a drafting engagement, not its
+output.
+
+What this file is not. It is not a licence anyone may use. No version of it has been
+published, so no conversion clock has started, no identifier has been filed, and the Steward
+Organization named in §1 does not exist yet. Two of the four Purpose Condition limbs
+(Entitlement, Donation Entitlement) refer to a registry that has not been built.
+
+Two honest framing notes. These terms are not an open source licence, and the movement
+says so in public: the Purpose Condition restricts use by large organizations, which the
+Open Source Definition does not permit. Open source is this category's predecessor and is
+mentioned as such, never claimed. And the architecture below — permission scoped by a
+condition rather than a promise to pay — is the most defensible untested structure
+available; no decided case validates or invalidates it. See
+../FAQ-OSPO.md for the unvarnished version of both points.
+
+------------------------------------------------------------------------------
+
+1. PURPOSE NOTICE (LICENCE-WIDE CONSTANTS)
+
+These four lines are constants of the licence text itself, identical in every copy, for
+every project. They are not per-project fill-in fields: a project adopts these terms by
+committing this text unchanged. There is exactly one canonical text per version (D10).
+
+SPDX-Style-Identifier: {{LICENSE_ID}}
+Steward Organization:  {{STEWARD_ORG_LEGAL_NAME}}
+Steward Registry:      {{STEWARD_REGISTRY_URL}}
+Canonical text:        {{LICENSE_TEXT_URL}}
+
+  Why this is in the licence and nowhere else: a repository file can be edited by anyone
+  with push access and carries no verified identity, so it can never designate a legal role.
+  Every legal designation lives here, in the text layer, or in the Steward Registry's
+  verified claim flow. The optional in-repo PURPOSE.yml manifest carries operational
+  content only, and any licence or licensor fields in it are informational mirrors —
+  non-authoritative; this text governs (D23 as amended; LEG-027).
+
+------------------------------------------------------------------------------
+
+2. DEFINITIONS
+
+These terms means this text, at the version stated in its title.
+
+The software means the work of authorship these terms are distributed with.
+
+A version of the software means a release of it that its project publishes, identified
+by the project. Published means first made available to the public by the project.
+
+You means the individual or organization exercising permissions under these terms, and
+your organization means, together as one:
+
+- the organization you work for, or on whose behalf you act; and
+- every organization that controls it, is controlled by it, or is under common control with
+  it, whether that control is direct or indirect, and whether it arises through ownership,
+  votes, contract, or otherwise.
+
+  [COUNSEL: LEG-018 requires the PolyForm Small Business 1.0.0 "control" definition to be
+  copied verbatim, not paraphrased. The two clauses above are a working paraphrase and
+  must be replaced with the verbatim PolyForm wording (PolyForm's texts are published under
+  CC-BY-4.0, so verbatim reuse with attribution is permitted). Confirm the attribution form
+  and whether any Swiss/German group-of-companies terminology should be added alongside
+  rather than instead.]
+
+A Large Organization is an organization that does not meet the threshold in §5.
+
+The Steward Organization is {{STEWARD_ORG_LEGAL_NAME}} (in these terms,
+"{{STEWARD_ORG_SHORT_NAME}}"), the organization named in §1. It is a registrar, a credential
+issuer, and the publisher of the fee schedule. It is never a licensor of the software, a
+sublicensor, or a holder of rights in it — the permissions in §3 come from the software's
+own contributors and from nobody else (D6; LEG-016).
+
+The Steward Registry is the public record the Steward Organization keeps at
+{{STEWARD_REGISTRY_URL}}, in which Entitlements, Donation Entitlements, and Waivers are
+recorded, and from which anyone may read them without an account.
+
+An Entitlement is a current credential recorded in the Steward Registry for an
+organization, issued by the Steward Organization under a separate agreement between that
+organization and the Steward Organization. These terms neither create nor require that
+agreement, and say nothing about its price.
+
+A Donation Entitlement is a current credential recorded in the Steward Registry for an
+organization on the strength of a documented direct donation, made by that organization to a
+charity listed by the Steward Organization, of the amount the published schedule states for
+that organization. The donated money never passes through the Steward Organization (D18;
+LEG-012).
+
+A Waiver is a record in the Steward Registry, made by the Project Steward for the
+software, excusing a named organization from §4 for that software.
+
+The Project Steward for the software is whoever holds administrative control of the
+software's canonical repository, or whoever they designate through the Steward Registry's
+verified claim process. A designation made anywhere else has no effect (D23 as amended;
+LEG-039).
+
+A vested version is a version of the software that a credential covers permanently, per
+§9.
+
+------------------------------------------------------------------------------
+
+3. GRANTS
+
+Each licensor of the software grants you, subject to §4, a licence under all copyright
+they hold in their contributions to the software, to do everything with the software that
+would otherwise infringe that copyright.
+
+Each licensor of the software also grants you, subject to §4, a licence under all patent
+claims they can license, or become able to license, that would be infringed by the software
+as they contributed it, to make, use, sell, offer for sale, import, and otherwise dispose of
+the software.
+
+These grants are per licensor and non-exclusive. Nobody grants rights on anyone else's
+behalf (D6, D7; LEG-015).
+
+  Why per-licensor and not "the Licensor grants": every contributor to the software licenses
+  their own part on these terms, so the condition in §4 travels with every contribution
+  without anyone assigning copyright to anyone. No contributor is ever asked to assign
+  copyright or transfer economic ownership of their work — not now and not in any later
+  version of these terms (D7; LEG-036). See
+  contributor-sign-off.md.
+
+------------------------------------------------------------------------------
+
+4. THE PURPOSE CONDITION
+
+The permissions in §3 apply only while at least one of the following is true:
+
+- (a) you are not exercising them for the benefit of a Large Organization;
+- (b) the Large Organization for whose benefit you exercise them holds a current
+  Entitlement for the software, recorded in the Steward Registry;
+- (c) that organization holds a Waiver for the software, recorded in the Steward
+  Registry; or
+- (d) that organization holds a current Donation Entitlement, recorded in the
+  Steward Registry.
+
+Use of the software for the benefit of a Large Organization where none of (a) to (d) is true
+is outside the scope of these grants. It is not a breach of a promise made to anyone;
+there is simply no permission for it (D6; LEG-010, LEG-013).
+
+These terms contain no obligation to pay anyone anything. They state what the
+permissions cover. Money, if it changes hands at all, changes hands under the separate
+agreement described in §2 — an ordinary bilateral contract between an organization and the
+Steward Organization, to which the software's licensors are not parties (LEG-010).
+
+  [COUNSEL: this is the load-bearing clause and the one carrying real doctrinal risk. Under
+  US law the condition/covenant line is policed for a nexus to the exclusive rights (MDY v.
+  Blizzard); a condition satisfied by a credential from an unrelated third party has a
+  weaker nexus than the classic scope limits and could be recharacterized as a covenant,
+  which would leave the Steward Organization with no standing and licensors with a contract
+  claim instead of an infringement claim. Draft to maximize scope-of-use character. Memos
+  required in US, CH, and DE before publication (LEG-051). Also confirm: does limb (a)'s
+  "for the benefit of" formulation correctly capture the contractor-working-for-a-large-client
+  case without sweeping in incidental benefit?]
+
+  [COUNSEL: limb (d)'s proof standard is open (OQ-LEG-1 / OPEN-27). What documentation of a
+  direct donation is sufficient for the registry to record a Donation Entitlement, who bears
+  the consequence of a false record, and what is the payer-side tax character in the main
+  payer jurisdictions? The clause above deliberately says only that the credential must be
+  recorded — the evidentiary standard belongs in the registry's published terms, not here.]
+
+------------------------------------------------------------------------------
+
+5. THE THRESHOLD
+
+An organization meets the threshold — and so is not a Large Organization — if, for its
+own prior tax year, taken across the whole of your organization as defined in §2, both
+of the following were true:
+
+- fewer than 100 individuals worked for it as employees and independent contractors,
+  counted together; and
+- its total revenue was less than USD 1,000,000, stated in 2026 dollars and adjusted for
+  changes in the US Bureau of Labor Statistics Consumer Price Index for All Urban Consumers
+  (CPI-U) since 2026. Revenue in other currencies converts at the average official rate for
+  that tax year.
+
+Both parts must be true. You assess this yourself, against your own prior fiscal year.
+
+These terms give nobody a right to audit you. No licensor, and not the Steward
+Organization, may demand your books, your headcount, or any certification under these terms.
+Where a credential is bought, the organization certifies its own revenue band once, in that
+purchase — outside these terms entirely (D8; LEG-020).
+
+No prices, tiers, or bands appear in these terms, ever. These terms are binary: an
+organization is above the threshold or below it. Everything else lives in the schedule the
+Steward Organization publishes (D8, D11; LEG-022).
+
+  [COUNSEL: D8/LEG-021 leaves the investment prong open (OQ-LEG-2 / OPEN-28) — whether
+  an organization that has raised more than USD 1,000,000 in the preceding five years counts
+  as large regardless of revenue and headcount (the Big Time Design pattern). Recommended in
+  the record, not decided. Decide in or out, and if in, draft the "raised" definition
+  (priced equity? convertibles? grants? debt?).]
+
+  [COUNSEL: the dual test is stated as a single AND across the consolidated group. Confirm
+  the counting rules that a real filer will ask about: part-time individuals, agency staff,
+  mid-year headcount changes, and revenue of a group whose members have different fiscal
+  year-ends. Also confirm the CPI-U mechanic states an unambiguous reference month and
+  series, and what happens if the series is discontinued.]
+
+------------------------------------------------------------------------------
+
+6. CURE
+
+If the Purpose Condition stops being satisfied for you, your permissions under §3 continue
+for 60 days from the first day it was not satisfied. If, within those 60 days, one of the
+limbs of §4 becomes true again, your permissions continue uninterrupted and this section
+applies afresh to any later failure.
+
+If none becomes true within those 60 days, your permissions under §3 end at the end of the
+60th day — except for versions already vested under §9, which continue permanently.
+
+  Why a cure window at all: growing past the threshold is a normal event, and an
+  organization that crosses it on a Tuesday should not become an infringer on the Wednesday.
+  60 days is the same order as the comparable clauses in this licence family (D8; LEG-014).
+
+  [COUNSEL: confirm the mechanics of "first day it was not satisfied" for a threshold whose
+  input is a prior tax year — the failure is discoverable only after the year closes, so
+  the trigger date needs drafting (year-end? filing? knowledge?). This is the difference
+  between a workable cure window and a trap.]
+
+------------------------------------------------------------------------------
+
+7. THESE TERMS BECOME APACHE-2.0
+
+Each version of the software published under these terms is, on the fourth anniversary of
+that version's publication, additionally available to everyone under the Apache License,
+Version 2.0. From that date, §4 no longer restricts anyone's use of that version, from
+anyone.
+
+This is fixed and licence-wide. It is not a per-project setting, not shortenable by a
+project, and not extendable by the Steward Organization for a version already published
+(D9; LEG-023, LEG-025).
+
+Later versions of the software have their own four-year clocks, which start when they are
+published.
+
+  Why this is in the licence and not in a policy document: it is the risk cap that makes the
+  licence reviewable. The worst case for an adopter is "pin the version and wait", and that
+  worst case is written into the grant rather than promised in marketing.
+
+  [COUNSEL: draft the conversion as a present grant with a deferred effective date, so that
+  it survives the Steward Organization's dissolution and the licensors' own later choices,
+  and so a version's conversion cannot be undone by anyone. Confirm the interaction with
+  Apache-2.0 §4's notice requirements and with the notice-preservation duty in §11 for code
+  that arrived from a permissively licensed predecessor.]
+
+------------------------------------------------------------------------------
+
+8. IF THE STEWARD ORGANIZATION LAPSES
+
+If the Steward Organization ceases to exist, or ceases for 12 consecutive months to
+issue Entitlements, and no successor has been publicly designated, the Purpose Condition in
+§4 lapses: the permissions in §3 apply from then on without it, for everyone (D9;
+LEG-024).
+
+  Why: every vendor-risk review asks what happens if the steward dies. The answer is written
+  into the grant, so the answer is not "trust us".
+
+  [COUNSEL: this clause must be objectively determinable by a licensee without litigation —
+  "ceases to issue Entitlements for 12 months" needs an evidentiary handle (the registry's
+  own published record is the obvious candidate, but it is under the lapsing party's
+  control). Draft the succession-designation formality too: who may designate, published
+  where, and what stops a hostile or paper successor from resetting the clock.]
+
+------------------------------------------------------------------------------
+
+9. RECORDED CREDENTIALS, AND WHAT STAYS YOURS
+
+A credential recorded in the Steward Registry — an Entitlement, a Donation Entitlement, or a
+Waiver — satisfies §4 for the versions it vests, and it vests them permanently.
+
+The rule is one line: a version is vested if it was published on or before the end of the
+credential's term. For an Entitlement or Donation Entitlement, the term ends when the paid
+period ends, and renewing extends it. For a Waiver, the term ends when the Waiver is revoked
+or expires.
+
+Once a version is vested for an organization, nothing takes it away: not the project
+leaving the registry, not the Waiver being revoked, not the credential lapsing, not the
+Steward Organization failing. Revocation and non-renewal act on versions published
+afterwards, never on what is already deployed (D12 as amended; LEG-084).
+
+Everyone who licenses their contributions on these terms accepts that recorded Entitlements,
+Donation Entitlements, and Waivers satisfy §4 for every licensor's grant. The Project
+Steward may record a Waiver, on any terms or none, and may revoke it going forward.
+
+  [COUNSEL: the sentence above is the in-licence bootstrap of the steward roles — a licensor
+  accepting, by using this text, that a third party's registry record satisfies a condition
+  in their own grant. Confirm its formation and prominence under Swiss and German standard-terms
+  doctrine (AGB), and under drive-by-contributor conditions where the contributor's only act
+  is a pull request. Confirm also that a Waiver "travels with the work" as it stood at grant
+  time, while an Entitlement travels with the registry, and draft the fork and
+  hostile-takeover cases (OQ-LEG-3 / OPEN-29; LEG-040).]
+
+------------------------------------------------------------------------------
+
+10. WHAT THESE TERMS DO NOT REQUIRE
+
+For the avoidance of doubt, and because these are the three questions every corporate
+reviewer asks first:
+
+1. No obligation on your own software. These terms place no condition on any software
+   you write, and no condition on any other software you combine, link, host, or ship with
+   the software. The condition in §4 attaches to this software and travels no further.
+2. No disclosure of anything. These terms require no publication of your source code, no
+   disclosure of your architecture, your deployment, your customers, or your internal
+   documents.
+3. No network clause. Making the software's functionality available to users over a
+   network triggers nothing here. There is no source-offer duty of any kind.
+4. No share-alike. Your modifications are yours, on whatever terms you choose, subject
+   only to §4 and §11.
+5. No audit right (see §5) and no reporting duty: these terms require you to file
+   nothing, register nothing, and notify nobody.
+
+These are properties of the drafting above, restated. They are not additional promises, and
+they are explained in plain English in ../ANNOTATIONS.md.
+
+------------------------------------------------------------------------------
+
+11. NOTICES
+
+You must keep a copy of these terms, and of every copyright, patent, and attribution notice
+you receive with the software, in any copy or substantial portion of the software you
+distribute.
+
+Where the software includes material that arrived under other terms, those notices stay too.
+Adopting these terms never deletes an inbound licence text (D24; LEG-042).
+
+------------------------------------------------------------------------------
+
+12. THE NAME
+
+The name of these terms, and the name of the Steward Organization, are trademarks of the
+Steward Organization. You may say that software is licensed under these terms only if the
+text you distribute with it is this text, unchanged, at a version the Steward Organization
+published (D10; LEG-037).
+
+Nothing in these terms grants you any other right in those trademarks, and nothing in them
+restricts your ability to describe the software factually.
+
+  [COUNSEL: the verbatim-text condition is the enforcement handle that keeps the canonical
+  text canonical (the MariaDB/BUSL mechanism). Draft it so it survives the trademark not yet
+  being registered anywhere, and confirm it does not collide with nominative-use doctrine in
+  the US or with §23 UWG-style rules in DE/CH. Note that the trademark filings themselves
+  are a separate workstream (D4; LEG-037) and no application exists today.]
+
+------------------------------------------------------------------------------
+
+13. NO WARRANTY; NO LIABILITY
+
+The software comes with no warranty of any kind, and no licensor has any liability to you
+arising from these terms or the software, to the fullest extent the law allows. These
+terms do not exclude anything that cannot lawfully be excluded.
+
+  [COUNSEL: draft the disclaimer and the cap in the jurisdiction-portable form this licence
+  family uses, with the mandatory-law carve-out. Note separately — it belongs in the
+  Entitlement terms and not here — that a credential is expressly not a warranty that
+  the software is free of third-party rights (LEG-083).]
+
+------------------------------------------------------------------------------
+
+14. INTERPRETATION
+
+If any part of these terms cannot be enforced, the rest still applies. Nobody loses a right
+by not enforcing it immediately.
+
+  [COUNSEL: governing law and forum. Options and trade-offs both matter here: silence (the
+  Blue Oak/PolyForm practice, which keeps the text jurisdiction-neutral and leaves each
+  licensor's own law to apply) versus a stated Swiss governing law (which centralizes
+  interpretation but reads as a vendor licence and may be unenforceable against consumers in
+  several member states). The record does not decide this; it is a drafting decision with
+  adoption consequences.]
+
+------------------------------------------------------------------------------
+
+15. COUNSEL AGENDA CARRIED BY THIS DRAFT
+
+Every marker above, collected, so the engagement can be scoped from one list. This is the
+licence-text subset of the priority list in the movement's licence-architecture record
+(LEG-050); it is not the whole engagement.
+
+#  | Section    | Question                                                                                                          | Record
+---+------------+-------------------------------------------------------------------------------------------------------------------+--------------------------
+1  | §2         | Verbatim PolyForm control definition + attribution form                                                           | LEG-018
+2  | §4         | Condition-vs-covenant enforceability (US MDY nexus, CH CO, DE AGB); "for the benefit of" scope                    | LEG-010, LEG-013, LEG-051
+3  | §4         | Donate-direct proof standard, false-record consequence, payer-side tax character                                  | LEG-012, OPEN-27
+4  | §5         | Investment prong in or out, and its "raised" definition                                                           | LEG-021, OPEN-28
+5  | §5         | Threshold counting rules; CPI-U reference month and series discontinuation                                        | LEG-017, LEG-019
+6  | §6         | Cure trigger date for a prior-tax-year test                                                                       | LEG-014
+7  | §7         | Conversion as a present grant with deferred effect; Apache-2.0 notice interaction                                 | LEG-023
+8  | §8         | Objective determinability of steward lapse; successor-designation formality                                       | LEG-024
+9  | §9         | In-licence steward bootstrap under AGB and drive-by formation; fork and takeover rules                            | LEG-039, LEG-040, OPEN-29
+10 | §12        | Verbatim-text trademark condition against nominative use / unregistered marks                                     | LEG-037
+11 | §13        | Warranty and liability drafting, jurisdiction-portable                                                            | —
+12 | §14        | Governing law and forum: silence versus a stated law                                                              | —
+13 | whole text | AI-generated contributions: training-use position, and condition robustness where many lines carry thin copyright | LEG-043, OPEN-24
+
+Sequencing that binds this draft (D26): before any full drafting engagement is
+commissioned, demand discovery must produce real arm's-length interest, and a capped
+feasibility review must answer two questions — whether prospective coverage is dependable,
+and whether cure and amnesty are commercially acceptable without central copyright ownership
+— with a binary stop on either. Nothing in this file may be sent to counsel as a drafting
+instruction before that gate.
+
+------------------------------------------------------------------------------
+
+16. REVISION LOG
+
+Revision    | Date       | Change
+------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------
+1.0-draft.0 | 2026-09-02 | First structural draft. Implements D6–D10, D23, D25 and D7 as amended into clause skeletons; isolates 13 counsel questions. No text reviewed by counsel.

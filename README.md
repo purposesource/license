@@ -94,6 +94,7 @@ engagement.
 |---|---|
 | [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md) | The licence draft — clause skeletons implementing the decided architecture, with 13 isolated counsel questions |
 | [drafts/contributor-sign-off.md](drafts/contributor-sign-off.md) | The contribution instrument draft: right-to-submit warranty, steward-role acceptance, and bounded forward delegation — plus the permanent promise that contributors keep their copyright |
+| [canonical/](canonical/) | The plain-text rendering of each draft — the one text per version everything else points at, produced from the draft by `npm run render:canonical` and re-verified byte-for-byte by CI. Still a draft, banner and all |
 | [ANNOTATIONS.md](ANNOTATIONS.md) | Plain-English walkthrough, clause by clause, and the proof that the three corporate fears are absent |
 | [FAQ-OSPO.md](FAQ-OSPO.md) | The legal-review pack: what triggers payment, what happens at year four, what if the steward dies, what the fee buys, and whether the licence qualifies as open source (it does not) |
 | [decisions/](decisions/) | The trace from text back to the decisions it implements |
@@ -118,13 +119,14 @@ npm ci          # no dependencies; installs nothing, verifies the lockfile
 npm run build   # == npm run check
 ```
 
-Three gates, each with its own failure modes documented in the script header:
+Four gates, each with its own failure modes documented in the script header:
 
 | Command | Gate | Fails on |
 |---|---|---|
 | `npm run lint:copy` | Copy lint over every prose file | any pattern in `copy-lint/banned.txt`; zero files scanned; an unparseable pattern |
 | `npm run lint:links` | Internal links and heading anchors across all Markdown | a missing target; an anchor matching no heading; a non-https external link; zero links found |
 | `npm run lint:drafts` | The honesty gate | a legal text missing the draft banner; a missing README banner; an undeclared or unused `{{…}}` token; a malformed counsel marker; too few counsel markers in the licence draft |
+| `npm run check:canonical` | The canonical rendering | a `canonical/*.txt` that is not byte-identical to what its draft renders to; a CR byte or a BOM in one; a canonical text no draft produces |
 
 The honesty gate is the one that matters. A draft that stops *looking* like a draft — a banner
 deleted in a tidy-up, a counsel marker quietly resolved by someone with no standing to
