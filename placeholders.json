@@ -1,5 +1,5 @@
 {
-  "$comment": "Every {{TOKEN}} that may appear anywhere in drafts/**, ANNOTATIONS.md, FAQ-OSPO.md or decisions/** must be declared here. scripts/check-drafts.mjs fails the build on an undeclared token AND on a declared token nobody uses, so this file is the complete, auditable list of everything in the draft texts that is not yet decided. Decision D10 (one canonical text, zero per-project parameters) means the SHIPPED text must resolve every token below to a literal constant — the tokens exist because the constants are not chosen yet, never because the text is meant to be filled in per project.",
+  "$comment": "Every {{TOKEN}} that may appear anywhere in drafts/**, ANNOTATIONS.md, FAQ-OSPO.md or decisions/** must be declared here. scripts/check-drafts.mjs fails the build on an undeclared token AND on a declared token nobody uses, so this file is the complete, auditable list of every token the draft texts use. Until 2026-09-08 that was the same thing as the list of everything not yet decided; a token whose constant has since been settled stays declared for as long as a text still writes it, and says so in its own `status`. Decision D10 (one canonical text, zero per-project parameters) means the SHIPPED text must resolve every token below to a literal constant — the tokens exist because the constants are not chosen yet, never because the text is meant to be filled in per project.",
   "tokens": {
     "STEWARD_ORG_LEGAL_NAME": {
       "value": null,
@@ -34,9 +34,10 @@
     },
     "GITHUB_ORG": {
       "value": "purposesource",
-      "status": "proposed",
-      "blockedBy": "D4 / OPEN-02 — the org name is proposed, not confirmed",
-      "meaning": "GitHub organization that hosts this repository and the registry repositories."
+      "status": "confirmed",
+      "blockedBy": "none — the organization exists (confirmed 2026-09-08). Superseded: \"D4 / OPEN-02 — the org name is proposed, not confirmed\"",
+      "meaning": "GitHub organization that hosts this repository and the registry repositories.",
+      "note": "A settled token stays declared here because README.md still writes it as {{GITHUB_ORG}} and the inventory must account for every token the texts use — removing it would fail the gate, not tidy it. The steward organization's LEGAL name is a different token (STEWARD_ORG_LEGAL_NAME) and is still pending on D4."
     }
   }
 }

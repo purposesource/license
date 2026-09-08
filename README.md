@@ -170,7 +170,12 @@ and the failure modes are written down rather than hidden:
 - **Not counsel-issued, and not legal advice** to anyone, for any purpose.
 - **Not an announcement.** No launch, no availability, no date is claimed.
 - **Not the platform.** The registry, the coverage lookup, the credentials, and the site live
-  in other repositories under `github.com/{{GITHUB_ORG}}` and do not exist yet either.
+  in other repositories under `github.com/{{GITHUB_ORG}}`. The registry is there and public —
+  the curated entries in `registry-v0`, the contract set they validate against in `spec`. The
+  site is a private preview until it is published. The coverage lookup and the credentials are
+  later-phase components and do not exist yet. *(Corrected 2026-09-08 — the bullet used to end
+  by saying that none of the four existed yet, which was true when it was written and is now
+  true of two of them.)*
 - **Not a decision register.** [decisions/](decisions/) is an index that traces text to
   decisions; the register itself is the movement's own internal document.
 - **Not a place for confidential or privileged material**, ever.
