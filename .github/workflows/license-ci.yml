@@ -31,6 +31,14 @@ jobs:
         # still empty and honest.
         run: npm ci
 
+      - name: Nothing from the private recording store is in this repository (VS-35)
+        # The private store holds rail transaction exports, attestations, sanctions-screening
+        # results and the terms each buyer accepted — classified P2/P3, retained ten years,
+        # and never in a public repository. This one is public, and it is where the
+        # accepted-terms half of the store would look most at home: the texts are published
+        # here, the record of who accepted which version is not. `npm run check` runs it first.
+        run: npm run lint:no-records
+
       - name: Copy lint
         # copy-lint/banned.txt — a hand-synced mirror of the movement's canonical MKT-018
         # pattern file in the website repository. CI never fetches across repositories, so
