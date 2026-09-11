@@ -105,6 +105,17 @@ pre-registered for revisit, and the register records the disputes rather than hi
   and there is no ledger row yet);
 - confidential, privileged, or internal material from any organization, including yours.
 
+*(Dated note, 2026-09-11: the process above gained its mechanical half. `.github/CODEOWNERS`
+is new on this date and names the organisation team `@purposesource/stewards` on `drafts/`,
+`canonical/`, `placeholders.json` and `copy-lint/` — so a pull request touching the text, the
+substitution table or the pattern file asks a steward to read it rather than relying on
+whoever happens to look. Read that file's own note before you rely on it: measured read-only
+the same day, the team holds no repository access yet and this branch carries no
+required-review rule, so the review is **requested** and not yet **required**. Both are
+operator acts, in that order. A code owner here is an editorial reader against the recorded
+decisions, never counsel: nothing in this repository becomes operative because someone
+approved a pull request.)*
+
 ---
 
 ## Before you push
