@@ -60,8 +60,13 @@ frozen". The accurate statement is that without forward delegation, new versions
 applied to existing contributions without per-contributor consent; existing versions stay
 licensed under the version they were adopted under regardless.
 
+**Amended 2026-09-16 (D46):** the immutable core gains a sixth item — the steward-lapse
+backstop, its existence and its clock, which may only ever be shortened — so that both
+guarantees the statutes name for the Association's own failure (Art. 14 para. 3) are
+ratcheted the same way the conversion already is.
+
 - **Implemented by:** [../drafts/contributor-sign-off.md](../drafts/contributor-sign-off.md)
-  §0, §2.3, §4; licence draft §3 (the per-licensor note)
+  §0, §2.3 (six items), §4; licence draft §3 (the per-licensor note)
 - **Requirements:** LEG-034, LEG-035, LEG-036
 - **Status:** core never reopens; instrument form and the material-consistency test are open
   for counsel
@@ -93,9 +98,18 @@ at sustained scale. Note the interaction with D7's immutable core: the conversio
 only ever be **shortened** through delegation, so any lengthening reaches future contributions
 only, or requires fresh consent.
 
-- **Implemented by:** licence draft §7, §8
+**Amended 2026-09-16 (D46):** the backstop gains a third limb — a signed, published
+**declaration of lapse** naming the day — so the board can bring the lapse forward on the
+day it stops selling, which the published kill protocol had promised and the text could not
+deliver; the twelve-month limb counts Donation Entitlements as issuance and a Waiver keeps
+no clock running; a successor is designated only by a signed, published record the successor
+has accepted, becomes the Steward Organization for every purpose of the text (§2), and counts
+as none if it issues nothing for twelve months. The designation formality and the evidentiary
+handle stay with counsel (agenda row 8, widened).
+
+- **Implemented by:** licence draft §2 (the successor limb), §7, §8
 - **Requirements:** LEG-023, LEG-024, LEG-025
-- **Status:** never reopens for adopted versions
+- **Status:** never reopens for adopted versions; the D46 limbs are draft text for counsel
 
 ### D10 — One canonical text, zero per-project parameters, SPDX at launch
 

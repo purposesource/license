@@ -29,7 +29,7 @@ discovering them from a critic.
 | **What triggers payment?** | Nothing in the licence: it contains no payment obligation. Use above the threshold without a recorded credential is simply unlicensed. |
 | **Can we be audited?** | No. There is no audit clause and there never will be. |
 | **What happens at four years?** | Each published version becomes available under Apache-2.0, automatically, for everyone. |
-| **What if the steward organization disappears?** | After twelve months without credential issuance and no designated successor, the condition lapses and the licence becomes permissive. |
+| **What if the steward organization disappears?** | After twelve months without credential issuance and no designated successor — or earlier, on the day a published declaration of lapse names — the condition lapses and the licence becomes permissive. |
 | **What do we keep if we stop paying?** | Every version published on or before the end of the paid term. Permanently. |
 | **Is there a copyright assignment for contributors?** | No — permanently, by design. Contributors keep their copyright. |
 | **Scanner status?** | The identifier is not registered yet; the filing is a launch event. Expect "unknown licence" flags in the interim, and read the honest answer below. |
@@ -115,7 +115,9 @@ does not depend on trusting anyone.
 The licence carries a backstop: if the steward ceases to exist, or ceases to issue
 credentials for **twelve consecutive months** with no publicly designated successor, the
 Purpose Condition **lapses** and the permissions apply without it — the licence degrades to
-permissive, for everyone.
+permissive, for everyone. The steward can bring that day forward by publishing a signed
+**declaration of lapse** (§8(c), added 2026-09-16 under D46), which is what its published
+wind-down protocol does on the day it stops selling; the declaration cannot be withdrawn.
 
 Two honest caveats:
 

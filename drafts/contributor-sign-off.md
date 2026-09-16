@@ -99,8 +99,8 @@ apply to my contribution because I am licensing it on those terms:
 ### 2.3 Bounded forward delegation
 
 My contribution may also be licensed under **any later version of the Purpose Source License
-that the Steward Organization publishes and that is materially consistent with the version in
-force when I contributed**.
+that the Steward Organization — or the successor it has designated under §8 of the licence —
+publishes and that is materially consistent with the version in force when I contributed**.
 
 **A later version applied to my contribution under this paragraph may never change any of
 the following** (the **immutable core**):
@@ -115,6 +115,8 @@ the following** (the **immutable core**):
 4. **The Steward Organization's character as registrar, never licensor** — it may never
    become a licensor, sublicensor, or rights-holder in contributed code.
 5. **The existence of the Project Steward's waiver power.**
+6. **The steward-lapse backstop** — its existence, and its clock, which may only ever be
+   **shortened**, never lengthened, and never removed (D46).
 
 Corrections that do not change the substance, and changes that are legally necessary to keep
 the licence workable, apply to my contribution automatically. **A change that touches the

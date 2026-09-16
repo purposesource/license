@@ -204,14 +204,18 @@ add trust at launch. And the contributor sign-off's immutable core makes that as
 binding rather than rhetorical: the conversion delay may only ever be **shortened** by a
 successor version applied through the delegation.
 
-### §8 Steward lapse — the twelve-month backstop
+### §8 Steward lapse — the twelve-month backstop, and the early exit
 
-If the steward stops existing, or stops issuing credentials for twelve consecutive months
-with no designated successor, the condition lapses and the licence becomes permissive for
-everyone.
+If the steward stops existing, or issues no credential for twelve consecutive months with no
+designated successor, the condition lapses and the licence becomes permissive for everyone.
+The steward can also say so early: a signed, published **declaration of lapse** names the
+day, and that day cannot be moved later (D46). A successor is designated only by a signed,
+published record the successor has accepted, and a successor that issues nothing for twelve
+months counts as none. A waiver granted by a project keeps no clock running.
 
 This is the answer to "what if the organization behind this dies", and it is written into the
-grant so that the answer does not depend on anyone's goodwill.
+grant so that the answer does not depend on anyone's goodwill — nor on anyone waiting a year
+when the steward has already stopped.
 
 ### §9 Vesting — what an organization keeps
 

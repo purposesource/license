@@ -2,9 +2,9 @@
   "$comment": "Every {{TOKEN}} that may appear anywhere in drafts/**, ANNOTATIONS.md, FAQ-OSPO.md or decisions/** must be declared here. scripts/check-drafts.mjs fails the build on an undeclared token AND on a declared token nobody uses, so this file is the complete, auditable list of every token the draft texts use. Until 2026-09-08 that was the same thing as the list of everything not yet decided; a token whose constant has since been settled stays declared for as long as a text still writes it, and says so in its own `status`. Decision D10 (one canonical text, zero per-project parameters) means the SHIPPED text must resolve every token below to a literal constant — the tokens exist because the constants are not chosen yet, never because the text is meant to be filled in per project.",
   "tokens": {
     "STEWARD_ORG_LEGAL_NAME": {
-      "value": null,
-      "status": "pending",
-      "blockedBy": "D4 (coined steward-organization name, after a knock-out trademark search) + LEG-060 (the entity does not exist yet)",
+      "value": "Purpose Source Association",
+      "status": "decided-pending-register",
+      "blockedBy": "the commercial-register entry (LEG-060): D40 item 1 (2026-09-14) accepted the descriptive legal name for the Association and amended D4's coined-name rule for it; the token stays in the text until the entry exists and 1.0 is rendered for publication. Superseded: \"D4 (coined steward-organization name, after a knock-out trademark search) + LEG-060 (the entity does not exist yet)\"",
       "meaning": "Registered legal name of the Steward Organization, named in the licence text itself as a licence-wide constant (LEG-027).",
       "note": "Working prose calls it \"the Steward Organization\". The name must avoid the word \"Open\" entirely (D4/D25)."
     },

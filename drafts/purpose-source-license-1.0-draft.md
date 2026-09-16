@@ -7,10 +7,10 @@
 
 # Purpose Source License 1.0 — working draft
 
-**Draft status:** pre-counsel working paper · **This draft:** `1.0-draft.0` · **Date of this revision:** 2026-09-02
+**Draft status:** pre-counsel working paper · **This draft:** `1.0-draft.1` · **Date of this revision:** 2026-09-16
 
 **What this file is.** A structural draft that turns the movement's recorded decisions
-(D6–D10, D23, D25, and D7 as amended — see [../decisions/](../decisions/)) into clause
+(D6–D10, D23, D25, D7 as amended, and D46 — see [../decisions/](../decisions/)) into clause
 skeletons, so that counsel receives a specification with the architecture already settled
 and the open questions already isolated. It is the input to a drafting engagement, not its
 output.
@@ -79,10 +79,11 @@ by the project. **Published** means first made available to the public by the pr
 **A Large Organization** is an organization that does not meet the threshold in §5.
 
 **The Steward Organization** is {{STEWARD_ORG_LEGAL_NAME}} (in these terms,
-"{{STEWARD_ORG_SHORT_NAME}}"), the organization named in §1. It is a registrar, a credential
-issuer, and the publisher of the fee schedule. **It is never a licensor of the software, a
-sublicensor, or a holder of rights in it** — the permissions in §3 come from the software's
-own contributors and from nobody else (D6; LEG-016).
+"{{STEWARD_ORG_SHORT_NAME}}"), the organization named in §1, or the organization it has
+publicly designated as its successor under §8. It is a registrar, a credential issuer, and
+the publisher of the fee schedule. **It is never a licensor of the software, a sublicensor,
+or a holder of rights in it** — the permissions in §3 come from the software's own
+contributors and from nobody else (D6; LEG-016).
 
 **The Steward Registry** is the public record the Steward Organization keeps at
 {{STEWARD_REGISTRY_URL}}, in which Entitlements, Donation Entitlements, and Waivers are
@@ -261,19 +262,50 @@ published.
 
 ## 8. If the Steward Organization lapses
 
-If the Steward Organization ceases to exist, or ceases for **12 consecutive months** to
-issue Entitlements, and no successor has been publicly designated, the Purpose Condition in
-§4 **lapses**: the permissions in §3 apply from then on without it, for everyone (D9;
-LEG-024).
+The Purpose Condition in §4 **lapses** — the permissions in §3 apply from then on without
+it, for everyone — on the earliest of the following days (D9 as amended by D46; LEG-024):
+
+- **(a)** the day the Steward Organization ceases to exist, if no successor has been
+  publicly designated under this section;
+- **(b)** the day on which **12 consecutive months** end in which the Steward Organization
+  has issued no Entitlement and recorded no Donation Entitlement, if no successor has been
+  publicly designated under this section; or
+- **(c)** the day named in a **declaration of lapse**: a signed record, published in the
+  Steward Registry and in its transparency log, by which the Steward Organization declares
+  that it has ceased to issue Entitlements and names the day on which this section takes
+  effect. A declaration of lapse cannot be withdrawn, and the day it names cannot be moved
+  later.
+
+A Waiver is the Project Steward's record, not the Steward Organization's, and recording one
+keeps nothing in (b) running.
+
+A successor is **publicly designated** only by a signed record, published in the same way as
+a declaration of lapse, that names the organization and that the organization has accepted
+in writing. From that day the successor is the Steward Organization for every purpose of
+these terms. A designated successor that issues no Entitlement and records no Donation
+Entitlement for 12 consecutive months counts as no successor, and (b) runs against it as it
+ran against the organization that designated it.
 
 > Why: every vendor-risk review asks what happens if the steward dies. The answer is written
-> into the grant, so the answer is not "trust us".
+> into the grant, so the answer is not "trust us" — and the steward can give it on the day it
+> stops, instead of leaving everyone to wait a year (D46).
 
 > [COUNSEL: this clause must be objectively determinable by a licensee without litigation —
-> "ceases to issue Entitlements for 12 months" needs an evidentiary handle (the registry's
-> own published record is the obvious candidate, but it is under the lapsing party's
-> control). Draft the succession-designation formality too: who may designate, published
-> where, and what stops a hostile or paper successor from resetting the clock.]
+> "12 consecutive months" in (b) needs an evidentiary handle (the registry's own published
+> record is the obvious candidate, but it is under the lapsing party's control; a mirror of
+> the transparency log and of the retired key set outside that control is the design intent).
+> Draft the succession-designation formality too: who may designate, published where, and
+> what stops a hostile or paper successor from resetting the clock. Added 2026-09-16 (D46):
+> (i) the clock in (b) where no Entitlement was ever issued — the intent is that it runs from
+> the later of this text's first publication and the last recorded credential; (ii) the
+> declaration in (c) and the designation are the two most consequential records the registry
+> will ever carry — draft their formality (the resolution of the board or of the liquidators
+> cited in the record, two signatures under the published key set, irreversibility) so that
+> a compromised key or a hostile board cannot do what the published constitution forbids;
+> (iii) whether the identity anchor in §1 — a legal name and a registry address — should also
+> carry the commercial-register identifier or a key thumbprint, so that "the organization
+> named in §1" stays verifiable after a name change, a merger with universal succession, or
+> the loss of the domain.]
 
 ---
 
@@ -400,7 +432,7 @@ licence-text subset of the priority list in the movement's licence-architecture 
 | 5 | §5 | Threshold counting rules; CPI-U reference month and series discontinuation | LEG-017, LEG-019 |
 | 6 | §6 | Cure trigger date for a prior-tax-year test | LEG-014 |
 | 7 | §7 | Conversion as a present grant with deferred effect; Apache-2.0 notice interaction | LEG-023 |
-| 8 | §8 | Objective determinability of steward lapse; successor-designation formality | LEG-024 |
+| 8 | §8 | Objective determinability of steward lapse; the declaration of lapse and the successor designation — who may act, published where, signers, irreversibility; the §2 successor limb and sign-off §2.3; the clock where nothing was ever issued; the §1 identity anchor (register identifier, key thumbprint); merger and name change | LEG-024, LEG-040 |
 | 9 | §9 | In-licence steward bootstrap under AGB and drive-by formation; fork and takeover rules | LEG-039, LEG-040, OPEN-29 |
 | 10 | §12 | Verbatim-text trademark condition against nominative use / unregistered marks | LEG-037 |
 | 11 | §13 | Warranty and liability drafting, jurisdiction-portable | — |
@@ -421,3 +453,4 @@ instruction before that gate.
 | Revision | Date | Change |
 |---|---|---|
 | `1.0-draft.0` | 2026-09-02 | First structural draft. Implements D6–D10, D23, D25 and D7 as amended into clause skeletons; isolates 13 counsel questions. No text reviewed by counsel. |
+| `1.0-draft.1` | 2026-09-16 | D46 (dissolution and steward lapse). §8 gains the declaration of lapse (c), counts Donation Entitlements in (b), says a Waiver keeps no clock running, and drafts the successor designation; §2 gains the successor limb; the §8 counsel marker and agenda row 8 are widened. No text reviewed by counsel. |
