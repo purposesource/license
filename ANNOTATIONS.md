@@ -394,7 +394,7 @@ words are determinable enough to keep them out.
 rule and then the outcomes: you exercise permissions for the benefit of an organization when
 you use the software as that organization, or in work you do for it as its employee,
 contractor or service provider. Then the three rules the review asked for, so that nobody
-has to infer them: "A client's coverage or exemption also covers work others do solely for
+has to infer them: "A client's coverage, or its meeting the threshold, also covers work others do solely for
 it. Running a general service for many customers is your own use; a dedicated deployment for
 one customer is work for that customer." Incidental benefit does not count, nor does merely
 passing the software on. And a plain reassurance, borrowed from the proposal: "Personal use,

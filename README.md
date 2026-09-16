@@ -46,7 +46,7 @@ holds **while any one of these four things is true**:
    here:** a non-profit or public-benefit body, a public educational institution or a public
    body meets the threshold whatever its size (draft §5). Its commercial subsidiaries do not
    inherit that, and work done for a commercial client is judged by the client: a client's
-   coverage or exemption covers work others do solely for it, while running a general service
+   coverage, or its meeting the threshold, covers work others do solely for it, while running a general service
    for many customers is the provider's own use. And **evaluation is free for everyone**:
    non-production evaluation, security review and preparing or submitting a contribution need
    no coverage, whoever you work for — production use and offering the software's
