@@ -57,7 +57,12 @@ unchanged text may be called by the name.
 - the drafts here are CC BY-SA today, and every contribution to them so far is the operator's
   own work, so the operator can release the finished text under CC BY without anyone else's
   consent. Should a third party contribute wording before publication, that contribution is
-  accepted under CC BY 4.0 or not at all.
+  accepted under CC BY 4.0 or not at all;
+- the wording borrowed from the 16 September 2026 review proposal (§4) came into the record
+  under this repository's own CC BY-SA notice and was produced within the operator's own
+  review process, so the same clearance applies. The proposal's notes ask that the finished
+  text not be labelled CC BY until the rights have been cleared; this list is where that
+  clearance is recorded, and any borrowed sentence whose clearance fails is redrafted.
 
 ## 4. Third-party material
 
@@ -69,9 +74,10 @@ The licence draft uses these PolyForm sentences and patterns: the definition of 
 verbatim (§2 of the draft: "Control means ownership of substantially all the assets of an
 entity, or the power to direct its management and policies by vote, contract, or otherwise.
 Control can be direct or indirect."); the *group* definition, modelled on PolyForm's "your
-company" (§2); the threshold figures and the consumer-price-index sentence naming the series
-(§5); the warranty and liability sentence of PolyForm's "No Liability" section, verbatim except
-that "the licensor will not be liable" reads "no licensor will be liable" (§13); and the
+company" (§2); the threshold figures and the CPI-U series PolyForm names (§5; the indexing
+formula itself is the review proposal's, below); the warranty and liability sentence of
+PolyForm's "No Liability" section, verbatim except that "this software" reads "the software"
+and "the licensor will not be liable" reads "no licensor will be liable" (§13); and the
 copyright-licence phrase "to do everything with the software that would otherwise infringe",
 modelled on PolyForm's copyright licence (§3). The PolyForm Project publishes its licence texts under the grant in its repository's
 README (<https://github.com/polyformproject/polyform-licenses>, section "License"), which
@@ -94,7 +100,26 @@ applies.)*
 
 **Apache License, Version 2.0** (<https://www.apache.org/licenses/LICENSE-2.0>). The draft's
 §3 follows the structure of Apache-2.0 §3 for the patent grant and the litigation trigger, and
-§7 converts the software to Apache-2.0 by reference; no Apache sentence is copied verbatim.
+of Apache-2.0 §5 for the inbound default (since `1.0-draft.3`); §7 converts the software to
+Apache-2.0 by reference; no Apache sentence is copied verbatim.
+
+**The 16 September 2026 review proposal** (`license-proposal/purpose-source-license-suggested.md`
+with its `REVIEW-NOTES.md`, kept beside this repository in the movement's record, not inside
+it). The proposal is a discussion draft written against this repository's `1.0-draft.2`; its
+notes place it under this repository's own notice — **CC BY-SA 4.0**, §1 and §2 above — with
+attribution and share-alike preserved. Since `1.0-draft.3` (D49, 2026-09-16) the licence
+draft borrows the proposal's plain wording, adapted to the draft's defined terms, at these
+places: the irrevocability sentence and the inbound default with "contributors keep their
+copyright" (§3); the personal-use sentence (§4); the counting rules and the June-to-June
+CPI-U formula (§5); the 60-days-in-twelve-months cap and "do not vest" (§6); the successor
+bound (§8); the 72-hour Waiver rule, the good-faith reliance sentence, the corporate-change
+sentences and the fork-and-import sentences (§9); and the notices cure (§11). The evaluation
+and contribution exception (§4), the contractor and service sentences (§4) and the
+release-level conversion bound (§7) are the operator's own wording from the review debate,
+not the proposal's. Its structure is not borrowed, its "control" paraphrase is not used (the
+PolyForm definition stays verbatim), and nothing in it is quoted as operative. The drafts here are
+CC BY-SA 4.0 (§2), so the borrowed wording carries the same terms it came under; its place in
+the rights clearance for the finished text is §3.
 
 ## 5. Trademarks
 

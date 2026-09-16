@@ -68,6 +68,18 @@ are dealing with:
 - **Dependencies whose licences do not fit** — that is not the licence's job to solve. It is
   the project's job, in its own dependency policy, before the code is merged.
 
+**Two things the licence itself says, since `1.0-draft.3` (D49, 2026-09-16).** First, you
+need no coverage to contribute: licence §4 lets anyone — an employee of a Large Organization
+included — evaluate the software outside production, review its security, and prepare and
+submit a contribution without a credential; production use and offering the software's
+functionality to others are what need one. Second, licence §3 carries an inbound default in
+the Apache §5 tradition: a contribution you intentionally submit is offered under the licence
+unless you clearly say otherwise, and you keep your copyright. That default settles the terms
+your contribution comes in under. **It does not replace the sign-off**, which is the only
+instrument for the two things the licence cannot do by itself — your acceptance of the steward
+roles (sign-off §2.2) and the bounded forward delegation (sign-off §2.3). Nothing in the
+default delegates anything forward, and nothing in it weakens the sign-off.
+
 **None of this applies to contributions to *this* repository**, which is documentation and
 scripts under the terms in [LICENSE-NOTICE.md](LICENSE-NOTICE.md). No sign-off is asked for
 here, because there is no licence in force to delegate forward to.
@@ -121,6 +133,9 @@ pre-registered for revisit, and the register records the disputes rather than hi
 - the **fixed four-year** Apache-2.0 conversion, attached to each publicly available part of
   the software (D48 item 4), and the steward-lapse backstop;
 - coverage that attaches to the licence, not to registration (D48 item 5);
+- permanent vesting with its named exceptions only, the 72-hour Waiver cooling and the
+  evaluation and contribution exception (D48, D49 — the operator's decisions of 2026-09-16,
+  amendable by the operator's dated note, not by a pull request);
 - **one canonical text** per version, zero per-project parameters;
 - **no copyright assignment, ever**;
 - never self-describing as open source, and never stapling purpose terms onto an existing

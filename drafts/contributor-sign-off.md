@@ -25,6 +25,8 @@ Whether a trailer is strong enough to carry the delegation in §2.3, or a short 
 agreement is needed instead, is counsel's call within the fixed constraints in §4. Public copy
 therefore promises the copyright outcome, never the ceremony.
 
+*(Dated note, 2026-09-16, D49: licence `1.0-draft.3` §3 now carries an inbound default — a contribution intentionally submitted to a project is offered under the licence unless the contributor clearly says otherwise, and contributors keep their copyright. That default settles the terms a contribution comes in under; it carries neither §2.2 nor §2.3, does not replace this sign-off, and changes no word of it.)*
+
 ---
 
 ## 1. The trailer (designed default)

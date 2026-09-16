@@ -25,7 +25,8 @@ which passes the funds on to listed charitable recipients with no distributable 
 profit (only the movement's direct costs, capped and published to the invoice, are ever
 charged to those funds); or earned by donating that amount directly to a listed charity; or
 waived by the project. Every publicly available part of the software becomes available under
-Apache-2.0 four years after it first became public, guaranteed in the licence text itself.
+Apache-2.0 four years after it first became public — and every part of a published version no
+later than four years after that version — guaranteed in the licence text itself.
 
 **It is not an open source licence** under the Open Source Definition, because it restricts
 use by large organizations. The movement says that plainly rather than arguing about the
@@ -39,35 +40,58 @@ holds **while any one of these four things is true**:
 
 1. **You are not acting for the benefit of a large organization.** Individuals and
    organizations below the threshold — fewer than 100 people **and** under USD 1,000,000 of
-   prior-year revenue in 2026 dollars, adjusted by a fixed consumer-price-index rule and
+   latest-completed-tax-year revenue in 2026 dollars, adjusted by a fixed consumer-price-index rule and
    measured across the whole group under common control — need nothing at all. No account,
    no registration, no notification. **"Free for non-profits" is in the text, not only
    here:** a non-profit or public-benefit body, a public educational institution or a public
    body meets the threshold whatever its size (draft §5). Its commercial subsidiaries do not
-   inherit that, and work done for a commercial client is judged by the client.
+   inherit that, and work done for a commercial client is judged by the client: a client's
+   coverage or exemption covers work others do solely for it, while running a general service
+   for many customers is the provider's own use. And **evaluation is free for everyone**:
+   non-production evaluation, security review and preparing or submitting a contribution need
+   no coverage, whoever you work for — production use and offering the software's
+   functionality to others are what need it (draft §4).
 2. **The organization holds a current Entitlement** recorded in the steward's public registry
    — the credential it buys, under an ordinary contract that has nothing to do with the
    licence. An Entitlement covers software by name, or because it covers every work under
    the licence; coverage never depends on a project being registered.
 3. **The organization holds a Waiver** recorded in that registry, granted by the project
-   itself. Waivers are public and free; private exemptions do not exist in the design.
+   itself. Waivers are public and free; private exemptions do not exist in the design. A
+   Waiver gives permission from the day it is recorded, but **nothing vests under it during
+   its first 72 hours** — revocation is never retroactive, so that window is the only undo for
+   a Waiver recorded by mistake (draft §9).
 4. **The organization holds a Donation Entitlement** — recorded when it donates the schedule
    amount directly to a listed charity. That money never passes through the steward.
 
 If none of the four is true, there is no permission for the use — it is unlicensed in the
 ordinary copyright sense, with a **60-day cure window** that starts on a defined day (the end
-of the tax year you grew past the threshold in; the day of an acquisition; the day a
-credential ended or a Waiver was revoked; otherwise the first day of uncovered use) so that
-growing past the threshold never makes anyone an overnight infringer. And whatever an organization was covered for, it keeps: **a version is vested if
-it was published on or before the end of the credential's term**, permanently, whatever
-happens afterwards to the credential, the project, or the steward. The only exceptions are a
-credential recorded as void for fraud, forgery or a compromised key, and a term refunded.
-Vesting is permission from now on; it does not excuse use before the credential.
+of the tax year you grew past the threshold in; the day a change of control made you large;
+the day a credential ended or a Waiver was revoked; otherwise the first day of uncovered use)
+so that growing past the threshold never makes anyone an overnight infringer. The window is
+capped at 60 such days in any twelve months, and versions published during it do not vest.
+And whatever an organization was covered for, it keeps: **a version is vested if it was
+published on or before the end of the credential's term**, permanently, whatever happens
+afterwards to the credential, the project, or the steward. The only exceptions are a forged
+record (one with no genuine issuance behind it), a credential obtained by fraud or deliberate
+deception, and a term refunded; a genuinely issued record survives a later compromise of the
+signing key, and you may rely on it despite the steward's own error. Coverage reaches the
+group while its members are in it; a business that is sold or merged keeps what it vested for
+its own operations, not the buyer's, and coverage cannot be sold on its own. Vested code stays
+vested in forks; what others add needs its own permission. Vesting is permission from now on;
+it does not excuse use before the credential.
+
+If the steward itself fails, the condition falls away for everyone: on the day the Association
+ceases to exist with no successor, on the day named in its declaration of lapse, or at the end
+of twelve months in which it neither recorded an Entitlement or Donation Entitlement nor kept a
+published schedule under which one could be obtained (draft §8; a project's Waiver keeps no
+clock running). A year with no sales alone does not end the model; a
+year with nothing on offer does. What remains after a lapse is what Apache asks anyway:
+notices, patent defence and the name.
 
 What the licence deliberately does **not** contain: no copyleft, no share-alike, no network
 clause, no disclosure duty, no audit right, no reporting duty, no prices, no governing-law
-clause, and no obligation of any kind on the adopter's own code. The clause-level proof is in
-[ANNOTATIONS.md](ANNOTATIONS.md).
+clause, and no obligation of any kind on the adopter's own code. The licence's own §10 says
+so in one sentence; the clause-level proof is in [ANNOTATIONS.md](ANNOTATIONS.md).
 
 ---
 
@@ -82,7 +106,7 @@ Stated plainly, because everything else in this repository depends on it being u
 | **Licence published?** | No. No version, no tag and no release exists, so no four-year conversion clock is running. |
 | **Steward organization formed?** | The **Purpose Source Association** held its founding assembly on 16 September 2026. Its commercial-register entry, and with it its enterprise identifier (UID), are pending. |
 | **Demand gate (D26) passed?** | Yes — 14 September 2026 (movement decision D39, on the operator's confirmation; the evidence filing is pending). What remains before a full drafting engagement is counsel's own work: the three jurisdiction memos (US, CH, DE) and the engagement itself. |
-| **Registry, credentials, coverage lookup built?** | The curated registry entries (`registry-v0`) are public. No credential has been issued. The coverage lookup exists as a specification (`spec`, cov-v1) and is not operating; where it and the licence disagree, the licence governs and the specification follows (see [decisions/](decisions/), D48). |
+| **Registry, credentials, coverage lookup built?** | The curated registry entries (`registry-v0`) are public. No credential has been issued. The coverage lookup exists as a specification (`spec`, cov-v1) and is not operating; where it and the licence disagree, the licence governs and the specification follows (see [decisions/](decisions/), D48 and D49). |
 | **Identifier registered with SPDX?** | No. The form is decided: `LicenseRef-PurposeSource-1.0`, valid SPDX for a licence not on the list. Inclusion on the list is requested later, when adoption exists; scanners may flag the identifier until then. |
 | **Can I adopt this in my project?** | No. Nothing is published, and adopting a draft would misrepresent it. |
 
@@ -124,12 +148,12 @@ required — the licence file is self-sufficient.
 
 | Path | What it is |
 |---|---|
-| [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md) | The licence draft (`1.0-draft.2`) — the decided architecture in short, plain clauses, with 14 isolated counsel questions and a revision log |
+| [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md) | The licence draft (`1.0-draft.3`) — the decided architecture in short, plain clauses, with 14 isolated counsel questions and a revision log. Its body (§1–§14, markers excluded) is about 2,330 words: longer than Apache-2.0 because the mechanism has more moving parts, and above the 2,000-word target set with D49 — the same-day verification pass cut the descriptive sentences it could; what is left is definitions, decided protections and the adopted sentences, so the last cut is the operator's to name |
 | [drafts/contributor-sign-off.md](drafts/contributor-sign-off.md) | The contributor sign-off draft: right-to-submit warranty, steward-role acceptance, and bounded forward delegation with a six-item immutable core — plus the permanent promise that contributors keep their copyright |
 | [canonical/](canonical/) | The plain-text rendering of each draft — the one text per version everything else points at, produced from the draft by `npm run render:canonical` and re-verified byte-for-byte by CI. Still a draft, banner and all |
 | [ANNOTATIONS.md](ANNOTATIONS.md) | Plain-English walkthrough, clause by clause, the "why" behind each clause, and the proof that the three corporate fears are absent |
 | [FAQ-OSPO.md](FAQ-OSPO.md) | The legal-review pack: what triggers payment, what happens at year four, what if the steward dies, what the fee buys, and whether the licence qualifies as open source (it does not) |
-| [decisions/](decisions/) | The trace from text back to the decisions it implements, including D48 (the operator decisions of 16 September 2026) |
+| [decisions/](decisions/) | The trace from text back to the decisions it implements, including D48 and D49 (the operator decisions of 16 September 2026, morning and evening) |
 | [placeholders.json](placeholders.json) | Every `{{…}}` constant the drafts still write, with its status and what blocks it. CI fails if a draft uses one that is not listed here, or lists one nothing uses |
 | [copy-lint/banned.txt](copy-lint/banned.txt) | The banned-copy patterns CI enforces over this repository (a hand-synced mirror of the movement's canonical list) |
 | [LICENSE-NOTICE.md](LICENSE-NOTICE.md) | How this repository's own contents are licensed — **not** the Purpose Source License |
