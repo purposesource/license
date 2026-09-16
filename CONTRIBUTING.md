@@ -48,6 +48,12 @@ And the permanent part: **no copyright assignment, ever.** No version of the ins
 no version of the licence, may require you to assign copyright or transfer economic ownership
 of your work. You keep your copyright.
 
+Nor does the sign-off give the Association anything special. It takes the public licence to
+your contribution like anyone else does — **no special or exclusive licence to the
+Association**, and no enforcement mandate (sign-off §3; the wording of item 2 was corrected
+on 2026-09-16, D50, from "no licence to the Association at all", which said more than was
+true).
+
 The full draft, with its open questions, is
 [drafts/contributor-sign-off.md](drafts/contributor-sign-off.md). Whether a git trailer
 carries enough contract strength or a minimal signed agreement is needed is a question for
@@ -79,6 +85,12 @@ your contribution comes in under. **It does not replace the sign-off**, which is
 instrument for the two things the licence cannot do by itself — your acceptance of the steward
 roles (sign-off §2.2) and the bounded forward delegation (sign-off §2.3). Nothing in the
 default delegates anything forward, and nothing in it weakens the sign-off.
+
+**One more since `1.0-draft.4` (D50, 2026-09-16).** A contribution you first publish in a
+development fork or branch for submission counts as originating in the project once it is
+accepted (licence §9), so coverage of the project by name reaches it like any other
+contribution. Its four-year conversion clock still starts on the day it first became public,
+fork included — forking never restarts a clock (licence §7).
 
 **None of this applies to contributions to *this* repository**, which is documentation and
 scripts under the terms in [LICENSE-NOTICE.md](LICENSE-NOTICE.md). No sign-off is asked for
@@ -130,12 +142,13 @@ pre-registered for revisit, and the register records the disputes rather than hi
 - **per-licensor** grants;
 - the dual AND threshold, group-consolidated, self-assessed, with **no audit clause**; the
   non-profit, education and public-body limb; no investment prong (D48, 2026-09-16);
-- the **fixed four-year** Apache-2.0 conversion, attached to each publicly available part of
-  the software (D48 item 4), and the steward-lapse backstop;
+- the **fixed four-year** Apache-2.0 conversion, granted now with deferred effect and attached
+  to each publicly available part of the software (D48 item 4; D50), and the steward-lapse
+  backstop with its clock anchored at first official publication (D46; D50);
 - coverage that attaches to the licence, not to registration (D48 item 5);
-- permanent vesting with its named exceptions only, the 72-hour Waiver cooling and the
-  evaluation and contribution exception (D48, D49 — the operator's decisions of 2026-09-16,
-  amendable by the operator's dated note, not by a pull request);
+- permanent vesting of every public part, with its named exceptions only, the 72-hour Waiver
+  cooling and the evaluation and contribution exception (D48, D49, D50 — the operator's
+  decisions of 2026-09-16, amendable by the operator's dated note, not by a pull request);
 - **one canonical text** per version, zero per-project parameters;
 - **no copyright assignment, ever**;
 - never self-describing as open source, and never stapling purpose terms onto an existing

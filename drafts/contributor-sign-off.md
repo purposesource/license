@@ -7,7 +7,7 @@
 
 # Contributor sign-off — working draft
 
-**Draft status:** pre-counsel working paper · **This draft:** `signoff-1.0-draft.2` · **Date of this revision:** 2026-09-16
+**Draft status:** pre-counsel working paper · **This draft:** `signoff-1.0-draft.3` · **Date of this revision:** 2026-09-16
 
 ## 0. The promise this document keeps
 
@@ -147,8 +147,15 @@ it applies only to contributions made after it is published.
 Stated in the negative, because these are the clauses contributors are right to look for:
 
 1. **No assignment.** You assign nothing and transfer nothing. Copyright stays with you (§0).
-2. **No exclusive licence**, and no licence to the Association at all. You license the
-   *project*, on the published terms, exactly as any other licensor under those terms does.
+2. **No exclusive licence**, and no special or exclusive licence to the Association. You
+   license the *project*, on the published terms, exactly as any other licensor under those
+   terms does; the Association, like anyone else, takes the public licence and nothing more.
+
+   *(Dated note, 2026-09-16, D50 item B11: until this date this item read "no licence to
+   the Association at all". That said too much — the Association, like any recipient of the
+   software, takes the public licence; what it never gets is a special or exclusive one.
+   Corrected on the 16 September comparison review's point. No other word of this section,
+   and nothing in §0, §2 or §4, changes.)*
 3. **No enforcement mandate.** You do not authorize anyone to sue, settle or release claims
    on your behalf. Any such mandate would be a **separate, opt-in** document that does not
    exist yet, and a contributor who never signs one keeps every claim they have.
@@ -172,9 +179,10 @@ Counsel chooses the form; these constraints are not counsel's to relax:
 
 **Trace.** This instrument implements movement decisions D7 as amended (the no-assignment
 outcome; the bounded delegation; the immutable core), D46 (item 6 and the successor limb —
-a candidate sheet, entered in the decision register once the operator confirms) and D48
-(the wording of items 2 and 4, the Association's name; operator decisions of 2026-09-16),
-and requirements LEG-034, LEG-035, LEG-036 and LEG-045. The index is
+a candidate sheet, entered in the decision register once the operator confirms), D48
+(the wording of items 2 and 4, the Association's name; operator decisions of 2026-09-16)
+and D50 (item B11, the wording of §3 item 2; operator decision of 2026-09-16, late), and
+requirements LEG-034, LEG-035, LEG-036 and LEG-045. The index is
 [decisions/README.md](../decisions/README.md).
 
 ---
@@ -200,3 +208,4 @@ and requirements LEG-034, LEG-035, LEG-036 and LEG-045. The index is
 | `signoff-1.0-draft.0` | 2026-09-02 | First draft. Right-to-submit warranty, steward-role acceptance, bounded forward delegation with the five-item immutable core, and the permanent no-assignment promise. No text reviewed by counsel. |
 | `signoff-1.0-draft.1` | 2026-09-16 | D46 (dissolution and steward lapse). The immutable core gains its sixth item, the steward-lapse backstop, whose clock may only ever be shortened; the delegation sentence in §2.3 names the successor designated under §8 of the licence. No text reviewed by counsel. |
 | `signoff-1.0-draft.2` | 2026-09-16 | This revision, following the operator decisions of 2026-09-16 (D48). Plain-language pass over §0–§4 in the licence draft's register; the instrument is called a contributor sign-off throughout. §2.2 names the Purpose Source Association, which the licence calls the Association, and repeats the D46 successor limb. Item 2 of the core is worded for the per-part conversion of licence §7 (D48 item 4); item 4 is scoped to code the Association registers for others (statutes Art. 4, Art. 13). Decision references move out of the statement into §4's trace line. No text reviewed by counsel. |
+| `signoff-1.0-draft.3` | 2026-09-16 | D50 item B11 (the operator decision of 2026-09-16, late, on the 16 September comparison review). §3 item 2 says "no special or exclusive licence to the Association" where it said "no licence to the Association at all", with a dated note; §4's trace line names D50. Nothing else changes: §0, §2 and the immutable core are word-for-word as in `signoff-1.0-draft.2`. No text reviewed by counsel. |

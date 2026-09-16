@@ -58,11 +58,12 @@ unchanged text may be called by the name.
   own work, so the operator can release the finished text under CC BY without anyone else's
   consent. Should a third party contribute wording before publication, that contribution is
   accepted under CC BY 4.0 or not at all;
-- the wording borrowed from the 16 September 2026 review proposal (§4) came into the record
-  under this repository's own CC BY-SA notice and was produced within the operator's own
-  review process, so the same clearance applies. The proposal's notes ask that the finished
-  text not be labelled CC BY until the rights have been cleared; this list is where that
-  clearance is recorded, and any borrowed sentence whose clearance fails is redrafted.
+- the wording borrowed from the 16 September 2026 review proposal and from the 16 September
+  2026 comparison proposal (both in §4) came into the record under this repository's own
+  CC BY-SA notice and was produced within the operator's own review process, so the same
+  clearance applies. Both proposals' notes ask that the finished text not be labelled CC BY
+  until the rights have been cleared; this list is where that clearance is recorded, and any
+  borrowed sentence whose clearance fails is redrafted.
 
 ## 4. Third-party material
 
@@ -120,6 +121,28 @@ not the proposal's. Its structure is not borrowed, its "control" paraphrase is n
 PolyForm definition stays verbatim), and nothing in it is quoted as operative. The drafts here are
 CC BY-SA 4.0 (§2), so the borrowed wording carries the same terms it came under; its place in
 the rights clearance for the finished text is §3.
+
+**The 16 September 2026 comparison proposal** (`license-proposal/comparison-e3037ff/`, with
+its `ANALYSIS.md` and `purpose-source-license-1.0-revised-proposal.md`, kept beside this
+repository in the movement's record, not inside it). The same reviewer's second pass, written
+against this repository's `1.0-draft.2` (commit `e3037ff`) and read against `1.0-draft.3`;
+its provenance note places it under this repository's own notice — **CC BY-SA 4.0**, §1 and
+§2 above — with attribution and share-alike preserved. Since `1.0-draft.4` (D50, 2026-09-16)
+the licence draft borrows or adapts the proposal's plain wording, fitted to the draft's
+defined terms, at these places: the present-grant form of the Apache-2.0 conversion — "grants
+you, now", "nothing more is needed on that day" (§7); the lapse clock's start "at this text's
+first official publication", its running on "through any succession", and "lapse does not
+bring §7's conversion forward" (§8); "reasonable provisional figures" and "the day you knew or
+should reasonably have known" (§5, §6); the development-fork origination sentence (§9); the
+opening of the patent-defence trigger, "if you or a member of your group files patent
+litigation" (§3); and, from its analysis, the point that a Waiver's survival is shown by the
+transparency log, "not a copy saved at issue" (§9). The vesting-by-parts rule and the refund
+and chargeback distinction (§9), the outage-days sentence (§6) and the Association's own bound
+(§2) are the operator's own wording from the decision, on points the proposal raised. Its
+structure is not borrowed; its separate outage permission, its written-notice machinery and
+its sublicensing clause are not used (D50 R2–R4); and nothing in it is quoted as operative.
+The drafts here are CC BY-SA 4.0 (§2), so the borrowed wording carries the same terms it came
+under; its place in the rights clearance for the finished text is §3.
 
 ## 5. Trademarks
 
