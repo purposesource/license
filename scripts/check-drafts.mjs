@@ -24,10 +24,10 @@ const STATUS_BANNER =
   '**Pre-launch.** This repository is part of the Purpose Source Network build; ' +
   'nothing here is a public commitment yet.';
 const LICENSE_DRAFT = 'drafts/purpose-source-license-1.0-draft.md';
-// Nine is not a target to hit; it is a floor that a "cleanup" commit cannot walk under
+// Fourteen is not a target to hit; it is a floor that a "cleanup" commit cannot walk under
 // without a reviewer noticing. Every open drafting question the record hands to counsel is
 // listed in the draft's own counsel-agenda section.
-const MIN_COUNSEL_MARKERS = 9;
+const MIN_COUNSEL_MARKERS = 14;
 
 // canonical/*.txt is a legal text like any other here. It is MACHINE-produced from a draft
 // (scripts/render-canonical.mjs), which is exactly why it must be gated the same way: a
@@ -131,11 +131,11 @@ if (markers < MIN_COUNSEL_MARKERS) {
       `marker was removed, say who resolved it and how in the same commit.`
   );
 }
-if (!/^SPDX-Style-Identifier:\s+\{\{LICENSE_ID\}\}\s*$/m.test(draft)) {
+if (!/^SPDX-License-Identifier:\s+\{\{LICENSE_ID\}\}\s*$/m.test(draft)) {
   problem(
     `${LICENSE_DRAFT} must carry the Purpose Notice identifier line ` +
-      `"SPDX-Style-Identifier: {{LICENSE_ID}}" (GH-009 canonical token, working form ` +
-      `pending OPEN-20).`
+      `"SPDX-License-Identifier: {{LICENSE_ID}}" (GH-009 canonical token in the SPDX ` +
+      `LicenseRef form decided 2026-09-16, D48 item 9).`
   );
 }
 

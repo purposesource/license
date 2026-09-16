@@ -1,18 +1,12 @@
 {
-  "$comment": "Every {{TOKEN}} that may appear anywhere in drafts/**, ANNOTATIONS.md, FAQ-OSPO.md or decisions/** must be declared here. scripts/check-drafts.mjs fails the build on an undeclared token AND on a declared token nobody uses, so this file is the complete, auditable list of every token the draft texts use. Until 2026-09-08 that was the same thing as the list of everything not yet decided; a token whose constant has since been settled stays declared for as long as a text still writes it, and says so in its own `status`. Decision D10 (one canonical text, zero per-project parameters) means the SHIPPED text must resolve every token below to a literal constant — the tokens exist because the constants are not chosen yet, never because the text is meant to be filled in per project.",
+  "$comment": "Every {{TOKEN}} that may appear anywhere in drafts/**, ANNOTATIONS.md, FAQ-OSPO.md or decisions/** must be declared here. scripts/check-drafts.mjs fails the build on an undeclared token AND on a declared token nobody uses, so this file is the complete, auditable list of every token the draft texts use. Until 2026-09-08 that was the same thing as the list of everything not yet decided; a token whose constant has since been settled stays declared for as long as a text still writes it, and says so in its own `status`. Once the text writes the literal instead, the token is removed here — as STEWARD_ORG_LEGAL_NAME and STEWARD_ORG_SHORT_NAME were on 2026-09-16 (D48 item 13: the texts now write \"Purpose Source Association\" and \"the Association\"). Decision D10 (one canonical text, zero per-project parameters) means the SHIPPED text must resolve every token below to a literal constant — the tokens exist because the constants are not chosen yet, never because the text is meant to be filled in per project.",
   "tokens": {
-    "STEWARD_ORG_LEGAL_NAME": {
-      "value": "Purpose Source Association",
-      "status": "decided-pending-register",
-      "blockedBy": "the commercial-register entry (LEG-060): D40 item 1 (2026-09-14) accepted the descriptive legal name for the Association and amended D4's coined-name rule for it; the token stays in the text until the entry exists and 1.0 is rendered for publication. Superseded: \"D4 (coined steward-organization name, after a knock-out trademark search) + LEG-060 (the entity does not exist yet)\"",
-      "meaning": "Registered legal name of the Steward Organization, named in the licence text itself as a licence-wide constant (LEG-027).",
-      "note": "Working prose calls it \"the Steward Organization\". The name must avoid the word \"Open\" entirely (D4/D25)."
-    },
-    "STEWARD_ORG_SHORT_NAME": {
+    "STEWARD_ORG_UID": {
       "value": null,
       "status": "pending",
-      "blockedBy": "D4",
-      "meaning": "Short display form of the Steward Organization used in prose after first mention."
+      "blockedBy": "the commercial-register entry (LEG-060): the Swiss enterprise identifier (UID) is assigned when the Purpose Source Association is entered in the commercial register. The founding assembly was held on 2026-09-16; the entry is pending. No value may be invented (D48 item 13).",
+      "meaning": "Swiss enterprise identifier (UID) of the Steward Organization, carried on the Purpose Notice line `UID: {{STEWARD_ORG_UID}}` as the identity anchor that keeps \"the organization named in §1\" verifiable after a name change, a merger or the loss of the domain (D48 item 13; the §8 counsel marker asked for it).",
+      "note": "The legal name itself is no longer a token: the texts write the literal \"Purpose Source Association\" (statutes Art. 1; D40 item 1; D48 item 13) and call it \"the Association\"."
     },
     "STEWARD_REGISTRY_URL": {
       "value": "https://purposesource.org/registry",
@@ -21,10 +15,10 @@
       "meaning": "Canonical steward registry URL that appears on the Purpose Notice line (GH-009)."
     },
     "LICENSE_ID": {
-      "value": "PurposeSource-1.0",
-      "status": "working-form",
-      "blockedBy": "OPEN-20 (final canonical identifier string, pending D4/OPEN-02); SPDX listing is separately \"requested\" at launch (LEG-029)",
-      "meaning": "SPDX-style identifier on the Purpose Notice line (GH-009). Must grep uniquely (VS-06)."
+      "value": "LicenseRef-PurposeSource-1.0",
+      "status": "decided-form-pending-listing",
+      "blockedBy": "OPEN-20 (final canonical identifier string): the LicenseRef form was decided on 2026-09-16 (D48 item 9) and is valid SPDX for a licence not on the SPDX list; inclusion on the list is requested later, when adoption exists (LEG-029), and scanners may flag the identifier until then. Superseded: \"PurposeSource-1.0\" (working form)",
+      "meaning": "SPDX LicenseRef identifier on the Purpose Notice line, written as `SPDX-License-Identifier: {{LICENSE_ID}}` (GH-009). Must grep uniquely (VS-06)."
     },
     "LICENSE_TEXT_URL": {
       "value": "https://purposesource.org/license/PurposeSource-1.0.txt",
@@ -37,7 +31,7 @@
       "status": "confirmed",
       "blockedBy": "none — the organization exists (confirmed 2026-09-08). Superseded: \"D4 / OPEN-02 — the org name is proposed, not confirmed\"",
       "meaning": "GitHub organization that hosts this repository and the registry repositories.",
-      "note": "A settled token stays declared here because README.md still writes it as {{GITHUB_ORG}} and the inventory must account for every token the texts use — removing it would fail the gate, not tidy it. The steward organization's LEGAL name is a different token (STEWARD_ORG_LEGAL_NAME) and is still pending on D4."
+      "note": "A settled token stays declared here because README.md still writes it as {{GITHUB_ORG}} and the inventory must account for every token the texts use — removing it would fail the gate, not tidy it. The steward organization's legal name was a separate token until 2026-09-16, when the texts began writing the literal \"Purpose Source Association\" (D48 item 13); only its UID is still a token."
     }
   }
 }

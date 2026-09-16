@@ -34,8 +34,8 @@ resolves anything. Three things survive untouched, and each is load-bearing:
 - **every `[COUNSEL: …]` marker**, on its own line, so the marker count in the rendering
   equals the count in the draft;
 - **every `{{TOKEN}}`** from [../placeholders.json](../placeholders.json). These name
-  constants nobody has decided yet — the steward organization's legal name, the final
-  identifier string. Resolving one silently would be inventing a decision.
+  constants nobody has decided yet — the Association's enterprise identifier, the registry and
+  canonical-text URLs, the final identifier string. Resolving one silently would be inventing a decision.
 
 ## The bytes are load-bearing
 
@@ -56,9 +56,12 @@ Its `check-license-sync` gate already looks for the upstream text at
 `https://raw.githubusercontent.com/purposesource/license/<tag>/canonical/<file>`, where
 `<tag>` is the version id. Today it finds nothing and prints a notice naming exactly the tag
 and path that would satisfy it; the moment a tag exists at that name, the same code path
-fetches the text and fails the website's build on any mismatch. Nothing needs changing on
-either side for that to happen — publishing the tag IS the switch, and it is the operator's
-act, not an engineering one.
+fetches the text and fails the website's build on any mismatch. That gate only re-checks a
+text the website has already imported. A NEW version reaches the website through its release
+importer, which reads GitHub Releases (never bare tags): a `PurposeSource-*` Release whose
+tagged commit carries `releases/license-release.v1.json` with the text's path and SHA-256.
+Publication is that procedure, not a tag — see [../README.md](../README.md) — and it is the
+operator's act, not an engineering one.
 
 ## Do not adopt these files
 

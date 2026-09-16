@@ -19,23 +19,27 @@ This flag lives here because the record requires it to be prominent and in plain
 should understand before they contribute.
 
 The designed contribution instrument for projects using the Purpose Source License is a
-one-line sign-off. It says three things: that you have the right to submit your contribution,
-that you accept the steward roles the licence itself defines, and — the part to read
-carefully — that **your contribution may also be licensed under later versions of the licence
-that the steward organization publishes, provided they are materially consistent with the
-version in force when you contributed.**
+**contributor sign-off** — by design, one line in the commit message. It says three things:
+that you have the right to submit your contribution, that you accept the steward roles the
+licence itself defines, and — the part to read carefully — that **your contribution may also
+be licensed under later versions of the licence that the Purpose Source Association (or the
+successor it has publicly designated) publishes, provided they are materially consistent with
+the version in force when you contributed.**
 
 That forward delegation is **bounded**. A later version applied to your contribution under it
-may never change any of five things:
+may never change any of six things:
 
-1. the free-tier threshold — it may only ever be **widened**;
-2. the conversion delay — it may only ever be **shortened**;
+1. the free-use threshold — it may only ever be **widened**;
+2. the conversion delay — the time after which the software becomes available under
+   Apache-2.0 may only ever be **shortened**, never removed;
 3. the charity destination and the no-private-profit rule;
-4. the steward organization's character as registrar, never a licensor of code it registers
-   for others (scoped 2026-09-05 per movement decision D29 §6.3 — see
-   [ANNOTATIONS.md](ANNOTATIONS.md) §2; superseded phrase, kept as history: "registrar, never
-   licensor");
-5. the existence of the project steward's waiver power.
+4. the Association's character as registrar, never a licensor of code it registers for others
+   (scoped 2026-09-05 per movement decision D29 §6.3 and written into licence §2 as "for
+   others" on 2026-09-16 — see [ANNOTATIONS.md](ANNOTATIONS.md) §2; superseded phrase, kept as
+   history: "registrar, never licensor");
+5. the existence of the project steward's free-of-charge waiver power;
+6. the steward-lapse backstop — its existence, and its clock, which may only ever be
+   **shortened** (added 2026-09-16, D46).
 
 A change touching any of those reaches only contributions made after it is published, unless
 you separately agree.
@@ -49,9 +53,33 @@ The full draft, with its open questions, is
 carries enough contract strength or a minimal signed agreement is needed is a question for
 counsel — which is why the public promise is about copyright, never about ceremony.
 
+### What you are signing off, in practice
+
+Before you sign off a contribution to a project under the licence, check which of these you
+are dealing with:
+
+- **Your own original work** — the normal case; the sign-off states it.
+- **Work your employer owns** — if you wrote it in your job, or under a contract that gives
+  the rights to someone else, get that party's permission first. The sign-off cannot give
+  what you do not hold.
+- **Code you copied from a permissively licensed project** — keep its licence and its
+  notices with it. Licence §11 says such material stays under the terms it came with; the
+  Purpose Source License covers only the contributions made under it.
+- **Dependencies whose licences do not fit** — that is not the licence's job to solve. It is
+  the project's job, in its own dependency policy, before the code is merged.
+
 **None of this applies to contributions to *this* repository**, which is documentation and
 scripts under the terms in [LICENSE-NOTICE.md](LICENSE-NOTICE.md). No sign-off is asked for
 here, because there is no licence in force to delegate forward to.
+
+### The identifier adopting projects will use
+
+When a version of the licence is published — none is today — adopting projects will mark
+files with `SPDX-License-Identifier: LicenseRef-PurposeSource-1.0`. That is the SPDX form for
+a licence not on the SPDX list (decided 2026-09-16, D48 item 9); inclusion on the list is
+requested later, when adoption exists, and scanners may flag the identifier until then. The
+short adoption steps are in the README's ["How a project adopts"](README.md#how-a-project-adopts).
+Nothing may be adopted from this repository today.
 
 ---
 
@@ -84,11 +112,15 @@ request that quietly reverses one will be closed with a pointer to
 pre-registered for revisit, and the register records the disputes rather than hiding them:
 
 - permission scoped by a **condition**, never a payment obligation in the licence;
-- the steward organization as **registrar, never a licensor of code it registers for others**
-  (scoped 2026-09-05 per movement decision D29 §6.3 — see [ANNOTATIONS.md](ANNOTATIONS.md) §2);
+- the Association as **registrar, never a licensor of code it registers for others**
+  (scoped 2026-09-05 per movement decision D29 §6.3 and written into licence §2 as "for others"
+  on 2026-09-16 — see [ANNOTATIONS.md](ANNOTATIONS.md) §2);
 - **per-licensor** grants;
-- the dual AND threshold, group-consolidated, self-assessed, with **no audit clause**;
-- the **fixed four-year** Apache-2.0 conversion per version, and the steward-lapse backstop;
+- the dual AND threshold, group-consolidated, self-assessed, with **no audit clause**; the
+  non-profit, education and public-body limb; no investment prong (D48, 2026-09-16);
+- the **fixed four-year** Apache-2.0 conversion, attached to each publicly available part of
+  the software (D48 item 4), and the steward-lapse backstop;
+- coverage that attaches to the licence, not to registration (D48 item 5);
 - **one canonical text** per version, zero per-project parameters;
 - **no copyright assignment, ever**;
 - never self-describing as open source, and never stapling purpose terms onto an existing
@@ -122,11 +154,12 @@ approved a pull request.)*
 
 ```sh
 npm ci
-npm run build   # copy lint + link check + honesty gate; about a second
+npm run build   # no-records gate + copy lint + link check + honesty gate + canonical check; about a second
 ```
 
-CI runs exactly these three gates on every push and pull request, with no secrets and no
-write permissions. If a gate fails, the message names the file, the line, and the rule.
+CI runs exactly these five gates on every push and pull request, with no secrets and no
+write permissions. If a gate fails, the message names the file, the line, and the rule. If you
+changed the licence draft, run `npm run render:canonical` first, or the canonical check fails.
 
 ---
 
