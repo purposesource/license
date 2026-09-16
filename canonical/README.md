@@ -5,7 +5,7 @@
 > grants a permission, creates an obligation, or may be relied on, adopted, quoted as
 > operative, or applied to any software or organization. Do not commit any file from this
 > repository into a project as its licence. Every point that needs legal judgement is
-> marked inline as `[COUNSEL: …]`.
+> collected as a `[COUNSEL: …]` question in the draft's counsel agenda.
 
 Every file in this directory is a **draft**, and every one of them says so on its first six
 lines. `canonical` names the ROLE the file plays — the one text per version that everything
@@ -31,8 +31,14 @@ resolves anything. Three things survive untouched, and each is load-bearing:
   [../copy-lint/required-banner.md](../copy-lint/required-banner.md) — the one span the
   renderer refuses to transform, because `scripts/check-drafts.mjs` compares it byte-for-byte
   against that file and a transformed warning is a warning no gate can pin;
-- **every `[COUNSEL: …]` marker**, on its own line, so the marker count in the rendering
-  equals the count in the draft;
+- **every `[COUNSEL: …]` marker**, so the marker count in the rendering equals the count in
+  the draft. Since the second pass on `1.0-draft.4` the licence body (§1–§14) carries no
+  inline marker: they all sit in §15, the draft's own counsel agenda, a table with one row
+  per question — the section, our position as drafted, and what counsel confirms — which the
+  renderer lays out as an aligned plain-text table, one line per row with the row's marker
+  at its end. The honesty gate (`scripts/check-drafts.mjs`) counts markers anywhere in the
+  draft file, so it counts them there. A reader of the rendering meets the licence first and
+  the lawyers' list after it;
 - **every `{{TOKEN}}`** from [../placeholders.json](../placeholders.json). These name
   constants nobody has decided yet — the Association's enterprise identifier, the registry and
   canonical-text URLs, the final identifier string. Resolving one silently would be inventing a decision.

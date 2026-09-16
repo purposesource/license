@@ -3,7 +3,7 @@
 > grants a permission, creates an obligation, or may be relied on, adopted, quoted as
 > operative, or applied to any software or organization. Do not commit any file from this
 > repository into a project as its licence. Every point that needs legal judgement is
-> marked inline as `[COUNSEL: …]`.
+> collected as a `[COUNSEL: …]` question in the draft's counsel agenda.
 
 # Decision index — tracing text back to the decision that produced it
 
@@ -87,8 +87,9 @@ is a special or exclusive one. A wording correction with a dated note; the immut
 and §2 are unchanged, and nothing in the sign-off is weakened.
 
 - **Implemented by:** [../drafts/contributor-sign-off.md](../drafts/contributor-sign-off.md)
-  §0, §2.3 (six items), §3 item 2 (D50), §4; licence draft §3 ("Contributors keep their copyright; nothing
-  here assigns it" — the inbound default of D49 A16 sits beside it and does not replace the
+  §0, §2.3 (six items), §3 item 2 (D50), §4; licence draft §3 ("Contributors keep their copyright." — the tail
+  "nothing here assigns it" was cut in the second pass on `1.0-draft.4` as already said by the
+  words that remain; the inbound default of D49 A16 sits beside it and does not replace the
   sign-off);
   [../CONTRIBUTING.md](../CONTRIBUTING.md) (the prominent flag, six items, the intake
   paragraph of D48 issue D)
@@ -128,6 +129,12 @@ generally unavailable, as its transparency log records, do not count toward the 
 it is *parts* made public during cure days, not versions, that do not vest, following the
 vesting unit of D50 B1 (§6).
 
+**Amended 2026-09-16 late, second pass (D50 C1, C2):** the cure runs only when the use needs
+coverage — days of use the §4 evaluation and contribution rule permits neither start the 60
+days nor count toward them (§6); and cure days *alone* vest nothing, without blocking a later
+credential from covering what was published during them (§6, replacing "parts made public
+during cure days do not vest").
+
 - **Implemented by:** licence draft §2 (group and control definitions), §5 (threshold, the
   revenue limit, the non-profit limb), §6 (cure)
 - **Requirements:** LEG-014, LEG-017, LEG-018, LEG-019, LEG-020, LEG-022
@@ -139,8 +146,8 @@ vesting unit of D50 B1 (§6).
 Each part of the software converts to Apache-2.0 four years after it was first made available
 to the public under the licence — fixed and licence-wide, never a per-project parameter. If
 the Association ceases to exist, or for twelve consecutive months neither records an
-Entitlement or Donation Entitlement nor keeps a published schedule under which one could be
-obtained, or declares the lapse, the condition falls away and the licence degrades to
+Entitlement or Donation Entitlement nor publishes in its transparency log a dated statement
+that credentials could be obtained under its schedule, or declares the lapse, the condition falls away and the licence degrades to
 permissive.
 
 The register records a genuine **dispute** here: a parallel analysis argued for permanence
@@ -195,6 +202,14 @@ and Donation Entitlements only under its published schedule and within its publi
 constitutional commitments on the charitable destination of funds and no private profit
 (§2), and the successor bound in §8 points to those commitments. B3 and B10 are further
 amendable defaults on D46's limbs; D46 stays a candidate sheet.
+
+**Amended 2026-09-16 late, second pass (D50 C4, C6):** lapse limb (b)'s second element is
+no longer a "published schedule under which one could be obtained" but a **dated statement,
+published in the transparency log within the twelve months, that credentials could be
+obtained under the schedule** — a fact the log can hold and anyone can check (§8); and the
+Association's one-year bound closes with "a renewal is recorded when its term starts, never
+in advance", so terms cannot be stacked (§2). C4 is a further amendable default on a D46
+limb; D46 stays a candidate sheet.
 
 - **Implemented by:** licence draft §2 ("made available to the public"; the successor limb;
   the Association's own bound), §7, §8
@@ -358,7 +373,8 @@ vested parts stay unaffected.
   [../LICENSE-NOTICE.md](../LICENSE-NOTICE.md); [../ANNOTATIONS.md](../ANNOTATIONS.md);
   [../FAQ-OSPO.md](../FAQ-OSPO.md); `placeholders.json`; `scripts/check-drafts.mjs`
 - **Status:** operator decisions, amendable; no text reviewed by counsel; every legal question
-  they touch keeps its `[COUNSEL: …]` marker
+  they touch keeps its `[COUNSEL: …]` marker — since the second pass on `1.0-draft.4`, in the
+  draft's §15 agenda rather than in the body (D50 item 19)
 
 ### D49 — The operator decisions of 16 September 2026, evening: adoptions from the review of the 16 September proposal (taken on the assistant's recommendation, amendable)
 
@@ -420,6 +436,19 @@ the successor bound now points to the Association's own bound in §2 (B10). R1 s
 term refunded in full still vests nothing — with B6's nuance added. R2 stands: B7's outage
 rule is a counting rule inside the cure, not a separate permission. R6 stands, and the text
 now says it: lapse does not bring §7's conversion forward.
+
+**Amended 2026-09-16 late, second pass (D50 C1–C6).** A2: the one-year bound now ends "a
+renewal is recorded when its term starts, never in advance" (C6). A7: cure days *alone* vest
+nothing, and a later credential may cover that code (C2); permitted evaluation days never
+start or count toward the cure (C1). A9 and D50 B6: a term refunded or charged back in full
+vests nothing, but use during it before the refund stays lawful (C5). A10: a credential
+covers its beneficiary and the entities the beneficiary controls, while it controls them; a
+parent or sister company only if the record names it — "its group's entities while they are
+in it" is superseded, because on that wording a bought subsidiary's Pass would have covered
+the acquirer's whole group (C3). A13: the schedule element of limb (b) becomes a dated
+statement in the transparency log that credentials could be obtained under the schedule
+(C4). R1 and R2 of this record stand a third time — refunds keeping vesting and the outage
+permission were asked for again in the third note and turned down again.
 
 **Length.** D49 set a target of 2,000 words for the body §1–§14 (markers excluded).
 `1.0-draft.3` ends at about 2,330: the cuts the operator allowed (§10 to one sentence, §2 and
@@ -519,13 +548,39 @@ it by number. The proposal's wording, where borrowed or adapted, is attributed i
 | R6 | UTC times and other specification-level detail in the licence | The licence stays at the level of the rule; the registry's published terms carry the mechanics |
 | R7 | "Now or later" patent claims | Withdrawn by the reviewer itself; D48's decision to drop after-acquired claims stands |
 
+**Adopted in the second pass, items 13–18 (C1–C6) — the reviewer's third note on
+`1.0-draft.3`, ruled on late the same night**
+
+| # | Item | Decision | Section |
+|---|---|---|---|
+| 13 | C1 | Evaluation must not consume the cure clock: §6 opens "When your use needs coverage and none of (a) to (d) in §4 is true, the permissions in §3 still continue for 60 days from:", and adds "Days of use the evaluation and contribution rule in §4 permits do not count." The §4 exception is a permission in its own right, so trigger (e) cannot start during permitted evaluation — two months of evaluation, then production, means 60 days from the first production day | licence §6 |
+| 14 | C2 | Grace alone vests nothing, but does not block later vesting: "These days alone vest nothing; a later credential may cover that code under §9" replaces "Parts made public during these days do not vest under §9", which attached the no-vesting to the part instead of to the days | licence §6 |
+| 15 | C3 | Coverage does not spread to an acquirer's group: "A credential covers its beneficiary and the entities the beneficiary controls, while it controls them. A parent or sister company is covered only if the record names it." The leaver sentence and the sale-or-merger sentence stay. The §5 group test keeps parents and siblings on purpose — the size test and the coverage scope differ | licence §9 |
+| 16 | C4 | Lapse limb (b) made objectively checkable: "nor published in its transparency log, within that period, a dated statement that credentials could be obtained under its schedule" replaces draft.3's "nor kept a published schedule under which one could be obtained" (shortened in draft.4's first pass to "nor kept a published schedule for obtaining one"). The §8 agenda row's determinability question shrinks to whether a false statement is actionable and how a successor inherits the clock | licence §8, §15 |
+| 17 | C5 | Refund: earlier use stays lawful — "A term refunded or charged back in full vests nothing; use during it before the refund stays lawful." B6's partial-refund and Association-failure sentence stays | licence §9 |
+| 18 | C6 | No stacked years: "…and for at most one year at a time; a renewal is recorded when its term starts, never in advance." | licence §2 |
+| 19 | — | Every `[COUNSEL: …]` marker leaves the licence body (§1–§14) for §15, rebuilt as a three-column agenda — Section · Our position (as drafted) · What counsel confirms — one row per former marker, each confirmation cell written as a marker so the honesty gate still counts it (the gate counts markers anywhere in the draft; `MIN_COUNSEL_MARKERS` in `scripts/check-drafts.mjs` equals the new count, 15, its comment saying the markers live in §15). Reason, the operator's instruction: every operator decision the markers once asked for is taken, and what remains is legal confirmation, which belongs in one list, not between the clauses. The canonical rendering shows the licence first and the lawyers' list after it | licence §1–§14 (none), §15; `scripts/check-drafts.mjs`; ANNOTATIONS Part 0; README; canonical/README |
+
+Rejected again in the second pass, unchanged from D49 and this record: a separate outage
+permission (B7 already stops the count on logged outage days, which also covers an outage
+longer than 60 days and an organization that had used its allowance); a 30-day
+written-notice cure for notices; refunds keeping vesting.
+
 **Length.** The operator held the body §1–§14 (markers excluded) at or under 2,350 words for
 `1.0-draft.4`, naming §2 and §8 as the sections to tighten and forbidding the cut of any
-decided protection or of a defined term another section uses. The draft ends at 2,348 words
-by the counting method D49 used for draft.3 (headings and the Purpose Notice constants in,
-markers, section rules and code-fence lines out), or 2,364 if the rules and fence lines are
-counted as words. The 2,000-word target of D49 is not withdrawn by this bound; see the dated
-note under D49.
+decided protection or of a defined term another section uses. The first pass ended at 2,348
+words by the counting method D49 used for draft.3 (headings and the Purpose Notice constants
+in, markers, section rules and code-fence lines out), or 2,364 if the rules and fence lines
+are counted as words. The second pass added C1–C6 (about seventy words), moved the markers
+out (which changed nothing, since they were never counted) and took every meaning-preserving
+cut the drafter could find; it stood at 2,381 by the same method, 31 above the bound. The
+verification pass on the second pass took the last three, each dropping no decided element:
+the §9 "once vested" example list (D12 decides permanence, not the list; the FAQ and
+ANNOTATIONS keep the events), §7's "no project, no licensor, not the Association" aside
+("nobody" already means them), and "copying" and "re-releasing" in §7's restart sentence
+(D48 item 4 decides forks and repackaging). The body ends at 2,350 by the same method, at
+the bound. The
+2,000-word target of D49 is not withdrawn by this bound; see the dated note under D49.
 
 **Same-day verification pass (2026-09-16 late).** Wording fixes on `1.0-draft.4` that change
 no decision: §6(d) now says it controls "even if (a) gives an earlier day", so the 60 days
@@ -541,9 +596,10 @@ official publication of any version of these terms, so that a later version appl
 existing contributions cannot move the clock's start (statutes Art. 13 para. 1 item 6;
 sign-off core item 6); and whether a refund in full made for the Association's own failure
 reads as leaving vesting untouched, as intended — the record's B6 order (full refund first) is
-kept, and the reader's point goes to counsel. Not yet in the text: FAQ question 19's "the
-exception has no clock" — on draft.4's words §6's opening can be read to cut off permitted
-evaluation after 60 days; the next pass's C1 writes the exclusion into §6. Count: 2,348.
+kept, and the reader's point goes to counsel. One thing this pass left open — FAQ question
+19's "the exception has no clock", which on the first-pass words §6's opening could be read
+to cut off after 60 days — is closed by the second pass's C1 (item 13 above). Count after
+this pass: 2,348.
 
 **Propagation owed outside this repository** (the register's D50 entry records them; this
 index only names them):
@@ -580,9 +636,37 @@ index only names them):
   conversion, for counsel's statutes review; the statutes are outside this repository.
 - The `repo-record.v1.json` note under D49 stands: the licence's conversion anchor is the
   software's first public availability, per part, and the schema's description must say so.
+- **The coverage lookup and evaluation use (C1)** (`spec/coverage/cov-v1.ts`): the lookup
+  must treat non-production evaluation, security review and contribution as *permitted* use
+  with no credential and no clock — never as uncovered use in cure. A lookup that starts a
+  60-day count on the first day it sees a Large Organization touch the software would
+  contradict §6's "when your use needs coverage" and its "days … the evaluation and
+  contribution rule in §4 permits do not count". Where the lookup cannot tell evaluation from
+  production, it must say so rather than count.
+- **The coverage scope (C3)**: a credential's scope is the **beneficiary plus the entities the
+  beneficiary controls, while it controls them** — not the §5 group. The lookup (and any
+  group-resolution logic behind it) must not extend a subsidiary's credential upward to a
+  parent or sideways to a sister company unless the record names them, and must re-evaluate
+  control on the day of a sale. The §5 threshold computation keeps the full group; the two
+  computations now differ on purpose and must not share one "group" function.
+- **The issuance-open log statement (C4)**: lapse limb (b) now stops only on a **dated
+  statement, published in the transparency log within the twelve months, that credentials
+  could be obtained under the schedule**. The platform must publish such a statement as a
+  signed log entry on a schedule (at least once in every twelve months, and in practice far
+  more often), the log format must carry it as a first-class entry type, the mirrors must
+  carry it, and the lapse reader must look for it. A price schedule on the website no longer
+  stops the clock. A statement made when credentials could in fact not be obtained is the
+  case the §8 agenda row sends to counsel; the runbook should make the statement only when
+  issuance is actually open.
+- **Renewals recorded at term start (C6)**: the registry's issuance rules and the Entitlement
+  terms must record a renewal on the day its term starts, never in advance, so that the
+  longest recorded coverage at any moment is one year (statutes Art. 11; D12).
+- **Refunds and earlier use (C5)**: the refund runbook and the Entitlement terms must say
+  that a full refund or chargeback voids vesting only — the use during the term, before the
+  refund, was licensed use and is not reopened.
 
-- **Implemented by:** licence draft `1.0-draft.4` throughout (its revision-log row lists every
-  adoption by section); [../drafts/contributor-sign-off.md](../drafts/contributor-sign-off.md)
+- **Implemented by:** licence draft `1.0-draft.4` throughout, both passes (its revision-log
+  rows list every adoption by section); [../drafts/contributor-sign-off.md](../drafts/contributor-sign-off.md)
   `signoff-1.0-draft.3` (§3 item 2 with its dated note; §4's trace line);
   [../README.md](../README.md) (vesting by parts, the present grant, the clock anchor, the
   outage-days rule, the refund nuance, the word count); [../CONTRIBUTING.md](../CONTRIBUTING.md)
@@ -593,9 +677,10 @@ index only names them):
   never tag releases?" answer; the rejected list); the dated notes under D7, D8, D9, D48 and
   D49 above
 - **Status:** operator decisions, amendable; no text reviewed by counsel; the §3, §5, §6, §7,
-  §8 and §9 markers carry the new questions and shrink where the text now answers (agenda rows
-  2, 5, 6, 7, 8 and 9 of the draft); the propagation above is owed; the 2,000-word target of
-  D49 is unresolved
+  §8 and §9 questions are carried by the draft's §15 agenda rows (rows 2, 5, 6, 7, 8 and 9),
+  where every marker now lives (item 19), and shrink where the text now answers; the
+  propagation above is owed; the 2,350-word bound is met at 2,350 and the 2,000-word
+  target of D49 is unresolved
 
 ---
 
@@ -604,7 +689,7 @@ index only names them):
 | Decision | Subject | Why it appears in these texts |
 |---|---|---|
 | D11 | Three lanes, steward-only pricing, one schedule | The licence must stay binary; prices live in the schedule and no price, tier or band appears anywhere in the licence text (ANNOTATIONS §5); lane names stay out (D49 R4) |
-| D12 as amended | Per-version vesting, canonical formula "vested iff version publication date ≤ term end"; annual entitlements | Licence draft §9 — per *part* since D50 B1, so the formula follows the licence and reads "vested iff the part was made available to the public ≤ term end"; the one-year bound in §2 (D49 A2); FAQ question 6 |
+| D12 as amended | Per-version vesting, canonical formula "vested iff version publication date ≤ term end"; annual entitlements | Licence draft §9 — per *part* since D50 B1, so the formula follows the licence and reads "vested iff the part was made available to the public ≤ term end"; the one-year bound in §2 (D49 A2), with renewals recorded at term start since D50 C6; FAQ question 6 |
 | D13 | Adoption and quit live in the repo; powers live on the platform | Why no admin-facing terms appear in the licence (ANNOTATIONS Part 3) |
 | D14 as amended | Waivers: registry-only, repo-scoped, public, gratis; revocation prospective | Licence draft §2 and §9 (the 72-hour cooling since D49 A8; vesting per part and the log as proof of survival since D50 B1 and B9); FAQ question 10 |
 | D18 | Donate-direct lane; separate payment rails | Licence draft §2 and §4 limb (d) |

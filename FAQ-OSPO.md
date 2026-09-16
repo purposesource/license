@@ -3,7 +3,7 @@
 > grants a permission, creates an obligation, or may be relied on, adopted, quoted as
 > operative, or applied to any software or organization. Do not commit any file from this
 > repository into a project as its licence. Every point that needs legal judgement is
-> marked inline as `[COUNSEL: …]`.
+> collected as a `[COUNSEL: …]` question in the draft's counsel agenda.
 
 # Legal-review pack — the questions an OSPO actually asks
 
@@ -27,11 +27,11 @@ discovering them from a critic.
 | **Is it open source?** | No. Field-of-use restriction. We do not claim the term. |
 | **Does anything attach to our code?** | No. No copyleft, no share-alike, no network clause, no disclosure duty. |
 | **Who needs a credential?** | Organizations above the threshold: 100 or more people **or** revenue at or above the limit in the latest completed tax year (USD 1,000,000 for 2026, indexed yearly to US CPI-U), measured group-wide. Never non-profits, public educational institutions or public bodies, whatever their size. Nobody else — and nobody at all for evaluation, security review or contributing (question 19). |
-| **What triggers payment?** | Nothing in the licence: it contains no payment obligation. Use for a large organization without a recorded credential is simply unlicensed, after a 60-day cure — at most 60 cure days in any twelve months, days the issuance service was down not counted, and parts made public during cure days do not vest. |
+| **What triggers payment?** | Nothing in the licence: it contains no payment obligation. Use for a large organization without a recorded credential is simply unlicensed, after a 60-day cure — at most 60 cure days in any twelve months; days the issuance service was down, and days of permitted evaluation, not counted; cure days alone vest nothing, though a later credential covers that code like any other (question 19). |
 | **Can we be audited?** | No. There is no audit clause and there never will be. |
 | **What happens at four years?** | Each licensor grants the Apache-2.0 permissions now, for each part of the software, effective four years after that part was first made public under these terms — and everything in a release no later than four years after that release. Nothing more is needed on the day; forks never restart the clock (question 4). |
-| **What if the steward organization disappears?** | On the day the Association ceases to exist with no designated successor; after twelve months in which it neither recorded an Entitlement or Donation Entitlement nor kept a published schedule under which one could be obtained (one clock, started at the licence's first official publication and never restarted by a successor; a project's Waiver keeps no clock running) — or earlier, on the day a published declaration of lapse names — the condition lapses and the licence becomes permissive. |
-| **What do we keep if we stop paying?** | Every part of the software made public on or before the recorded end of the term — every public commit, tag, release or package within scope, whether or not the project ever tags a release (question 24). Permanently, with exactly three narrow exceptions — a forged record, a credential obtained by fraud, and a term refunded or charged back in full (question 6). |
+| **What if the steward organization disappears?** | On the day the Association ceases to exist with no designated successor; after twelve months in which it neither recorded an Entitlement or Donation Entitlement nor published in its transparency log a dated statement that credentials could be obtained under its schedule (one clock, started at the licence's first official publication and never restarted by a successor; a project's Waiver keeps no clock running; question 22) — or earlier, on the day a published declaration of lapse names — the condition lapses and the licence becomes permissive. |
+| **What do we keep if we stop paying?** | Every part of the software made public on or before the recorded end of the term — every public commit, tag, release or package within scope, whether or not the project ever tags a release (question 24). Permanently, with exactly three narrow exceptions — a forged record, a credential obtained by fraud, and a term refunded or charged back in full, and even then the use before the refund stays lawful (question 6). |
 | **Is there a copyright assignment for contributors?** | No — permanently, by design. Contributors keep their copyright. |
 | **Which law governs?** | The licence is silent, like Blue Oak and PolyForm. Conflict-of-laws rules decide; the Entitlement contract picks its own. |
 | **Scanner status?** | The identifier is `LicenseRef-PurposeSource-1.0`, valid SPDX for an unlisted licence. Expect "unknown licence" flags until list inclusion is requested and granted (question 12). |
@@ -94,9 +94,11 @@ Precisely three things:
    registered with the steward. The licence also binds the seller: a credential is issued only
    under the Association's published schedule, on the same terms for everyone, for at most
    one year at a time, and within the Association's published constitutional commitments on
-   the charitable destination of funds and no private profit. There is no private price, no
-   side term and no century-long deal for anyone, and the licence itself says where the money
-   must go.
+   the charitable destination of funds and no private profit. A renewal is recorded when its
+   term starts, never in advance, so years cannot be stacked: the longest coverage on the
+   record at any moment is one year. There is no private price, no side term and no
+   century-long deal for anyone — in one piece or in ten — and the licence itself says where
+   the money must go.
 2. **Permanent vesting** of every covered part made public on or before the recorded end of
    your term — tagged release or untagged commit alike (questions 6 and 24).
 3. **Amnesty covenants for past use** — if and as the Entitlement agreement offers them, from
@@ -123,9 +125,9 @@ Each licensor **grants you, now**, the copyright and patent permissions of **Apa
 2.0** for each **part** of the software, effective four years after the day that part was
 first made available to the public under these terms — a public commit, tag, release or
 package, never a date an author typed into a file. Nothing more is needed on that day.
-Material added later has its own clock. **Forking, copying, repackaging or re-releasing an
-existing part never restarts its clock.** Nobody — not the steward, not the project, not any
-licensor — can extend it for anything already public.
+Material added later has its own clock. **Forking or repackaging an existing part never
+restarts its clock** — nor does copying or re-releasing it. Nobody — not the steward, not the
+project, not any licensor — can extend it for anything already public.
 
 The words "grants you, now" are new in `1.0-draft.4` and they matter for a review. The
 previous draft said each part "becomes available" under Apache-2.0 at four years, which left
@@ -159,9 +161,10 @@ apply without it — the licence degrades to permissive, for everyone — on the
 
 - the day the Association ceases to exist with no publicly designated successor;
 - the last day of **twelve consecutive months** in which it neither recorded an Entitlement or
-  a Donation Entitlement nor kept a published schedule under which one could be obtained (a
-  project's Waiver keeps no clock running — it is the project's record, not the steward's;
-  question 22 explains the schedule element); or
+  a Donation Entitlement nor published in its transparency log, within that period, a dated
+  statement that credentials could be obtained under its schedule (a project's Waiver keeps
+  no clock running — it is the project's record, not the steward's; question 22 explains the
+  log statement); or
 - the day named in a signed, published **declaration of lapse**, which the steward's wind-down
   protocol is designed to issue on the day it stops selling. It cannot be withdrawn and the day
   cannot be moved later.
@@ -185,9 +188,10 @@ Two honest caveats:
   handle is the registry's transparency log **and its published mirrors held outside the
   Association's control**; the Association's statutes bind it to name an archive custodian
   that keeps the registry, the log and the key set readable after it is gone. Whether that
-  suffices, whether the schedule element of the twelve-month test is readable from the log
-  alone, whether "first official publication" is a determinable day, and what you may rely on
-  if the log and a mirror disagree, is on the counsel agenda — unresolved.
+  suffices, whether a false "credentials can be obtained" statement in the log is actionable,
+  how a successor inherits the clock, whether "first official publication" is a determinable
+  day, and what you may rely on if the log and a mirror disagree, is on the counsel agenda —
+  unresolved.
 - The Association exists on paper only: its founding assembly was held on 2026-09-16 and its
   commercial-register entry is pending. There is no credential to buy today and no coverage
   lookup to query.
@@ -205,9 +209,11 @@ That means:
 - At activation you vest the entire back catalogue of covered code — everything within scope
   that is public that day.
 - During your term you vest everything made public in it.
-- If you do not renew, you keep all of that and simply stop vesting new code. Parts made
-  public during the 60-day cure that follows do not vest either; the cure keeps you running,
-  it does not extend your term.
+- If you do not renew, you keep all of that and simply stop vesting new code. The 60-day cure
+  that follows vests nothing by itself — it keeps you running, it does not extend your term —
+  but it does not block anything either: a part published during those days vests under a
+  credential you record later, like any other part public before that credential's term
+  ends (question 19).
 - The same holds if the project leaves the registry, if a Waiver is revoked, if the schedule
   changes, or if the Association fails. Revocation acts forwards, never on what you have
   deployed. Your term is the start date, end date and schedule version recorded at issue; a
@@ -222,8 +228,10 @@ That means:
 
 1. a **forged record** — one with no genuine issuance behind it — vests nothing;
 2. a credential **obtained by fraud or deliberate deception** vests nothing;
-3. a term **refunded or charged back in full** vests nothing (question 23 says why); a
-   partial refund, or a refund for the Association's own failure, leaves vesting untouched.
+3. a term **refunded or charged back in full** vests nothing (question 23 says why) — but the
+   use during that term, before the refund, stays lawful: you lose permanence, not your
+   record of compliance; a partial refund, or a refund for the Association's own failure,
+   leaves vesting untouched.
 
 **What §9 says are not exceptions:**
 
@@ -234,17 +242,25 @@ That means:
 2. **patent litigation** (question 18) ends only your patent licence, never your vested
    parts.
 
-**Corporate changes.** A credential covers its beneficiary and the entities in its group while
-they are in it. An entity that leaves the group keeps what it vested. When a covered business
-is sold or merged, its vested coverage goes with that business for its own operations — not
-for the buyer's other operations — and coverage cannot be sold on its own. So a spin-off keeps
-its deployments; a buyer gets the target's deployments and nothing more.
+**Corporate changes.** A credential covers its beneficiary and the entities the beneficiary
+controls, while it controls them. A parent or sister company is covered only if the record
+names it — coverage runs down from the buyer of the credential, never up or sideways. An
+entity that leaves keeps what it vested. When a covered business is sold or merged, its
+vested coverage goes with that business for its own operations — not for the buyer's other
+operations — and coverage cannot be sold on its own. So a spin-off keeps its deployments; a
+buyer gets the target's deployments and nothing more. The case that fixed the wording: a
+small subsidiary holds a Pass and a very large group buys it. Under the earlier words
+("its group's entities while they are in it") the subsidiary's Pass would have covered every
+company in the acquirer's group from the day of the sale, because that was now its group.
+Now it covers the subsidiary and what the subsidiary controls, and nobody above or beside
+it. Note that the *threshold* in §5 still counts parents and sisters: the size test is
+group-wide on purpose, and the coverage scope is narrower on purpose.
 
 **Forks.** Vested code stays vested in forks and modified copies; what others add needs its
 own permission. Coverage of named software reaches the contributions first offered through
 that project, not code imported from elsewhere — and a contribution first published in a
-development fork or branch for submission counts as originating in the project once
-accepted, so an ordinary pull request is never an "import".
+fork or branch for submission counts as the project's once accepted, so an ordinary pull
+request is never an "import".
 
 Nothing else in the design can strip a part you already vested. This is deliberate: a
 licence that can strand a production deployment is not procurable at any price.
@@ -353,8 +369,9 @@ forward; what you vested under it stays yours, and use during its active days st
 
 Nor can you negotiate a private deal with the Association: the licence says credentials are
 issued only under the published schedule, on the same terms for everyone, for at most one
-year at a time, and within the Association's published constitutional commitments on the
-charitable destination of funds and no private profit.
+year at a time — a renewal is recorded when its term starts, never in advance — and within
+the Association's published constitutional commitments on the charitable destination of
+funds and no private profit.
 
 The reason is self-protective as well as ethical: private side deals would make the coverage
 question unanswerable, and the registry's whole value is that one lookup answers it.
@@ -363,8 +380,8 @@ question unanswerable, and the registry's whole value is that one lookup answers
 
 **Contributors never assign copyright and never transfer economic ownership. Permanently.**
 That is a constitutional commitment of the movement — it is in the Association's statutes —
-not a current policy. The licence itself says it in one line: "Contributors keep their
-copyright; nothing here assigns it."
+not a current policy. The licence itself says it in four words: "Contributors keep their
+copyright."
 
 The licence also carries Apache-2.0 §5's default: unless the contributor clearly says
 otherwise, a contribution intentionally submitted to the project is offered under these
@@ -447,8 +464,11 @@ infringers.
 
 - **The licence:** working draft, pre-counsel — revision `1.0-draft.4`, which applied the
   operator's decisions on the 16 September 2026 review proposal and, later the same day, on
-  the comparison review that followed it (question 23 lists what was turned down, both
-  times). Not published. No version exists, so no conversion clock runs.
+  the comparison review that followed it and on the reviewer's third note (question 23 lists
+  what was turned down, each time). Since that last pass the licence body carries no inline
+  counsel marker: every open legal question is in the draft's own §15 agenda, one row per
+  question, and the honesty gate counts them there. Not published. No version exists, so no
+  conversion clock runs.
 - **The steward organization:** the Purpose Source Association held its founding assembly on
   2026-09-16. Its commercial-register entry and enterprise identifier are pending.
 - **The registry:** a first, public version with curated entries exists. **Credentials and the
@@ -564,20 +584,24 @@ organization of any size:
 The same sentence draws the fence: the permissions extend "not to production use or offering
 the software's functionality to others". A staged rollout, a pilot with real users or an
 internal tool people rely on every day is production, not evaluation, and needs coverage from
-its first day of use. The counsel marker on §4 asks counsel to confirm that the words are
-determinable enough to keep those cases out.
+its first day of use. The §4 row of the counsel agenda asks counsel to confirm that the words
+are determinable enough to keep those cases out.
 
-Two practical notes. The exception has no clock: evaluation can take as long as it takes —
-a point the next revision writes into §6 itself, since draft.4's §6 opening does not yet say
-that permitted evaluation is outside its 60 days. And
-it is distinct from the 60-day cure in §6: if you start production use as a Large Organization
-with no credential, §6(e) gives you 60 days from that first day — but those are cure days,
-they count against the 60-in-twelve-months cap, and parts made public during them do not
-vest. One thing does not eat them: days on which the Association's issuance service was
-generally unavailable, as its transparency log records, do not count toward either 60 — an
-outage on the steward's side never costs you cure days and never counts against the cap.
-Evaluate freely; the day you go to
-production, get the credential.
+Two practical notes. **The exception has no clock**, and the text now says so in §6 itself:
+the cure runs only "when your use needs coverage", and "days of use the evaluation and
+contribution rule in §4 permits do not count". So evaluate for two months, or six, and go to
+production on the day after: the cure's 60 days start on that first production day, not on
+the first day you tried the software. (On draft.4's first-pass words the 60 days could have
+been argued to have run out during the evaluation, before you had used the software in
+production at all; the second pass closed that.) And the exception is distinct from the
+60-day cure in §6: if you start production use as a Large Organization with no credential,
+§6(e) gives you 60 days from that first day — but those are cure days, they count against the
+60-in-twelve-months cap, and by themselves they vest nothing. They do not block vesting
+either: a part published during your cure days vests under the credential you then record,
+like any other part public before that term ends. One thing does not eat cure days: days the
+transparency log records as a general outage of the Association's issuance service do not
+count toward either 60 — an outage on the steward's side never costs you cure days and never
+counts against the cap. Evaluate freely; the day you go to production, get the credential.
 
 ## 20. Can a contractor work for a covered client?
 
@@ -636,24 +660,31 @@ the log's history suffices as proof that a Waiver survived, is on the counsel ag
 
 ## 22. What happens if the Association sells nothing for a year?
 
-**Nothing — as long as it keeps a published schedule under which someone could buy.**
+**Nothing — as long as it says so in its transparency log.**
 
 This matters because of how the backstop in §8 works. The condition lapses for everyone,
 permanently, at the end of any twelve consecutive months in which the Association neither
-recorded an Entitlement or Donation Entitlement nor kept a published schedule under which one
-could be obtained. The previous draft counted only recorded credentials. The 16 September
-review pointed out the hole, and both reviewers agreed it was real: a live steward with a
-price list on its website and a slow first year — twelve months in which nobody happened to
-buy — would have lost the condition for every project, for ever, with no way back. A backstop
-is meant to catch a steward that has died or gone silent, not one whose market has not
-arrived yet.
+recorded an Entitlement or Donation Entitlement nor published in its transparency log, within
+that period, a dated statement that credentials could be obtained under its schedule. The
+draft before last counted only recorded credentials. The 16 September review pointed out the
+hole, and both reviewers agreed it was real: a live steward with a price list on its website
+and a slow first year — twelve months in which nobody happened to buy — would have lost the
+condition for every project, for ever, with no way back. A backstop is meant to catch a
+steward that has died or gone silent, not one whose market has not arrived yet.
 
-So the test now needs both facts to be absent: no credential recorded *and* no published
-schedule kept. A steward that is alive and open for business keeps the clock from running
-simply by keeping its schedule published; a steward that has stopped publishing and stopped
-recording does not, and after twelve months of that the licence becomes permissive for
-everyone. Waivers still keep no clock running, and naming a successor neither stops nor
-restarts it.
+The first fix said "nor kept a published schedule under which one could be obtained". The
+reviewer's third note showed why that was not enough: a price list is not evidence of
+anything. Nobody can tell from a page on a website whether the steward behind it was open
+for business or had been dead for a year with the page left up, and counsel would have been
+asked to say whether a schedule "nobody can actually buy under" counted as kept. So the test
+now uses a fact the log can hold. A **log statement** is a signed, dated entry in the same
+append-only transparency log that records every credential — the Association writing, on a
+named day, that credentials can be obtained under its published schedule. Either an entry
+with a date inside the twelve months is in the log and its mirrors, or it is not; there is
+nothing to interpret. A steward that is alive and open for business publishes one and keeps
+the clock stopped; a steward that has stopped recording and stopped saying so lapses after
+twelve months of both silences, and the licence becomes permissive for everyone. Waivers
+still keep no clock running, and naming a successor neither stops nor restarts it.
 
 Where the clock starts is now in the text, not in a counsel note: it starts at the licence's
 first official publication and runs on through any succession, and a successor is measured
@@ -666,12 +697,13 @@ keeps its schedule element — the comparison proposal, written against the earl
 would have taken it back to recorded credentials alone (question 23) — and that lapse does
 not bring the four-year Apache conversion forward.
 
-You can still check this yourself: the schedule's publication is logged in the registry's
-transparency log, like every credential, so the twelve-month test is readable from the log and
-its mirrors. Two things are with counsel: confirming that a schedule nobody can actually buy
-under does not count as "kept", and that "first official publication" is a determinable day.
-And the underlying decision sheet on dissolution and lapse (D46) is still a candidate awaiting
-the operator's confirmation, so this is the operator's default rule, not yet a settled one.
+You can still check this yourself: the statement sits in the registry's transparency log,
+like every credential, so the twelve-month test is readable from the log and its mirrors.
+Three things are with counsel: whether a false statement — one made when credentials could in
+fact not be obtained — is actionable, how a successor inherits the clock, and that "first
+official publication" is a determinable day. And the underlying decision sheet on dissolution
+and lapse (D46) is still a candidate awaiting the operator's confirmation, so this is the
+operator's default rule, not yet a settled one.
 
 ## 23. What did the September reviews propose that the text does not do, and why?
 
@@ -748,8 +780,10 @@ they were missed. Both lists count from 1; the licence's records call them D49 a
    transparency log records, do not count toward either 60 (B7, question 19).
 5. **Taking the twelve-month lapse test back to recorded credentials alone.** The comparison
    proposal was written against the earlier draft, before the schedule element was added.
-   Turned down: "nor kept a published schedule" stays, for the reason in question 22 — a slow
-   first year must not lapse the licence for everyone.
+   Turned down: the second limb stays, for the reason in question 22 — a slow first year must
+   not lapse the licence for everyone. (The reviewer's third note then changed *what* the
+   second limb is: a dated log statement that credentials could be obtained, not a kept
+   schedule — adopted, see below.)
 6. **UTC times and other specification-level detail.** Turned down: the licence says what
    counts and from when; the registry's specification says how the clock reads. Detail of
    that kind belongs there, where it can be corrected without a new licence version.
@@ -768,6 +802,19 @@ part rather than by named release (question 24), the present Apache grant, the a
 continuous lapse clock, provisional figures and the cure trigger that goes with them, the
 development-fork rule, the refund nuance, the outage-days rule, the group-wide patent
 trigger, the log as proof of a Waiver's survival, and the Association's own bound.
+
+**From the reviewer's third note (D50 items 13 to 18, C1 to C6 in the revision log)**, ruled
+on in a second pass the same night: six adoptions and no new rejections. Evaluation never
+starts or consumes the cure clock (question 19); cure days alone vest nothing but do not
+block a later credential from covering that code (questions 6 and 19); a credential covers
+its beneficiary and what it controls, a parent or sister company only if the record names it
+(question 6); the lapse test's second limb is a dated statement in the transparency log, not
+a kept schedule (question 22); use during a term that is later refunded in full stays lawful
+(question 6); and a renewal is recorded when its term starts, never in advance (questions 3
+and 10). The note also asked again for three things already turned down — a separate outage
+permission, a 30-day written-notice cure for notices, and refunds keeping vesting — and the
+answers above stand. The same pass moved every counsel marker out of the licence body into
+the draft's §15 agenda (question 15).
 
 ## 24. We never tag releases — what vests?
 
@@ -798,5 +845,6 @@ Three practical consequences:
 - **Tagged projects lose nothing.** A tagged release is public on its release day and
   everything in it is public by then, so for a project that tags, the old answer and the new
   one are the same set of code.
-- **Cure days still vest nothing** (question 19), and a Waiver still waits 72 hours
-  (question 21). The unit changed; the timing rules did not.
+- **Cure days alone still vest nothing** (question 19) — though a later credential covers
+  what was published during them — and a Waiver still waits 72 hours (question 21). The unit
+  changed; the timing rules did not.

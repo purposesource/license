@@ -7,7 +7,7 @@
 > grants a permission, creates an obligation, or may be relied on, adopted, quoted as
 > operative, or applied to any software or organization. Do not commit any file from this
 > repository into a project as its licence. Every point that needs legal judgement is
-> marked inline as `[COUNSEL: …]`.
+> collected as a `[COUNSEL: …]` question in the draft's counsel agenda.
 
 This repository holds the **draft text of the Purpose Source License and the public record of
 how it is being developed** — drafts, decisions, annotations, and the review conversation.
@@ -70,33 +70,43 @@ of the tax year you grew past the threshold in; the day a change of control made
 the day a credential ended or a Waiver was revoked; where reliable figures later show you
 were over the threshold, the day you knew or should reasonably have known, even if the
 tax-year day is earlier; otherwise the first day of uncovered use) so that growing past the
-threshold never makes anyone an overnight infringer. The window is capped at 60 such days in
-any twelve months; days on which the steward's issuance service was down, as its transparency
-log records, count toward neither 60; and parts made public during cure days do not vest.
+threshold never makes anyone an overnight infringer. The cure runs only when your use needs
+coverage: days of the free evaluation, security review or contribution that §4 permits never
+start it and never count toward it, so two months of evaluation followed by production means
+the 60 days start on the first production day. The window is capped at 60 such days in any
+twelve months; days the steward's transparency log records as a general outage of its
+issuance service count toward neither 60; and cure days alone vest nothing — though a
+credential recorded later covers what was published during them, like any other part.
 And whatever an organization was covered for, it keeps: **a part is vested if it was public
 on or before the end of the credential's term**, permanently, whatever happens afterwards to
 the credential, the project, or the steward. Vesting is counted in parts, not releases —
 every public commit, tag, release or package — so a project that never tags a release still
 leaves its covered users with permanent rights; no release is needed. The only exceptions
 are a forged record (one with no genuine issuance behind it), a credential obtained by fraud
-or deliberate deception, and a term refunded or charged back in full — a partial refund, or a
-refund for the steward's own failure, leaves vesting untouched; a genuinely issued record
-survives a later compromise of the signing key, and you may rely on it despite the steward's
-own error. Coverage reaches the group while its members are in it; a business that is sold
-or merged keeps what it vested for its own operations, not the buyer's, and coverage cannot
-be sold on its own. Vested code stays vested in forks; what others add needs its own
+or deliberate deception, and a term refunded or charged back in full — even then the use
+during that term, before the refund, stays lawful, and a partial refund, or a refund for the
+steward's own failure, leaves vesting untouched; a genuinely issued record survives a later
+compromise of the signing key, and you may rely on it despite the steward's own error.
+Coverage reaches the beneficiary and the entities it controls, while it controls them — a
+parent or sister company only if the record names it, so a subsidiary's credential never
+spreads to the group that buys it (the size test in §5 still counts the whole group; the
+coverage scope is narrower on purpose); an entity that leaves keeps what it vested; a
+business that is sold or merged keeps what it vested for its own operations, not the
+buyer's, and coverage cannot be sold on its own. Vested code stays vested in forks; what others add needs its own
 permission, and a contribution first published in a development fork for submission counts
 as the project's own once accepted. Vesting is permission from now on; it does not excuse
 use before the credential.
 
 If the steward itself fails, the condition falls away for everyone: on the day the Association
 ceases to exist with no successor, on the day named in its declaration of lapse, or at the end
-of twelve months in which it neither recorded an Entitlement or Donation Entitlement nor kept a
-published schedule under which one could be obtained (draft §8; a project's Waiver keeps no
-clock running). That twelve-month clock starts at the licence's first official publication
-and runs on through any succession — a successor is measured by the same clock, so naming
-one never restarts it. A year with no sales alone does not end the model; a year with
-nothing on offer does. A lapse does not bring the four-year conversion forward. What remains
+of twelve months in which it neither recorded an Entitlement or Donation Entitlement nor
+published in its transparency log a dated statement that credentials could be obtained under
+its schedule (draft §8; a project's Waiver keeps no clock running). That twelve-month clock
+starts at the licence's first official publication and runs on through any succession — a
+successor is measured by the same clock, so naming one never restarts it. A year with no
+sales alone does not end the model; a year with no sales and no such statement in the log
+does — a price list on a website is not evidence that anyone was open for business, a dated
+entry in the log is. A lapse does not bring the four-year conversion forward. What remains
 after a lapse is what Apache asks anyway: notices, patent defence and the name.
 
 What the licence deliberately does **not** contain: no copyleft, no share-alike, no network
@@ -121,9 +131,12 @@ Stated plainly, because everything else in this repository depends on it being u
 | **Identifier registered with SPDX?** | No. The form is decided: `LicenseRef-PurposeSource-1.0`, valid SPDX for a licence not on the list. Inclusion on the list is requested later, when adoption exists; scanners may flag the identifier until then. |
 | **Can I adopt this in my project?** | No. Nothing is published, and adopting a draft would misrepresent it. |
 
-Every open drafting question is marked inline as `[COUNSEL: …]`, and each draft collects its
-own markers into a counsel agenda at the end. Three jurisdiction memos (US, CH, DE) on the
-condition architecture are prerequisites for publishing anything, and none exists.
+Every open legal question is written as a `[COUNSEL: …]` marker. Since the second pass on
+`1.0-draft.4` the licence body (§1–§14) carries none of them inline: they all live in the
+draft's own §15 counsel agenda, one row per question — the section, our position as drafted,
+and what counsel confirms — and the honesty gate counts them there, because it counts markers
+anywhere in the draft file. Three jurisdiction memos (US, CH, DE) on the condition
+architecture are prerequisites for publishing anything, and none exists.
 
 **Publication is a procedure, not a tag.** When a version is published, the canonical text is
 rendered and committed; a release manifest (`releases/license-release.v1.json` — version id,
@@ -159,7 +172,7 @@ required — the licence file is self-sufficient.
 
 | Path | What it is |
 |---|---|
-| [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md) | The licence draft (`1.0-draft.4`) — the decided architecture in short, plain clauses, with 14 isolated counsel questions and a revision log. Its body (§1–§14, markers excluded) is 2,348 words: inside the 2,350-word bound set with D50, above the 2,000-word target set with D49, and longer than Apache-2.0 because the mechanism has more moving parts — what is left is definitions, decided protections and the adopted sentences, so any further cut is the operator's to name |
+| [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md) | The licence draft (`1.0-draft.4`, second pass) — the decided architecture in short, plain clauses with no counsel marker between them, a §15 agenda of 14 counsel questions (our position, what counsel confirms), and a revision log. Its body (§1–§14, headings included; markers, rules and fences excluded) is 2,350 words: at the 2,350-word bound set with D50 after the six adoptions of the second pass, above the 2,000-word target set with D49, and longer than Apache-2.0 because the mechanism has more moving parts — what is left is definitions, decided protections and the adopted sentences (the revision log names the last three cuts) |
 | [drafts/contributor-sign-off.md](drafts/contributor-sign-off.md) | The contributor sign-off draft: right-to-submit warranty, steward-role acceptance, and bounded forward delegation with a six-item immutable core — plus the permanent promise that contributors keep their copyright |
 | [canonical/](canonical/) | The plain-text rendering of each draft — the one text per version everything else points at, produced from the draft by `npm run render:canonical` and re-verified byte-for-byte by CI. Still a draft, banner and all |
 | [ANNOTATIONS.md](ANNOTATIONS.md) | Plain-English walkthrough, clause by clause, the "why" behind each clause, and the proof that the three corporate fears are absent |
@@ -216,7 +229,7 @@ after publication.
   section; say what breaks and, if you can, what would fix it.
 - **A new question for counsel** — a legal issue the drafts have not spotted: open a
   [counsel question](.github/ISSUE_TEMPLATE/counsel-question.yml) issue. These become
-  `[COUNSEL: …]` markers in the text.
+  `[COUNSEL: …]` markers in the draft's §15 counsel agenda.
 - **A wording suggestion you can express as a diff** — open a pull request against the draft,
   with the reasoning in the description. Read [CONTRIBUTING.md](CONTRIBUTING.md) first: there
   are rules about what may be changed and what may not.

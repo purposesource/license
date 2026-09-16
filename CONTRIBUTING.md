@@ -87,8 +87,8 @@ roles (sign-off §2.2) and the bounded forward delegation (sign-off §2.3). Noth
 default delegates anything forward, and nothing in it weakens the sign-off.
 
 **One more since `1.0-draft.4` (D50, 2026-09-16).** A contribution you first publish in a
-development fork or branch for submission counts as originating in the project once it is
-accepted (licence §9), so coverage of the project by name reaches it like any other
+fork or branch for submission counts as the project's own once it is accepted (licence §9),
+so coverage of the project by name reaches it like any other
 contribution. Its four-year conversion clock still starts on the day it first became public,
 fork included — forking never restarts a clock (licence §7).
 

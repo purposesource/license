@@ -24,10 +24,12 @@ const STATUS_BANNER =
   '**Pre-launch.** This repository is part of the Purpose Source Network build; ' +
   'nothing here is a public commitment yet.';
 const LICENSE_DRAFT = 'drafts/purpose-source-license-1.0-draft.md';
-// Fourteen is not a target to hit; it is a floor that a "cleanup" commit cannot walk under
-// without a reviewer noticing. Every open drafting question the record hands to counsel is
-// listed in the draft's own counsel-agenda section.
-const MIN_COUNSEL_MARKERS = 14;
+// Fifteen is not a target to hit; it is a floor that a "cleanup" commit cannot walk under
+// without a reviewer noticing. Since 1.0-draft.4 the markers live in §15, the draft's own
+// counsel-agenda section: one row per question, its "what counsel confirms" cell written as
+// a marker, so the body §1–§14 carries none. The fifteenth is the banner's own mention of
+// the marker form, which the gate has always counted.
+const MIN_COUNSEL_MARKERS = 15;
 
 // canonical/*.txt is a legal text like any other here. It is MACHINE-produced from a draft
 // (scripts/render-canonical.mjs), which is exactly why it must be gated the same way: a
