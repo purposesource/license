@@ -7,7 +7,7 @@
 
 # Contributor sign-off — working draft
 
-**Draft status:** pre-counsel working paper · **This draft:** `signoff-1.0-draft.3` · **Date of this revision:** 2026-09-16
+**Draft status:** pre-counsel working paper · **This draft:** `signoff-1.0-draft.4` · **Date of this revision:** 2026-09-17
 
 ## 0. The promise this document keeps
 
@@ -78,9 +78,10 @@ it, and the project's public history — are public and may be redistributed ind
 I understand and accept the roles the Purpose Source License defines, and that they apply to
 my contribution because I license it on those terms:
 
-- the **Project Steward** — whoever holds administrative control of the canonical repository
-  — may record a **Waiver** in the Steward Registry, which satisfies the licence's Purpose
-  Condition for a named organization, for this software, my contribution included;
+- the **Project Steward** — whoever holds administrative control of the canonical repository,
+  whom the licence calls the maintainers — may record a **Waiver** in the Steward Registry,
+  which the licence calls the Registry; a Waiver satisfies the licence's Purpose Condition
+  (its §4) for a named organization, for this software, my contribution included;
 - the **Steward Organization** — the Purpose Source Association, which the licence calls the
   Association, or the successor it has publicly designated under §8 of the licence — records
   Entitlements and Donation Entitlements, keeps the Steward Registry in which Project Stewards
@@ -88,6 +89,11 @@ my contribution because I license it on those terms:
   sublicensor, and never a rights-holder in it**;
 - **I receive nothing of monetary value for my contribution**, and I understand that the
   movement's attribution mechanism directs where funds go without paying contributors.
+
+*(Dated note, 2026-09-17, D51: licence `1.0-draft.5` says "the maintainers" for the Project
+Steward and "the Registry" for the Steward Registry, and its §2 says the Association "does
+not own or license the code it registers for others". This paragraph keeps its own role
+names and names the licence's words beside them; nothing it states changes.)*
 
 > [COUNSEL: this is acceptance of a third party's power over a condition in the
 > contributor's own grant. Confirm formation and prominence under Swiss and German
@@ -180,9 +186,10 @@ Counsel chooses the form; these constraints are not counsel's to relax:
 **Trace.** This instrument implements movement decisions D7 as amended (the no-assignment
 outcome; the bounded delegation; the immutable core), D46 (item 6 and the successor limb —
 a candidate sheet, entered in the decision register once the operator confirms), D48
-(the wording of items 2 and 4, the Association's name; operator decisions of 2026-09-16)
-and D50 (item B11, the wording of §3 item 2; operator decision of 2026-09-16, late), and
-requirements LEG-034, LEG-035, LEG-036 and LEG-045. The index is
+(the wording of items 2 and 4, the Association's name; operator decisions of 2026-09-16),
+D50 (item B11, the wording of §3 item 2; operator decision of 2026-09-16, late) and D51
+(the licence's plain-language pass of 2026-09-17; §2.2 names the licence's words beside its
+own role names), and requirements LEG-034, LEG-035, LEG-036 and LEG-045. The index is
 [decisions/README.md](../decisions/README.md).
 
 ---
@@ -209,3 +216,4 @@ requirements LEG-034, LEG-035, LEG-036 and LEG-045. The index is
 | `signoff-1.0-draft.1` | 2026-09-16 | D46 (dissolution and steward lapse). The immutable core gains its sixth item, the steward-lapse backstop, whose clock may only ever be shortened; the delegation sentence in §2.3 names the successor designated under §8 of the licence. No text reviewed by counsel. |
 | `signoff-1.0-draft.2` | 2026-09-16 | This revision, following the operator decisions of 2026-09-16 (D48). Plain-language pass over §0–§4 in the licence draft's register; the instrument is called a contributor sign-off throughout. §2.2 names the Purpose Source Association, which the licence calls the Association, and repeats the D46 successor limb. Item 2 of the core is worded for the per-part conversion of licence §7 (D48 item 4); item 4 is scoped to code the Association registers for others (statutes Art. 4, Art. 13). Decision references move out of the statement into §4's trace line. No text reviewed by counsel. |
 | `signoff-1.0-draft.3` | 2026-09-16 | D50 item B11 (the operator decision of 2026-09-16, late, on the 16 September comparison review). §3 item 2 says "no special or exclusive licence to the Association" where it said "no licence to the Association at all", with a dated note; §4's trace line names D50. Nothing else changes: §0, §2 and the immutable core are word-for-word as in `signoff-1.0-draft.2`. No text reviewed by counsel. |
+| `signoff-1.0-draft.4` | 2026-09-17 | D51 (the licence's plain-language pass, `1.0-draft.5`). §2.2 names the licence's words beside the role names it keeps — the Project Steward, "whom the licence calls the maintainers"; the Steward Registry, "which the licence calls the Registry"; the Purpose Condition located as the licence's §4 — with a dated note; §4's trace line names D51. Nothing else changes: §0, §2.1, §2.3 with the immutable core, §3 and §4's constraints are word-for-word as in `signoff-1.0-draft.3`. No text reviewed by counsel. |

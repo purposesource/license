@@ -13,7 +13,7 @@ recorded decision disagree, the draft is defective — the decisions are in
 [decisions/](decisions/).
 
 Read alongside [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md),
-revision `1.0-draft.4` of 2026-09-16. Revision `1.0-draft.2` moved every "why" paragraph out
+revision `1.0-draft.5` of 2026-09-17. Revision `1.0-draft.2` moved every "why" paragraph out
 of the licence body and into this file, so the body carries only operative text, the banner
 and the placeholder tokens. Revision `1.0-draft.3` applied the
 operator's evening decisions on the 16 September review proposal — sixteen adoptions, A1 to
@@ -23,10 +23,18 @@ adoptions into the licence, B1 to B10 (an eleventh, B11, corrected the contribut
 and seven rejections, R1 to R7, recorded as D50 — and, in a second pass the same night, the
 operator's decisions on the reviewer's third note: six more adoptions, C1 to C6, recorded as
 D50 items 13 to 18, and the move of every counsel marker out of the body into the draft's
-own §15 agenda (D50 item 19). Each adoption is
+own §15 agenda (D50 item 19). Revision `1.0-draft.5` is the plain-language pass of
+2026-09-17 (D51): the same rules in fewer and simpler words, plain section titles, and four
+roles renamed — the Steward Organization is now **the Association**, the Steward Registry
+**the Registry**, the Project Steward **the maintainers**, and a Large Organization a
+**large organization** in lower case. The statutes, the registry specification and the
+contributor sign-off keep the older names for the same roles; this file uses the licence's
+words and gives the older name where a reader might look for it. Each adoption is
 explained below under its clause, with its letter; where a rejection is cited, the record it
-belongs to (D49 or D50) is named, because both records count their rejections from R1. If you
-are looking for the reasoning behind a clause, it is here, under the clause's own number.
+belongs to (D49 or D50) is named, because both records count their rejections from R1. Every
+quotation of the licence is the `1.0-draft.5` wording unless it is marked as an earlier
+draft's. If you are looking for the reasoning behind a clause, it is here, under the
+clause's own number.
 
 ---
 
@@ -42,7 +50,10 @@ decisions it implements are traced in [decisions/](decisions/); the operator dec
 and the operator's late decisions of the same day on the comparison review — a second
 review, written against `1.0-draft.2`, with a revised proposal of its own (D50) — are what
 changed between `1.0-draft.3` and `1.0-draft.4`; the reviewer's third note, ruled on late the
-same night (D50 items 13 to 18, C1 to C6), is the second pass on `1.0-draft.4`. Both
+same night (D50 items 13 to 18, C1 to C6), is the second pass on `1.0-draft.4`; and the
+plain-language pass of 2026-09-17 (D51) is what changed between `1.0-draft.4` and
+`1.0-draft.5` — no rule, number, day count, exception, actor or defined role added, dropped,
+widened or narrowed, and every scope-of-permission sentence kept in scope form. Both
 proposals, and their notes, sit outside this repository; where the draft borrows their plain
 wording, [LICENSE-NOTICE.md](LICENSE-NOTICE.md) §4 attributes it.
 
@@ -61,8 +72,9 @@ text, so row 8 is the §8 row).
 **What it is not.** It is not a licence anyone may use. No version has been published, so no
 conversion clock has started and no project is under these terms. The identifier in §1 is in
 the SPDX `LicenseRef-` form, which is valid for a licence that is not on the SPDX list; a
-request for list inclusion comes later, once adoption exists. The Steward Organization named
-in §1 — the Purpose Source Association — held its founding assembly on 2026-09-16; its
+request for list inclusion comes later, once adoption exists. The Association named in §1 —
+the Purpose Source Association, on the notice line "Steward: Purpose Source Association (the
+Association)" — held its founding assembly on 2026-09-16; its
 commercial-register entry and its enterprise identifier (UID) are pending, which is why the
 UID is still a placeholder token and no value has been invented for it. The registry's first
 version is public (curated entries, validated against a published contract set); the
@@ -97,6 +109,44 @@ under §9 below and in the FAQ), §7's "no project, no licensor, not the Associa
 and "copying" and "re-releasing" in §7's restart sentence — and the body ends at 2,350
 words, at the bound; the draft's revision log states the figure and the method.
 
+**The plain-language pass, and its metrics (`1.0-draft.5`, D51).** The operator's instruction
+of 2026-09-17 was one rule — same meaning, same legal force, fewer and simpler words — with
+targets: no sentence over 30 words, an average of 17 or fewer, Flesch reading ease of 55 or
+more, grade 10 or under, at most five capitalised defined terms, and a body at or under 2,000
+words. Measured on the canonical body §1–§14 with the scratchpad `readability.py` (headings,
+rules and the Purpose Notice lines excluded; the spec's Flesch and grade formulae; sentences
+split at a full stop, semicolon or colon before a capital or an opening bracket, list items
+counted as sentences):
+
+| | `1.0-draft.4` (second pass) | `1.0-draft.5` |
+|---|---|---|
+| Words | 2,250 | 2,310 |
+| Sentences | 125 | 163 |
+| Words per sentence | 18.0 | 14.2 |
+| Sentences over 30 words | 17 | 0 |
+| Flesch reading ease | 51.2 | 57.0 |
+| Grade | 10.6 | 8.8 |
+| Capitalised defined terms | 9 | 5 |
+
+The five terms that remain are the Association, the Registry, Entitlement, Donation
+Entitlement and Waiver. The four that went are renames, not cuts: the Steward Organization is
+the Association, the Steward Registry is the Registry, the Project Steward is the maintainers
+(defined in §2 as whoever holds administrative control of the canonical repository, or
+whoever they name through the Registry's verified claim), and a Large Organization is a large
+organization in lower case, defined once in §5 as an organization that does not meet the
+threshold below. "Purpose Condition" survives only in §4's title; the body says *coverage*,
+and §2 defines *covered* as holding a current credential for the software and *vested* as
+yours to keep for good. The statutes, the registry specification and the contributor sign-off
+keep the older names — Steward Organization, Steward Registry, Project Steward, Large
+Organization — for the same roles; nothing about the roles changed, only the words. Every
+target was met except the word count, which rose: the definitions the pass adds and the
+seventeen sentence splits cost more words than the renames save, and every remaining sentence
+carries a decided element, so the last cut is still the operator's to name. The one place the
+pass kept a legal phrase on purpose is §3's patent scope, "necessarily infringed by their
+contribution": the plain form tried first keyed the scope to *use* alone and narrowed the
+grant, and §15's §3 row and §7's conversion both rest on Apache-2.0's scope (explained under
+§3 below).
+
 ---
 
 ## Part 1 — The three fears, answered by construction
@@ -108,10 +158,10 @@ else it says.
 ### The absence list, in full
 
 Until `1.0-draft.2`, §10 of the licence carried this list. `1.0-draft.3` cut §10 to one
-sentence — "These terms require nothing of your own software, no disclosure, no network duty,
-no share-alike, no audit and no report." — so that the body stays short and every
-cross-reference to §10 survives. The five lines live here now, in full, and the README
-carries them in substance:
+sentence, and `1.0-draft.5` says it in two — "These terms ask nothing of your own software.
+They require no disclosure, no network duty, no share-alike, no audit and no report." — so
+that the body stays short and every cross-reference to §10 survives. The five lines live here
+now, in full, and the README carries them in substance:
 
 1. **Nothing on your own software**: §4 attaches to this software only.
 2. **No disclosure** of source, architecture, deployment, customers or documents.
@@ -139,7 +189,7 @@ Concretely, under the draft:
 - No obligation attaches to anything that merely sits next to the software in a repository,
   a container, or a process.
 
-**Where to check:** §10's one sentence, item 1 of the list above, and the absence of any
+**Where to check:** §10's two sentences, item 1 of the list above, and the absence of any
 "derivative work" or "combined work" obligation anywhere in §3 or §4.
 
 ### Fear 2 — "Will we have to disclose our source, our stack, or our customers?"
@@ -172,8 +222,8 @@ own use, judged by your own size, not by your customers' (§4, A4).
 
 ### What the draft *does* restrict — stated as plainly as the reassurances
 
-One thing, and it is a real restriction: **production use for the benefit of an organization
-above the threshold, without a recorded credential, is outside the grant.** That is a
+One thing, and it is a real restriction: **production use for an organization above the
+threshold, without a recorded credential, is outside the grant.** That is a
 restriction on a field of use, and it is exactly why these terms are not an open source
 licence under the Open Source Definition, and why the movement says so rather than arguing
 about definitions. Evaluation, security review and contributing are outside the restriction
@@ -188,14 +238,17 @@ to it (§3, B8), and nothing else.
 Each section below has two halves: what the clause says, in plain words, and why it says it —
 the commentary that used to sit inside the licence text. Where a sentence arrived with
 `1.0-draft.3`, its adoption letter (A1 to A16) is given so the D49 record can be traced; where
-it arrived with `1.0-draft.4`, its letter is B1 to B10 and the record is D50.
+it arrived with `1.0-draft.4`, its letter is B1 to B10 and the record is D50. The section
+titles below are `1.0-draft.5`'s plain titles; the numbers and every §-reference are
+unchanged.
 
 ### §1 Purpose Notice — five constant lines
 
 **What it says.** Five lines that are part of the licence text and identical in every copy:
 the SPDX identifier line (`SPDX-License-Identifier: LicenseRef-PurposeSource-1.0`), the
-Steward Organization's name, its enterprise identifier, the registry address and the address
-of the canonical text.
+steward's name — "Steward: Purpose Source Association (the Association)", which is also
+where the defined term is introduced — its enterprise identifier, the Registry's address
+(labelled "Registry:") and the address of the canonical text.
 
 **Why the lines are constants and not blanks.** A licence with per-project fill-in fields
 becomes a family of subtly different licences that each need their own review — the failure
@@ -207,8 +260,8 @@ uses it. The tokens still visible in the draft mark constants that are genuinely
 
 **Why the designations are in the licence and nowhere else.** A repository file can be edited
 by anyone with push access and carries no verified identity, so it can never designate a legal
-role. Every legal designation lives here, in the text layer, or in the Steward Registry's
-verified claim flow. The optional in-repo `PURPOSE.yml` manifest carries operational content
+role. Every legal designation lives here, in the text layer, or in the Registry's verified
+claim flow. The optional in-repo `PURPOSE.yml` manifest carries operational content
 only; any licence or licensor fields in it are informational mirrors, non-authoritative — this
 text governs (D23 as amended; LEG-027).
 
@@ -226,7 +279,7 @@ change, a merger with universal succession or the loss of the domain. The Swiss 
 identifier is that anchor; whether a key thumbprint must join it stays with counsel (agenda
 row 8).
 
-### §2 Definitions — the group test, who the steward is not, and what a credential is
+### §2 Words used here — the group test, who the Association is not, and what a credential is
 
 **The group and "control".** The threshold in §5 is measured across **an organization's
 group**: the organization plus everything that controls it, that it controls, or that is under
@@ -244,41 +297,46 @@ Earlier drafts said "your organization". The draft now says "an organization's g
 the rule works for the contractor case in §4: when a contractor uses the software in work for
 a client, the *client's* group is measured, not the contractor's.
 
-**"Made available to the public", and "version".** Defined once, in two short sentences,
-because §7's conversion clock and §9's vesting both hang on a date: a part is made available
-to the public on the first day anyone can obtain it under these terms — a public commit, tag,
-release or package — and never on a date an author wrote into a file. A date that anyone can
-set is not a date anyone can rely on. A version is a release the project identifies as such.
+**"Public", and "version".** Defined once, in two short sentences, because §7's conversion
+clock and §9's vesting both hang on a date: "A part is public from the day anyone can first
+obtain it under these terms — by a public commit, tag, release or package, never an author's
+own timestamp." A date that anyone can set is not a date anyone can rely on. Until
+`1.0-draft.5` the defined term was "made available to the public"; the body now says "public"
+after that one definition, and §7 says "first public under these terms". "A version is a
+release the maintainers identify as such."
 Since `1.0-draft.4` only one sentence uses that defined term: §7's release-level bound (A12),
 which lets a reader take one date off a release ("schedule version" in the credential-term
 definition is registry vocabulary, not the defined term, and §12 says "as the Association
 published it" rather than "at a version"). §9's vesting rule no longer counts versions at all
-— it vests *parts*, on the same "made available to the public" day that §7 already used
-(B1), so a project that never tags a release still vests what it publishes. The bold defined
-term "published", which only §7 used, went with it; §7 now says "first made available to the
-public" in full. `1.0-draft.3` merged the two definitions to save words; `1.0-draft.4` cut
-the version definition to what §7 needs.
+— it vests *parts*, on the same "public" day that §7 already used (B1), so a project that
+never tags a release still vests what it publishes. The bold defined term "published", which
+only §7 used, went with it. `1.0-draft.3` merged the two definitions to save words;
+`1.0-draft.4` cut the version definition to what §7 needs; `1.0-draft.5` shortened the term
+itself.
 
-**The Steward Organization, called the Association.** It is defined by what it is *not*: in
-software it registers **for others**, it is never a licensor, never a sublicensor, never a
-rights-holder. It records credentials; the permissions in §3 come from the software's own
-licensors. This is the structural core of the whole design and what makes one-file adoption
-possible — a project adopting these terms transfers nothing to anyone and needs no
-relationship with the steward at all (D6; LEG-016).
+**The Association (the Steward Organization of the statutes).** It is defined by what it
+does *not* do: it "does not own or license the code it registers for others; the §3
+permissions come from the software's own contributors". Until `1.0-draft.5` the sentence
+said "never a licensor, sublicensor or rights-holder"; the plain words say the same. It
+records credentials, nothing more. This is the structural core of the whole design and what
+makes one-file adoption possible — a project adopting these terms transfers nothing to anyone
+and needs no relationship with the Association at all (D6; LEG-016).
 
 The scoping words "for others" were added on 2026-09-16 and close a note that lived here since
 2026-09-05: the movement's decision D29 §6.3 and the statutes (Art. 4 para. 3) let the
 Association own a registered project of its own, and for that project it is an ordinary
-licensor like anyone else, disclosed as steward-owned wherever the project appears, with no
-treatment other projects cannot have. The old note asked counsel whether the text needed a
-scoping limb; the limb is now drafted, so the question is closed and the note is retired.
+contributor like anyone else ("For its own software it is an ordinary contributor"),
+disclosed as steward-owned wherever the project appears, with no treatment other projects
+cannot have. The old note asked counsel whether the text needed a scoping limb; the limb is
+now drafted, so the question is closed and the note is retired.
 
 The successor limb — "or its successor publicly designated under §8" — is D46's:
 without it, a designated successor could have stopped the lapse in §8 while being unable to
 issue anything, because §2 named one legal person for every copy of the text.
 
-**The Steward Registry.** The public record, its transparency log, and that log's published
-mirrors held outside the Association's control. The mirrors are named here because §8's lapse
+**The Registry (the Steward Registry of the statutes and the specification).** The public
+record, its transparency log, and that log's published mirrors held outside the Association's
+control. The mirrors are named here because §8's lapse
 has to be provable when the Association is the party lapsing; the statutes provide for an
 archive custodian who keeps the registry, the log and the key set readable after the
 Association is gone (Art. 9 para. 4, Art. 23 para. 5). Anyone may read the registry without an
@@ -298,7 +356,7 @@ Entitlement is recorded when an organization donates the schedule amount directl
 charity; the money never passes through the Association (D18; LEG-012). Either **covers
 software by name, or because it covers every work licensed under these terms**. That second
 limb (D48 item 5) matters more than it looks: coverage attaches to the *licence*, not to
-*registration*. A Large Organization must always be able to obtain coverage for any software
+*registration*. A large organization must always be able to obtain coverage for any software
 under these terms, whether or not the project ever registered — the network-wide Pass covers
 every work under these terms, registered or not. This amends the commercial decision D42,
 whose Pass covered "every registered repository"; the coverage lookup, which today treats an
@@ -306,10 +364,11 @@ unregistered repository as an error, has to follow. The lane names themselves �
 Portfolio — stay out of the licence (R4; D11): lanes and prices live in the schedule, and the
 licence says only "the software it names, or every work under these terms if it says so".
 
-**The bound on what the Association may issue (A2, widened by B10).** One sentence: both
-credentials are issued only under the Association's published schedule, on the same terms
-for everyone, for at most one year at a time, and within its published constitutional
-commitments on the charitable destination of funds and no private profit. The statutes
+**The bound on what the Association may issue (A2, widened by B10).** Two sentences since
+`1.0-draft.5` (one until then): "The Association issues both only under its published
+schedule, on the same terms for everyone, for at most one year at a time. It issues them only
+within the commitments in its published constitution: that funds go to charity and that there
+is no private profit." The statutes
 already say this — Art. 11 allows one published schedule and no private price, discount or
 side term, D12 makes every entitlement annual, and Art. 13 carries the charitable-destination
 and no-private-profit commitments — but a licensee reading only the licence could not see it,
@@ -329,8 +388,8 @@ issuer, not the buyer: §9 intends that a credential issued in breach of it is s
 holder's, and the §8 marker asks counsel whether the bound is enforceable by a licensee or a
 licensor, and what a breach does to such a credential (agenda row 8).
 
-**No stacked years (C6).** The second pass closes the sentence with the one-year bound and
-adds the rule that makes it bite: "…and for at most one year at a time; a renewal is recorded
+**No stacked years (C6).** The second pass closes the issuance sentence with the one-year
+bound and adds the rule that makes it bite, now a sentence of its own: "A renewal is recorded
 when its term starts, never in advance." Without it, "one year at a time" could be met by
 recording ten consecutive one-year terms on the same day — a century-long Pass in ten pieces.
 Now a renewal exists in the registry only from the day its term begins, so the longest
@@ -338,8 +397,9 @@ recorded coverage at any moment is one year, and a buyer who wants the next year
 this one ends. The registry's issuance rules must record renewals that way;
 [decisions/README.md](decisions/README.md) carries the note.
 
-**Waiver.** A record the Project Steward makes, excusing a named organization from §4 for that
-software. Public, in the registry, gratis — private exemptions do not exist in the design
+**Waiver.** "The maintainers' record naming an organization that may use the software without
+an Entitlement" — the maintainers' record, excusing a named organization from §4 for that
+software. Public, in the Registry, gratis — private exemptions do not exist in the design
 (D14 as amended). Its permission is immediate; its permanence waits 72 hours (§9, A8).
 
 **A credential's term.** What the registry records: for an Entitlement or Donation
@@ -349,23 +409,28 @@ schedule change never alters an existing credential's term** (D48 item 11, repla
 credential is current on every day of its term. This makes §9's vesting rule a matter of two
 recorded dates, not of anyone's interpretation.
 
-**The Project Steward.** Whoever holds administrative control of the canonical repository, or
-whoever they designate through the registry's verified claim process — "nowhere else", as
-the definition now ends. A designation made in a repository file, an issue or an email has no
-effect, for the reason given under §1 (D23 as amended; LEG-039). `1.0-draft.3` folded the
-former stand-alone sentence ("a designation made anywhere else has no effect") into the
-definition; the rule is unchanged.
+**The maintainers (the Project Steward of the statutes, the specification and the
+sign-off).** "The maintainers are whoever holds administrative control of the software's
+canonical repository, or whoever they name through the Registry's verified claim, nowhere
+else." A designation made in a repository file, an issue or an email has no effect, for the
+reason given under §1 (D23 as amended; LEG-039). `1.0-draft.3` folded the former stand-alone
+sentence ("a designation made anywhere else has no effect") into the definition;
+`1.0-draft.5` renamed the role and moved the paragraph up, directly after "You", so the word
+is defined before the version and Waiver definitions use it (the version sentence now follows it); the rule is unchanged. The
+statutes, the specification and the sign-off still say "Project Steward" for this role.
 
-### §3 Grants — per licensor, irrevocable, with an Apache-shaped patent licence
+### §3 What you may do — per contributor, not to be taken back, with an Apache-shaped patent licence
 
-**Why "each licensor grants" and not "the Licensor grants".** Every contributor to the
+**Why "each contributor grants" and not "the Licensor grants".** Every contributor to the
 software licenses their own part on these terms, so the condition in §4 travels with every
 contribution without anyone assigning copyright to anyone. **No contributor is ever asked to
 assign copyright or transfer economic ownership of their work — not now and not in any later
 version of these terms** (D7 as amended; LEG-036). The permanent promise is stated in the
 contributor sign-off's §0 ([drafts/contributor-sign-off.md](drafts/contributor-sign-off.md)),
-and the licence body keeps only the operative sentences: nobody grants on anyone else's
-behalf, and "Contributors keep their copyright." (The second pass on `1.0-draft.4` cut the
+and the licence body keeps only the operative sentences: "Each grant is per contributor;
+nobody grants for anyone else." and "Contributors keep their copyright." (Until
+`1.0-draft.5` the grantor was called the licensor; the §15 agenda still says "each licensor
+grants for itself" for the same rule. The second pass on `1.0-draft.4` cut the
 tail "nothing here assigns it" as a cut toward the word bound: keeping one's copyright already
 says that nothing assigns it.)
 
@@ -380,16 +445,19 @@ Two consequences a reviewer should see:
   contributor whose copyright is in the code, not to one company that might be persuaded to
   look away.
 
-**"Irrevocable except as these terms say" (A1).** The Apache tradition, in
-the proposal's wording. A maintainer used to Apache-2.0 looks for the word "irrevocable" and,
-not finding it, wonders whether a licensor could withdraw the grant at will. Now the text
-answers: no. The exceptions "these terms say" are the ones you can read — the §4 condition
+**"Cannot be taken back, except as these terms say" (A1).** The Apache tradition, in plain
+words since `1.0-draft.5`: "Everyone gets the same grants, and they cannot be taken back,
+except as these terms say." (Until then: "per licensor, non-exclusive, and irrevocable
+except as these terms say" — "everyone gets the same grants" is what non-exclusive means.)
+A maintainer used to Apache-2.0 looks for the word "irrevocable" and, not finding it, wonders
+whether a contributor could withdraw the grant at will. The text answers: no. The exceptions
+"these terms say" are the ones you can read — the §4 condition
 (which scopes the permission rather than revoking it), the end of the 60 days in §6, the
 patent defence below, and the notice condition in §11. Nothing else lets anyone take a grant
 back.
 
-**Inbound equals outbound (A16).** "Unless the contributor clearly says otherwise, a
-contribution intentionally submitted to the project is offered under these terms." That is
+**Inbound equals outbound (A16).** "A contribution intentionally submitted to the project is
+offered under these terms unless the contributor clearly says otherwise." That is
 Apache-2.0 §5's default, and it does for a project what it does under Apache: a drive-by pull
 request is under the licence without a ceremony, unless its author says otherwise. It does
 **not** replace the contributor sign-off, and the operator was explicit that the sign-off is
@@ -398,11 +466,15 @@ consistent later versions inside the immutable core, which the licence sentence 
 cannot do. The sentence gives the project the present licence; the sign-off gives it the
 future.
 
-**The patent licence** follows Apache-2.0 §3 in scope: the claims a licensor can license that
-are necessarily infringed by their contribution alone or in combination with the software
-they contributed it to, for making, having made, using, offering to sell, selling, importing
+**The patent licence** follows Apache-2.0 §3 in scope: "the patent claims they can license
+that are necessarily infringed by their contribution, alone or combined with the software
+they contributed it to", for making, having made, using, offering to sell, selling, importing
 and otherwise transferring the software. The alignment is deliberate — when a part converts to
-Apache-2.0 under §7, the patent position should not move.
+Apache-2.0 under §7, the patent position should not move. "Necessarily infringed" is the one
+legal phrase the plain-language pass kept on purpose: the plain form tried first ("claims …
+that using their contribution … would always infringe") keyed the scope to use alone, so a
+claim infringed only by making, importing or transferring the contribution fell out of the
+grant; the verifier flagged it and the Apache words came back.
 
 **The patent defence** (D48 item 6) is Apache's trigger, not PolyForm's: your patent licences
 for the software end on the day you *file* patent litigation (including a cross-claim or
@@ -413,9 +485,12 @@ reaches patents and nothing else. §3 says so itself; §9 no longer repeats it (
 cut the duplicate sentence), so the one place to read what patent litigation does to vested
 parts is here.
 
-**The trigger reaches your group (B8).** Since `1.0-draft.4` the sentence reads "if you or a
-member of your group files patent litigation … every patent licence you or your group hold
-under these terms for that software ends that day". The comparison review named the
+**The trigger reaches your group (B8).** Since `1.0-draft.4` the trigger is group-wide; the
+sentence reads "Every patent licence you or your group hold under these terms for the
+software ends the day you or a member of your group files patent litigation about it." The
+next sentence says what that means — "alleging that the software or a contribution in it
+infringes a patent, or contributes to infringing one; a cross-claim or counterclaim counts".
+The comparison review named the
 workaround the Apache wording leaves open: a group keeps its patent licences in the operating
 company and files the suit from an affiliate that never touched the software. The group
 definition in §2 already exists for the threshold, so the defence borrows it at no cost in
@@ -425,16 +500,18 @@ trigger is determinable and enforceable against an affiliate that took no licenc
 what litigation *before* a part converts does to the deferred Apache patent grant in §7
 (agenda row 2).
 
-### §4 The Purpose Condition — a scope limit, not a bill
+### §4 The Purpose Condition — when you need coverage: a scope limit, not a bill
 
 This is the clause the whole design turns on, and the annotation has to be honest about both
 halves of it.
 
-**What it does.** The permissions apply while one of four facts is true: you are not
-exercising them for the benefit of a Large Organization; or the benefiting organization holds
+**What it does.** "The permissions in §3 apply only while one of these is true": you are not
+using the software for a large organization; or the large organization you use it for holds
 a current Entitlement, a current Waiver, or a current Donation Entitlement covering the
-software. Nothing else. Use outside those facts is use without permission — not a broken
-promise, simply no permission (D6; LEG-010, LEG-013).
+software. Nothing else. Use outside those facts is use without permission — "simply
+unlicensed: no promise is broken, there is no permission" (D6; LEG-010, LEG-013). The title
+keeps the words "Purpose Condition"; the body says *coverage* — an organization holding a
+current credential for software is covered for it (§2).
 
 **What it deliberately does not do.** It does not say anyone must pay. There is no promise to
 pay in the licence, to the steward or to anyone else. Money moves, if at all, under an
@@ -449,12 +526,13 @@ any relationship to the steward.
 
 **Evaluation, security review and contribution need no coverage (A3).** New in
 `1.0-draft.3`, in the BSL tradition, in the operator's wording from the review debate, and
-written as a widening of the grant so that it sits inside §4's own rule: "The permissions in
-§3 also apply, with no credential, to non-production evaluation, security review, and
-preparing and submitting contributions to the project; not to production use or offering the
-software's functionality to others." (The first form, "No coverage is needed for …", stood
-outside §4's "apply only while" sentence, so on its words an evaluating Large Organization
-had no permission; the verification pass reframed it, keeping the adopted words.) Three
+written as a widening of the grant so that it sits inside §4's own rule: "With no credential,
+the permissions in §3 also apply to non-production evaluation, security review, and
+preparing and submitting contributions to the project. That does not include production use,
+or offering the software's functionality to others." (The first form, "No coverage is needed
+for …", stood outside §4's "apply only while" sentence, so on its words an evaluating large
+organization had no permission; the verification pass reframed it, keeping the adopted
+words.) Three
 reasons. A large organization cannot decide whether
 to buy coverage without trying the software; a security team should never need a credential
 to look for a vulnerability; and a project wants patches from everyone, including from
@@ -469,19 +547,20 @@ right, so it must not consume the 60 days that §6 gives an organization that ha
 credential. On draft.4's first-pass words it could have: §6's trigger (e), "the first day of
 such use", read together with an evaluation that needed no credential, could be argued to
 start the clock on the first day of the evaluation. The second pass fixes this in §6 itself
-— its opening now runs only "when your use needs coverage", and it adds "Days of use the
-evaluation and contribution rule in §4 permits do not count." Worked through: a Large
-Organization evaluates for two months, then goes to production on day 61 with no credential.
+— its opening now runs only "when your use needs coverage", and it adds "Days of use the §4
+evaluation and contribution rule permits do not count." Worked through: a large organization
+evaluates for two months, then goes to production on day 61 with no credential.
 The two months were permitted use and cost nothing; the 60 cure days start on day 61, the
 first day of production, and end on day 120. Under the first-pass words the same organization
 could have been told its 60 days ran out on day 60, before it had used the software in
 production at all. The coverage lookup must treat evaluation use as permitted, not as
 uncovered use with a clock; [decisions/README.md](decisions/README.md) carries the note.
 
-**"For the benefit of", defined by cases (D48 item A, sharpened by A4).** The draft gives the
-rule and then the outcomes: you exercise permissions for the benefit of an organization when
-you use the software as that organization, or in work you do for it as its employee,
-contractor or service provider. Then the three rules the review asked for, so that nobody
+**"For", defined by cases (D48 item A, sharpened by A4).** The draft gives the rule and then
+the outcomes: "You use the software for an organization when you use it as that organization,
+or in work for it as its employee, contractor or service provider." (Until `1.0-draft.5` the
+phrase was "exercise permissions for the benefit of"; "for" is the same test.) Then the three
+rules the review asked for, so that nobody
 has to infer them: "A client's coverage, or its meeting the threshold, also covers work
 others do solely for it. A general service for many customers is your own use; a dedicated
 deployment for one customer is work for that customer." Incidental benefit does not count,
@@ -490,20 +569,20 @@ nor does merely passing the software on. And a plain reassurance, borrowed from 
 judged, not the contractor" is gone from the body because the outcomes now say it. In
 practice:
 
-- *Covered:* a Large Organization's own use; its employees using the software in their work;
+- *Covered:* a large organization's own use; its employees using the software in their work;
   a contractor, agency or managed-service provider running or building with the software
-  solely for a Large Organization's project (the client's group is measured, and the client's
+  solely for a large organization's project (the client's group is measured, and the client's
   credential or exemption covers that work); a deployment dedicated to one customer (that
   customer's use).
 - *Not covered:* being an ordinary customer of a general service that happens to run the
   software (the service is the operator's own use, judged by the operator's size); a package
   mirror, registry or distributor passing the software on; an employee's personal or hobby
-  project; a research collaboration where the Large Organization is not the one using the
+  project; a research collaboration where the large organization is not the one using the
   software; any benefit that is merely incidental.
 
 The worked cases are in [FAQ-OSPO.md](FAQ-OSPO.md) questions 16 and 20.
 
-**"These terms oblige nobody to pay; §6 is their only grace."** One sentence, put in so that
+**"These terms require nobody to pay; §6 is the only grace period."** One sentence, put in so that
 no reader — human or machine — invents another. A credential takes effect when recorded; a
 Waiver's revocation takes effect when recorded; there is no renewal grace in the licence. The
 one timing rule that is not a grace is §9's 72-hour Waiver rule (A8): it delays permanence,
@@ -528,7 +607,12 @@ registry answering the coverage question. The proof standard for the donation �
 documentation suffices, who bears a false record — belongs in the registry's published terms
 and is on the counsel agenda (OPEN-27), not in the licence.
 
-### §5 The threshold — dual test, group-wide, self-assessed, indexed, with a non-profit limb
+### §5 Who counts as large — dual test, group-wide, self-assessed, indexed, with a non-profit limb
+
+**"Large organization", defined here.** Since `1.0-draft.5` the term is lower case and lives
+in §5, not §2: "A large organization is an organization that does not meet the threshold
+below." The capitalised "Large Organization" of earlier drafts, and of the statutes, the
+specification and the sign-off, is the same thing.
 
 **The test.** Free-tier eligibility needs **both** fewer than 100 people (employees and
 individual contractors together) **and** less than the revenue limit in the latest completed
@@ -575,9 +659,10 @@ draft.2's was not:
 
 1. the series is named by its BLS code, CUUR0000SA0 (the CPI-U, U.S. city average, all items,
    not seasonally adjusted);
-2. the limit is USD 1,000,000 for 2026; for each later calendar year it is USD 1,000,000
-   multiplied by the **preceding June's** value of the series divided by its **June 2026**
-   value — June to June, so every year's limit is known by mid-July of the year before;
+2. the limit is USD 1,000,000 for 2026; for each later calendar year it is "that amount
+   times a ratio", and "the ratio is the **preceding June's** value of US BLS CPI-U series
+   CUUR0000SA0 over its **June 2026** value" — June to June, so every year's limit is known
+   by mid-July of the year before;
 3. rounded to the **nearest USD 1,000** — the proposal rounded up to whole dollars, and the
    operator preferred a limit a person can remember (R7);
 4. the limit **never falls below the previous year's** — monotone non-decreasing, so the
@@ -592,7 +677,8 @@ the formula is unambiguous is on the §5 marker (agenda row 5).
 
 **Non-profits, education and public bodies (D48 item 1).** A non-profit or public-benefit
 body under the law it is organized under, a public educational institution, or a public body
-performing public functions meets the threshold whatever its size. The README and FAQ have
+performing public functions meets the threshold whatever its size (a three-item list in the
+text since `1.0-draft.5`). The README and FAQ have
 promised "free for non-profits" from the start; the text now says it. Two edges are drawn so
 the limb cannot be gamed: a commercial organization such a body controls does not inherit
 the exemption, and work done for a commercial client is judged by that client under §4. The
@@ -616,8 +702,8 @@ reach future contributions only. That is the honest statement — not "never", b
 what is already contributed, without asking".
 
 **Self-assessment, no audit, no prices.** You assess the threshold yourself. **Nobody may
-audit you under these terms** — no licensor and not the Association may demand your books,
-your headcount or any certification (D8; LEG-020). Where a credential is bought, the buyer
+audit you under these terms** — "neither a contributor nor the Association may demand your
+books, headcount or any certification" (D8; LEG-020). Where a credential is bought, the buyer
 certifies its own revenue band once, in that purchase, outside these terms; the licence no
 longer says so itself, because it is a fact about the purchase flow, not a rule of the
 licence. **No prices, tiers or bands appear in the licence, ever**: the licence is binary —
@@ -626,7 +712,7 @@ publishes (D8, D11; LEG-022). The body used to say "these terms contain no price
 bands" in §5; the verification pass cut that sentence as descriptive — the absence is a fact
 about the text, and this file and the FAQ state it.
 
-### §6 Cure — 60 days, from five defined days, at most 60 in any twelve months
+### §6 Sixty days to put it right — from five defined days, at most 60 in any twelve months
 
 **Why a cure window at all.** Growing past the threshold is a normal event, and an
 organization that crosses it on a Tuesday should not become an infringer on the Wednesday.
@@ -638,15 +724,15 @@ the *latest completed* tax year — a failure discoverable only after the year c
 draft names the day the 60 days run from. Its opening sentence is C1's: "When your use needs
 coverage and none of (a) to (d) in §4 is true, the permissions in §3 still continue for
 60 days from:" — the words "your use needs coverage" keep permitted evaluation, security
-review and contribution (§4) out of the cure altogether, and the section's closing sentence
-— "Days of use the evaluation and contribution rule in §4 permits do not count." — says the
+review and contribution (§4) out of the cure altogether, and a sentence near the section's
+end — "Days of use the §4 evaluation and contribution rule permits do not count." — says the
 same from the other side. The rule and its example are explained under §4 above.
 
 - **(a)** you grew past the threshold — from the end of the tax year in which you first
   exceeded it;
-- **(b)** a change of control — an acquisition, a merger — made you a Large Organization:
-  from that day (the body now says "the day a change of control made an organization a Large
-  Organization", the D48 item 12 wording, instead of listing the kinds of transaction);
+- **(b)** a change of control — an acquisition, a merger — made you a large organization:
+  from that day (the body says "the day a change of control made an organization a large
+  organization", the D48 item 12 wording, instead of listing the kinds of transaction);
 - **(c)** a credential's term ended, or a Waiver was recorded as revoked — from that day;
 - **(d)** reliable figures later show that the threshold was exceeded — from the day you knew
   or should reasonably have known (B4: the partner of §5's provisional-figures sentence; an
@@ -674,8 +760,9 @@ on and off — and turn the cure into indefinite free coverage. "These days alon
 nothing; a later credential may cover that code under §9" says what the cure is: continuity
 for what you already run, not a free credential (draft.3 said "versions published during
 these days do not vest"; B1 changed the unit to parts, and the second pass reworded the
-sentence, C2, without changing the first half of the rule). **Vested parts need no cure**:
-what §9 vested is not affected by any of this. Whether the five days and the count of "such
+sentence, C2, without changing the first half of the rule). **"Vested parts need none of
+this"** ("need no cure" until `1.0-draft.5`): what §9 vested is not affected by any of this.
+Whether the five days and the count of "such
 days" across overlapping failures are determinable without litigation, and how (b) applies to
 a target whose group changed mid-year, stays with counsel (agenda row 6).
 
@@ -691,10 +778,10 @@ under §9 like everything else in scope — the cure days did not vest it, and t
 stop it vesting either.
 
 **Outage days do not count (B7).** One sentence, new in `1.0-draft.4` and shortened in its
-second pass: "Days its transparency log records as a general outage of the Association's
-issuance service do not count toward either 60" — neither the 60 days of continuation nor the
+second pass: "Days the transparency log records as a general outage of the Association's
+issuing service do not count toward either 60" — neither the 60 days of continuation nor the
 60-day cap. The
-60-day cure is the only permission a new Large Organization has
+60-day cure is the only permission a new large organization has
 while it buys its credential, and the rolling cap makes those days scarce; an organization
 should not spend them on the Association's own downtime. The rule is the minimal form of what
 the comparison review asked for — it pauses a clock, it grants nothing, it vests nothing, and
@@ -711,17 +798,17 @@ limb is true, which is exactly the continuity a new user needs during an outage,
 stops an outage from eating those days. The proposals needed an outage rule only because
 their own text forbade first-use grace.
 
-### §7 Conversion — Apache-2.0 at four years, per part, with a release-level bound
+### §7 Apache-2.0 after four years — per part, with a release-level bound
 
-**What it says (D48 item 4, redrafted as a present grant by B2).** Each licensor grants you,
-*now*, the copyright and patent permissions of Apache-2.0 for each part of the software,
-effective four years after the day that part was first made available to the public under
-these terms, in any form. Nothing more is needed on that day, and §4 no longer restricts that
-part. Each part has its own clock; material added later starts its own when first made
-public. Forking or repackaging an existing part — copying it, re-releasing it — never
-restarts its clock. Nobody can extend the clock of anything already public: no project, no
-licensor, not the Association (the clause named them until the verification pass on the
-second pass cut the aside toward the word bound; "nobody" already means them).
+**What it says (D48 item 4, redrafted as a present grant by B2).** "Each contributor also
+grants you, now, the copyright and patent permissions of the Apache License, Version 2.0, for
+each part of the software. That grant takes effect four years after the part was first public
+under these terms, in any form. Nothing more is needed on that day, and §4 no longer
+restricts that part." Each part has its own clock; material added later starts its own when
+first public. Forking or repackaging an existing part — copying it, re-releasing it — never
+restarts its clock. "Nobody can extend the four years for anything already public": no
+project, no contributor, not the Association (the clause named them until the verification
+pass on the second pass cut the aside toward the word bound; "nobody" already means them).
 
 **Why a grant now, and not "becomes available" (B2).** Draft.3's §7 said each part "becomes
 available under Apache-2.0" at four years, and its own marker asked counsel to redraft that
@@ -730,8 +817,9 @@ thing: if that is the mechanism wanted, write it into the operative words instea
 it as drafting instructions. So `1.0-draft.4` does. The difference is who has to do what on
 the fourth anniversary: under "becomes available", a reader could argue that some act of
 conversion was still owed by a licensor who by then may have sold the copyright, dissolved,
-or died; under "grants you, now, … effective four years after", the grant already exists on
-day one and only its effective date is in the future, so a successor in title and an estate
+or died; under "grants you, now" with a grant that "takes effect four years after", the
+grant already exists on day one and only its effective date is in the future, so a successor
+in title and an estate
 take the copyright with the grant already attached, and the Association's dissolution cannot
 touch it. The marker shrinks to confirmation — that the form survives those events, binds a
 successor in title and an estate, and leaves no part's conversion undoable (agenda row 7).
@@ -749,7 +837,7 @@ the gap. `1.0-draft.4` gives §9 the same unit (B1, explained under §9).
 **The release-level bound (A12).** Per-part clocks are exact, but nobody wants to compute a
 date for every line. Draft.3 adds the outer bound the review asked for, which draft.4 keeps
 in shorter words: "Every part in a version converts no later than four years after that
-version was first made available to the public; earlier dates stand." It is the only
+version was first public; earlier dates stand." It is the only
 sentence in the text that still uses the defined term "version" (B1). So an adopter can read one
 date off a release and know that everything in it is Apache-2.0 by then at the latest — older
 parts convert earlier, and the per-part rule still decides when. The registry's release manifest, which would let the lookup state the
@@ -779,23 +867,26 @@ imposes, so early conversion would change nothing a licensee could feel.
 **Counsel's part.** The conversion is now drafted as a present grant with a deferred
 effective date (B2); counsel confirms that it survives the Association's dissolution, a
 licensor's later choices and the transfer of a licensor's copyright to a successor in title
-or an estate, that the "first made available to the public" day is provable from public
-records, and how it interacts with Apache-2.0 §4's notice requirements and with §11 for code
+or an estate, that the "first made available to the public" day (the agenda row's words; the
+body says "first public") is provable from public records, and how it interacts with
+Apache-2.0 §4's notice requirements and with §11 for code
 that arrived from a permissively licensed predecessor (row 7).
 
-### §8 If the Association lapses — the twelve-month backstop, and the early exit
+### §8 If the Association stops — the twelve-month backstop, and the early exit
 
 **Why.** Every vendor-risk review asks what happens if the steward dies. The answer is written
 into the grant, so the answer is not "trust us" — and the steward can give it on the day it
 stops, instead of leaving everyone to wait a year (D9 as amended by D46; LEG-024).
 
-**The three days.** The Purpose Condition lapses — permissions apply without it, for everyone
-— on the earliest of: (a) the day the Association ceases to exist with no designated
-successor; (b) the last day of twelve consecutive months in which it **neither recorded an
-Entitlement or Donation Entitlement nor published in its transparency log, within that
-period, a dated statement that credentials could be obtained under its schedule**; (c) the
-day named in a signed, published **declaration of lapse**, which cannot
-be withdrawn and whose day cannot be moved later. Limb (c) is D46's: five of the movement's
+**The three days.** "The condition in §4 lapses — the permissions in §3 then apply without
+it, for everyone — on the first of these days": (a) the day the Association ceases to exist
+with no successor publicly designated; (b) the last day of any 12 consecutive months in which
+it **neither recorded an Entitlement or Donation Entitlement nor published a dated statement
+as described below** — and the next paragraph describes it: "The statement in (b) is one the
+Association publishes in its transparency log within those months, dated, saying that
+credentials could be obtained under its schedule."; (c) the day named in a signed, published
+**declaration of lapse**, which "cannot be withdrawn, nor its day moved later". Limb (c) is
+D46's: five of the movement's
 documents had promised the board could bring the lapse forward on the day it stops selling,
 and the text could not deliver it. Limb (b) used to end "with no successor so designated";
 `1.0-draft.4` cut those words (B3), because §2 already defines the Association to include its
@@ -820,8 +911,10 @@ reviewer's third note put the problem plainly: a price list on a website is not 
 anything — nobody can tell from it whether the Association was open for business, and a
 stale page left up by a dead steward would have kept the clock from running for ever. So the
 second pass replaces the schedule element with a fact the log can hold: within the twelve
-months, the Association must have **published in its transparency log a dated statement that
-credentials could be obtained under its schedule**. A log statement is a signed, dated entry
+months, the Association must have **published in its transparency log a dated statement
+saying that credentials could be obtained under its schedule** (since `1.0-draft.5` limb (b)
+points to "a dated statement as described below" and a sentence of its own describes it).
+A log statement is a signed, dated entry
 in the same append-only log that records every credential — the Association writing, on a
 named day, "credentials can be obtained under the published schedule". It is objectively
 checkable: either an entry with that date is in the log and its mirrors, or it is not. A
@@ -835,9 +928,10 @@ inherits the clock (agenda row 8).
 
 **What keeps the clock in (b) running, and what does not.** Recording an Entitlement or a
 Donation Entitlement does; so does a dated statement in the transparency log, within the
-period, that credentials could be obtained under the schedule (C4). A Waiver does not — it is
-the Project Steward's record, not the Association's, and
-is the maintainer's "gratis, forever" tool; it must stay usable right up to the lapse, so it
+period, that credentials could be obtained under the schedule (C4). A Waiver does not — "A
+Waiver is the maintainers' record and keeps nothing in (b) running" — it is the maintainers'
+record, not the Association's, and
+is the maintainers' "gratis, forever" tool; it must stay usable right up to the lapse, so it
 cannot be the thing that postpones the lapse. Designating a successor does not either: the
 successor is measured by the same clock (B3).
 
@@ -847,8 +941,8 @@ on through any succession" — so the first twelve months are counted from the d
 finished licence is published, not from the first credential (there may be none for a
 while), not from the Association's founding, and not from a day nobody can name. Draft.3's
 marker carried that intention; the comparison review said an intention in a marker is not a
-rule, and it was right. "From that day it is the Steward Organization for every purpose
-here, measured by the same clock" replaces draft.3's "one that records nothing for twelve
+rule, and it was right. "From that day it is the Association for every purpose here,
+measured by the same clock" replaces draft.3's "one that records nothing for twelve
 consecutive months counts as none", which read as an anti-reset rule but could also be read
 as giving each successor twelve months of its own. Now there is one clock, it started once,
 and a designation neither stops nor restarts it. And one sentence restates D9 where a reader
@@ -862,8 +956,8 @@ later, the direction statutes Art. 13 para. 1 item 6 and sign-off core item 6 fo
 row 8).
 
 **The evidentiary handle.** Anyone may determine whether (a), (b) or (c) has occurred from the
-Steward Registry's transparency log **and its published mirrors held outside the
-Association's control**. The mirrors are the point: the registry's own record is under the
+Registry's transparency log **and its published mirrors held outside the Association's
+control**. The mirrors are the point: the Registry's own record is under the
 lapsing party's control, so the statutes bind the Association to name an archive custodian —
 a public-benefit or public archive body, never a member or founder — that keeps
 the registry, the log and the key set readable at their permanent addresses after the
@@ -878,8 +972,8 @@ profit, which since `1.0-draft.4` bind the Association itself in §2 (B10, expla
 so §8 points to them instead of repeating them. The bound is the review proposal's §7, and it
 closes a gap draft.2 left open: a designation to anyone at all — a commercial buyer of the
 registry, say — would have kept the condition alive with the money going somewhere the
-licensors never agreed to. From the day of designation the successor is the Steward
-Organization for every purpose of these terms, measured by the same clock (B3), so a paper
+contributors never agreed to. From the day of designation the successor "is the Association
+for every purpose here, measured by the same clock" (B3), so a paper
 successor cannot reset it. Draft.3 tightened these two paragraphs for length and draft.4
 tightened them again; every element is still there — the signed record, the log and its
 mirrors, irreversibility, acceptance in writing, the one continuous clock and the bound. The
@@ -892,16 +986,19 @@ recorded (it starts at first official publication), and whether a successor's ow
 twelve-month test should mirror limb (b) (there is no separate successor test any more —
 there is one clock).
 
-### §9 Recorded credentials, and what stays yours — bounded permanence
+### §9 What you keep — bounded permanence
 
-**The rule.** A current credential satisfies §4 for the software it covers, for every
-licensor's grant, and vests parts permanently — for a Waiver, as the text says in the rule
-itself, subject to the 72-hour paragraph below: **a part is vested for an organization if it
-is within its credential's scope and was made available to the public on or before the end of
-that term** (D12 as amended; LEG-084; unit changed by B1). The pointer matters: a Waiver's
-term ends when it is recorded as revoked, so without it the general rule would have vested
-the back catalogue under a Waiver revoked inside 72 hours, which is exactly what A8 exists to
-prevent. Once vested, nothing takes a part away. The events that do not take one away — the
+**The rule.** "A current credential satisfies §4 for the software it covers, for every
+contributor's grant. It also vests parts; for a Waiver, the next paragraph says how." Then
+the rule itself: **"A part vests for an organization when its credential covers the part and
+the part was public by the end of the credential's term."** (D12 as amended; LEG-084; unit
+changed by B1; until `1.0-draft.5`: "within its credential's scope and was made available to
+the public on or before the end of that term"). Permanence is in the word: §2 defines a
+vested part as "yours to keep for good", and §9 says "Once a part has vested, nothing takes
+it away." The pointer to the Waiver paragraph matters: a Waiver's term ends when it is
+recorded as revoked, so without it the general rule would have vested the back catalogue
+under a Waiver revoked inside 72 hours, which is exactly what A8 exists to prevent. The
+events that do not take a part away — the
 project leaving the registry, a Waiver revoked, a term ending, a schedule change, the
 Association failing — stood in the clause until the verification pass on the second pass cut
 the list toward the word bound; the rule needs no list, and the FAQ keeps it.
@@ -915,13 +1012,14 @@ The comparison review put the gap in one example: an organization pays for a yea
 public commits from a project that never tags a release. Its code converts to Apache-2.0
 after four years like anyone's, but on draft.3's words nothing vested when its paid year
 ended, because there was no "version published on or before" the end of the term. That
-defeats the promise this clause exists to make. Draft.4 vests every part within the
-credential's scope that was made available to the public — a public commit, tag, release or
-package, §2's definition — on or before the end of the term, so the two mechanisms now share
+defeats the promise this clause exists to make. Draft.4 vests every part the credential
+covers that was public — a public commit, tag, release or package, §2's definition — by the
+end of the term, so the two mechanisms now share
 one unit and one date. For a project that does tag, nothing changes: a tagged release is
 made public on its release day, and everything in it is public by then. For a project that
 never tags, the rule now works. "Vested versions" became "vested parts" in §3, §6 and §9, the
-Waiver paragraph vests "every part then public within its scope", and §6 says "These days
+Waiver paragraph vests "every part then public that it covers" ("within its scope" until
+`1.0-draft.5`), and §6 says "These days
 alone vest nothing; a later credential may cover that code under §9" (C2). Propagation: the
 registry's vesting generator must vest parts, not releases;
 [decisions/README.md](decisions/README.md) carries the note.
@@ -929,22 +1027,22 @@ registry's vesting generator must vest parts, not releases;
 **Waivers: permission now, permanence after 72 hours (A8).** New in draft.3, and an
 amendment of D48 item 15, which had left the lookup's 72-hour cooling to follow a licence that
 knew none. The reason is D14 itself:
-revocation of a Waiver is prospective, so under draft.2 a Project Steward who recorded a
+revocation of a Waiver is prospective, so under draft.2 maintainers who recorded a
 Waiver for the wrong organization — a typo, a hijacked account, a maintainer talked into it —
 vested that organization's right to the whole back catalogue at the moment of recording, and
 no revocation could undo it. 72 hours is the only undo there is. So the text now says: a
 Waiver gives permission from the day it is recorded; nothing vests under it during its first
-72 hours; if it is still active after 72 hours, every part then public within its scope
-vests, and later parts vest as they are made public while it stays active; and revocation
-never makes earlier permitted use unlawful. The beneficiary loses nothing but permanence
+72 hours; if it is still active then, every part then public that it covers vests, and later
+parts vest as they become public while it stays active; and revocation never makes earlier
+permitted use unlawful. The beneficiary loses nothing but permanence
 during those three days — it may use the software from the first minute — and a Waiver
 revoked within them leaves the beneficiary exactly where it was before, with the use in
 between lawful. The spec's coverage function `cov-v1` already implements this rule, so on
 this point the licence has caught up with the lookup rather than the other way round.
 
-**"Still active" is shown by the log, not by a saved copy (B9).** The text now says so in
-the Waiver sentence itself: "the transparency log shows whether it was, not a copy saved at
-issue". The comparison review took the point from the other reviewer: a signed copy of a
+**"Still active" is shown by the log, not by a saved copy (B9).** The text says so in the
+Waiver paragraph itself: "The transparency log, not a copy saved at issue, shows whether it
+was still active." The comparison review took the point from the other reviewer: a signed copy of a
 Waiver downloaded at hour one proves that the Waiver was issued, and nothing else — it
 cannot show a revocation at hour 48, so it cannot prove the Waiver survived to hour 72. The
 only record that can is the log's status history, which is what the sentence points at. No
@@ -960,9 +1058,9 @@ said a credential "issued through a compromised signing key" vests nothing, whic
 punished a buyer who did everything right for a failure of the Association's own key
 hygiene. Draft.3 uses the registry's own distinction:
 
-1. a **forged record** — one with no genuine issuance behind it — vests nothing; a genuinely
-   issued record survives a later compromise of the signing key, because the buyer's rights
-   come from the issuance, not from the key;
+1. a **forged record** — "one nobody genuinely issued" — vests nothing; a genuinely issued
+   record survives a later compromise of the signing key, because the buyer's rights come
+   from the issuance, not from the key;
 2. a credential **obtained by fraud or deliberate deception** vests nothing;
 3. a term **refunded or charged back in full** vests nothing (kept against both reviews'
    proposals — see R1 below), but **use during it before the refund stays lawful** (C5); a
@@ -973,8 +1071,9 @@ The body states them as three short sentences, so a reader can count them. And t
 the text says are **not** exceptions:
 
 1. **good-faith reliance is protected** (§9): "You may rely on a genuinely issued record
-   despite the Association's error, an honest under-certification, a later compromise of the
-   signing key or the record's later removal." An honest under-certification of a revenue
+   despite any of these:" — a four-item list since `1.0-draft.5` — "the Association's error;
+   an honest under-certification; a later compromise of the signing key; or the record's
+   later removal." An honest under-certification of a revenue
    band is therefore a matter for the purchase agreement — a true-up — and never a loss of
    vesting; the body used to say that in its own words and now says it through the reliance
    sentence;
@@ -1019,11 +1118,13 @@ Association-failure refund second, and the record's wording (D50 B6) carries tha
 (agenda row 9).
 
 **Groups, sales and mergers (A10, scoped by C3).** Five sentences answering the questions a
-corporate lawyer asks first. "A credential covers its beneficiary and the entities the
-beneficiary controls, while it controls them" — a subsidiary is covered by its parent's
-credential for as long as it is a subsidiary. "A parent or sister company is covered only if
-the record names it" — coverage runs *down* from the beneficiary, never up or sideways. "An
-entity that leaves keeps what it vested" — a spin-off does not lose the code it was already
+corporate lawyer asks first. "A credential covers the organization it is recorded for and
+the entities that organization controls, while it controls them" ("its beneficiary" until
+`1.0-draft.5`; the agenda row still says beneficiary) — a subsidiary is covered by its
+parent's credential for as long as it is a subsidiary. "A parent or sister company is covered
+only if the record names it" — coverage runs *down* from the beneficiary, never up or
+sideways. "An entity that leaves its control keeps what it vested" — a spin-off does not
+lose the code it was already
 running. "A covered business sold or merged takes its vested coverage with it, for its own
 operations, not the buyer's" — the buyer gets the target's deployments, not a licence for the
 buyer's other divisions. "Coverage cannot be sold on its own" — credentials are not a
@@ -1052,15 +1153,15 @@ the note.
 counsel; counsel now confirms rather than decides. "Vested code stays vested in forks and
 modified copies; what others add needs its own permission" — a fork does not un-vest what
 you already had, and does not vest the fork's new work. "Coverage of named software reaches
-the contributions first offered under these terms through that project, not code imported
-from elsewhere" — copying another project's code into a covered repository does not bring it
+contributions first offered under these terms through that project, not code imported from
+elsewhere" — copying another project's code into a covered repository does not bring it
 under the cheaper credential. "Forking gives no power to waive conditions on upstream code" —
-a company cannot fork a project, name itself Project Steward of the fork and waive the
-upstream authors' condition for itself.
+a company cannot fork a project, call itself the fork's maintainers and waive the upstream
+authors' condition for itself.
 
 **Development forks are not imports (B5).** One sentence added after the imports rule in
-`1.0-draft.4`, and shortened in its second pass: "one first published in a fork or branch for
-submission counts as the project's once accepted." The comparison review noticed that the anti-import
+`1.0-draft.4`, and shortened in its second pass: "A contribution first published in a fork or
+branch for submission counts as the project's once accepted." The comparison review noticed that the anti-import
 rule, read literally, would exclude the ordinary pull request: a contributor forks the
 repository, pushes a branch, opens the request — and the code was "first published" in the
 fork, not in the project, so a credential naming the project might be argued not to reach
@@ -1077,36 +1178,41 @@ amnesty covenants — offers it in their own agreement, bounded to claims they a
 never through these terms (LEG-045). Individual contributors' claims for past use can be
 released only by those contributors.
 
-**The bootstrap sentence.** "Everyone who licenses contributions on these terms accepts that
+**The bootstrap sentence.** "Every contributor, by licensing on these terms, accepts that
 recorded credentials satisfy §4 for their grant." This is the in-licence acceptance of the
-steward roles: a licensor agreeing, by using this text, that a third party's registry record
+steward roles: a contributor agreeing, by using this text, that a third party's registry record
 satisfies a condition in their own grant. Its formation under Swiss and German standard-terms
 doctrine and under drive-by-contributor conditions is a counsel question (LEG-039, LEG-040).
 The fork and hostile-takeover cases that used to hang on it are now drafted (A11 above) and
-counsel confirms them (OPEN-29).
+counsel confirms them (OPEN-29). The section's last sentence is the Waiver power itself: "The
+maintainers may record a Waiver free of charge and revoke it going forward." — the
+free-of-charge waiver power the sign-off's immutable core calls the project steward's.
 
-### §10 One sentence, and the list that moved
+### §10 What these terms never ask of you — two sentences, and the list that moved
 
 §10 adds nothing. Until draft.2 it carried a five-line list of obligations the draft does not
-contain; draft.3 cut it to one sentence — "These terms require nothing of your own software,
-no disclosure, no network duty, no share-alike, no audit and no report." — and kept the
-heading so that every cross-reference to §10 in this file, the FAQ and the README still
-lands. The five lines are in Part 1 above, in full.
+contain; draft.3 cut it to one sentence, and draft.5 says it in two — "These terms ask
+nothing of your own software. They require no disclosure, no network duty, no share-alike,
+no audit and no report." — and kept the heading's number so that every cross-reference to
+§10 in this file, the FAQ and the README still lands. The five lines are in Part 1 above, in
+full.
 
 ### §11 Notices — and what arrived under other terms
 
 Keep the licence text and every copyright, patent and attribution notice with every copy or
 substantial portion you distribute. Adopting these terms never deletes an inbound licence
-text (D24; LEG-042). The first sentence is drafted as a scope condition — the permissions
-cover a distributed copy only if it keeps the notices — in the MIT/Apache tradition; whether
-that form is right, and how it interacts with §7 conversion, is a counsel question (agenda
-row 10). The last sentence (D48 item D) says that material that came to the project under
-other terms stays under those terms, with its notices; these terms cover the contributions
-made under them. That is the licence side of the contribution model — original work,
+text (D24; LEG-042). The first sentence is drafted as a scope condition — "The permissions in
+§3 apply to a copy or substantial portion of the software you distribute only if it keeps
+these terms and the notices" — in the MIT/Apache tradition; whether that form is right, and
+how it interacts with §7 conversion, is a counsel question (agenda row 10). The last two
+sentences (D48 item D) say that "Material that came to the project under other terms stays
+under them, with its notices. These terms govern the contributions made under them." ("cover"
+until `1.0-draft.5`, which keeps *cover* for the credential state only). That is the licence
+side of the contribution model — original work,
 employer-owned work, copied permissive code and incompatible dependencies are the project's
 intake questions, not the licence's, and CONTRIBUTING carries them.
 
-**The notices cure (A15).** New: "if you leave one out, putting it back restores the
+**The notices cure (A15).** New: "If you leave one out, putting it back restores the
 permission from then on." MIT and Apache have no notice cure at all — a missing notice is
 simply a copy outside the licence — and the review proposed a 30-day written-notice
 procedure. The operator took the outcome without the machinery: one sentence, no notice
@@ -1123,12 +1229,16 @@ software factually (D10; LEG-037). No application to register the marks exists t
 finished licence text itself will be published under CC BY 4.0 (D48 item 10), so the text is
 freely copyable and the *name* is what protects its integrity; LICENSE-NOTICE has the detail.
 
-### §13 No warranty, no liability
+### §13 No warranty — and no liability
 
-One short section in the Blue Oak/PolyForm register (D48 item 8): as far as the law allows,
-the software comes as is, with no warranty and no liability under any kind of legal claim —
-and the terms exclude nothing the law says cannot be excluded. That last sentence is the
-mandatory-law carve-out, kept from earlier drafts. Portability across the main adopter
+One short section in the Blue Oak/PolyForm register (D48 item 8), four sentences since
+`1.0-draft.5`: "This section applies as far as the law allows." — put first so that the
+split disclaimer and exclusion both keep the qualifier — then the software comes as is,
+without any warranty or condition; "No contributor will be liable to you for any damages
+arising out of these terms or the software's use or nature, under any kind of legal claim."
+(PolyForm's "will be liable", as LICENSE-NOTICE §4 attributes it); and "These terms exclude
+nothing the law says cannot be excluded." That last sentence is the mandatory-law
+carve-out, kept from earlier drafts. Portability across the main adopter
 jurisdictions, including against consumers, stays with counsel (agenda row 12). Note one thing
 that is deliberately **not** here: the promise that a credential is not a warranty against
 third-party rights belongs in the Entitlement terms, not in the licence (LEG-083). Two
@@ -1137,13 +1247,15 @@ behalf" and "your terms must not remove recipients' permissions" — were not ad
 every recipient receives each licensor's grant directly, so nobody's downstream terms can
 remove it, and nothing in the text stops anyone selling support on their own account.
 
-### §14 Interpretation — and the silence on governing law
+### §14 If part of this fails — severability, no waiver by delay, and the silence on governing law
 
-Severability and no waiver by delay, in two sentences. **There is no governing-law or forum
-clause, by decision** (D48 item 7), following Blue Oak and PolyForm practice. State the
-consequence accurately: the applicable conflict-of-laws rules of whatever court hears a
-dispute decide which law applies to the licence — it is *not* the case that "each licensor's
-own law applies", and this file does not claim it. The Entitlement agreement is a separate
+Severability and no waiver by delay, in two sentences: "If any of these terms cannot be
+enforced, the rest still apply. Nobody loses a right here by not enforcing it at once."
+**There is no governing-law or forum clause, by decision** (D48 item 7), following Blue Oak
+and PolyForm practice. State the consequence accurately: the applicable conflict-of-laws
+rules of whatever court hears a dispute decide which law applies to the licence — it is
+*not* the case that "each contributor's own law applies", and this file does not claim it.
+The Entitlement agreement is a separate
 contract and chooses its own law and forum; that choice cannot be read into the licence. The
 consequences of the silence for enforcement in the US, CH and DE are the remaining counsel
 question (agenda row 13). The alternative the record weighed — a stated Swiss governing law —
@@ -1165,11 +1277,16 @@ proposal: adoptions A1 to A16 and rejections R1 to R8, each explained under its 
 review, written against `1.0-draft.2`, and its revised proposal: adoptions B1 to B11 (B11
 corrects the contributor sign-off) and rejections R1 to R7. `D46` is a decision candidate on
 its own sheet, entered in the register
-once the operator confirms; the drafts already implement it.
+once the operator confirms; the drafts already implement it. `D51` is the plain-language
+pass of 2026-09-17: the same rules in fewer and simpler words, plain section titles, and the
+renames — Steward Organization to the Association, Steward Registry to the Registry, Project
+Steward to the maintainers, Large Organization to large organization — with the statutes,
+the specification and the sign-off keeping their own vocabulary for the same roles.
 
 | Section | Implements | Requirements and sources |
 |---|---|---|
-| §1 Purpose Notice | D10 (one canonical text, zero per-project parameters); D23 as amended (designations in the text layer); D48 items 9 (LicenseRef identifier) and 13 (literal name, UID anchor) | LEG-027; SPDX `LicenseRef-` form; REUSE |
+| §1–§14 plain-language pass; plain titles; the renames (the Association, the Registry, the maintainers, large organization); "covered" and "vested" defined | D51 (no rule, number, day count, exception, actor or defined role changed; §3's "necessarily infringed" kept on the verifier's flag) | scratchpad `readability.py`; metrics in Part 0 |
+| §1 Purpose Notice | D10 (one canonical text, zero per-project parameters); D23 as amended (designations in the text layer); D48 items 9 (LicenseRef identifier) and 13 (literal name, UID anchor); D51 ("Steward: Purpose Source Association (the Association)", "Registry:") | LEG-027; SPDX `LicenseRef-` form; REUSE |
 | §2 group and control | D8; D48 item A (the client's group is measured); D49 R3 (verbatim "control" kept) | LEG-018; PolyForm Small Business 1.0.0 (verbatim "control", "your company" model) |
 | §2 steward, registrar scoping | D6; D29 §6.3; D46 (successor limb) | LEG-016; statutes Art. 4 |
 | §2 registry, recording, mirrors | D48 item B (effect on recording; §6 the only grace); D46 | statutes Art. 9 para. 4, Art. 23 para. 5 |
@@ -1177,16 +1294,16 @@ once the operator confirms; the drafts already implement it.
 | §2 bound on issuance: published schedule, same terms, at most one year, within the published constitutional commitments; a renewal recorded when its term starts, never in advance | D49 A2; D50 B10 (the Association bound in the text; §8's successor bound points here); D50 C6 (no stacked years) | statutes Art. 11, Art. 13; D12 |
 | §2 Donation Entitlement | D18 | LEG-012 |
 | §2 credential term | D48 item 11 | — |
-| §2 Waiver, Project Steward | D14 as amended; D23 as amended | LEG-039 |
+| §2 Waiver, the maintainers (the Project Steward of the statutes, the specification and the sign-off) | D14 as amended; D23 as amended; D51 (rename) | LEG-039 |
 | §3 grants, no assignment | D6, D7 as amended; D50 R3 (no "sublicensing on these same terms" — recipients take directly from each licensor) | LEG-015, LEG-036 |
-| §3 irrevocable except as these terms say | D49 A1 | Apache-2.0 §2–§3 tradition |
+| §3 grants cannot be taken back except as these terms say ("irrevocable" until draft.5) | D49 A1; D51 (plain words) | Apache-2.0 §2–§3 tradition |
 | §3 inbound = outbound default | D49 A16 (the sign-off stays the instrument for forward delegation) | Apache-2.0 §5 |
 | §3 patent licence and defence | D48 item 6; D50 B8 (the trigger reaches the group), R7 (no "now or later" claims) | Apache-2.0 §3 |
 | §4 condition, not covenant | D6 | LEG-010, LEG-013, LEG-051 |
-| §4 "for the benefit of" | D48 item A; D49 A4 (client's coverage covers work solely for it; general service vs dedicated deployment; personal use) | — |
+| §4 use "for" an organization ("for the benefit of" until draft.5) | D48 item A; D49 A4 (client's coverage covers work solely for it; general service vs dedicated deployment; personal use); D51 (plain words) | — |
 | §4 evaluation, security review, contribution exception | D49 A3 | BSL tradition |
 | §4 limb (d) | D18 | LEG-012; OPEN-27 |
-| §5 dual test, no audit (no price, tier or band appears anywhere in the text; the sentence that said so was cut as descriptive) | D8, D11 | LEG-017, LEG-019, LEG-020, LEG-022 |
+| §5 dual test, no audit (no price, tier or band appears anywhere in the text; the sentence that said so was cut as descriptive); "large organization" defined here | D8, D11; D51 (the definition moves from §2 to §5, lower case) | LEG-017, LEG-019, LEG-020, LEG-022 |
 | §5 counting rules | D49 A5 (operator defaults); D50 B4 (reasonable provisional figures) | — |
 | §5 CPI indexing, June-to-June formula | D48 item 2 (CPI-U kept); D49 A6 (formula), R7 (nearest USD 1,000) | PolyForm Small Business 1.0.0; US BLS CPI-U CUUR0000SA0 |
 | §5 non-profit, education, public-body limb | D48 item 1; D49 R5 (entity-based, not activity-scoped) | — |
@@ -1203,7 +1320,7 @@ once the operator confirms; the drafts already implement it.
 | §9 groups, sales and mergers: beneficiary plus controlled entities, parent or sister only if named | D49 A10; D50 C3 (coverage scope narrower than the §5 group test) | — |
 | §9 forks, imports and development-fork origination | D49 A11 (answers OPEN-29 at operator level); D50 B5 | LEG-040 |
 | §9 bootstrap sentence | D23 as amended | LEG-039, LEG-040; OPEN-29 |
-| §10 one sentence | D49 cut (the list moves to Part 1 and the README) | — |
+| §10 two sentences | D49 cut (the list moves to Part 1 and the README); D51 (one sentence split in two) | — |
 | §11 notices, inbound terms | D24; D48 item D | LEG-042 |
 | §11 notices cure | D49 A15; D50 R2 (no 30-day written-notice machinery) | — |
 | §12 the name | D10; D48 item 10 (CC BY 4.0 for the finished text) | LEG-037 |
@@ -1234,11 +1351,19 @@ not in the licence:
 | The immutable core | The contributor sign-off §2.3 and statutes Art. 13 — six items | It bounds what a later *version* may do to existing contributions; the licence version itself is what it bounds |
 | Forward delegation to later licence versions | The contributor sign-off | The licence's inbound rule (D49 A16) gives the project the present licence only; the sign-off is not weakened |
 | The contributor intake rules (original work, employer permission, copied permissive code, dependencies) | CONTRIBUTING | The licence covers contributions made under it; the project decides what it takes in (D48 item D) |
-| The five-line absence list | Part 1 of this file, and the README | §10 keeps one sentence so cross-references survive (draft.3 cut) |
+| The five-line absence list | Part 1 of this file, and the README | §10 keeps two sentences so cross-references survive (draft.3 cut; draft.5 split) |
 
 ---
 
-*Revised 2026-09-16, late, for the second pass on `1.0-draft.4` (D50 items 13–19): C1
+*Revised 2026-09-17 for `1.0-draft.5` (D51, the plain-language pass): every quotation of a
+licence sentence updated to the new wording; the section titles updated to the plain titles;
+the Steward Organization, the Steward Registry, the Project Steward and the Large
+Organization renamed to the Association, the Registry, the maintainers and the large
+organization throughout, with the older names given once under each definition and in Part 0
+for readers of the statutes, the specification and the sign-off; the before/after readability
+metrics and the five surviving terms added to Part 0; the "necessarily infringed" decision
+explained under §3; the trace table gains the D51 row. Nothing else changed. Revised
+2026-09-16, late, for the second pass on `1.0-draft.4` (D50 items 13–19): C1
 (evaluation never starts or consumes the cure clock, with the two-months-then-production
 example) under §4 and §6; C2 (grace alone vests nothing, a later credential may cover that
 code, with the release-during-grace example) under §6 and §9; C3 (coverage is the beneficiary

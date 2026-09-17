@@ -77,8 +77,11 @@ entity, or the power to direct its management and policies by vote, contract, or
 Control can be direct or indirect."); the *group* definition, modelled on PolyForm's "your
 company" (§2); the threshold figures and the CPI-U series PolyForm names (§5; the indexing
 formula itself is the review proposal's, below); the warranty and liability sentence of
-PolyForm's "No Liability" section, verbatim except that "this software" reads "the software"
-and "the licensor will not be liable" reads "no licensor will be liable" (§13); and the
+PolyForm's "No Liability" section — verbatim until `1.0-draft.4`, except that "this software"
+read "the software" and "the licensor will not be liable" read "no licensor will be liable";
+since `1.0-draft.5` (D51) carried in three shorter sentences that keep its words, with "as
+far as the law allows" opening the section, "no licensor" reading "no contributor" and "the
+use or nature of the software" reading "the software's use or nature" (§13); and the
 copyright-licence phrase "to do everything with the software that would otherwise infringe",
 modelled on PolyForm's copyright licence (§3). The PolyForm Project publishes its licence texts under the grant in its repository's
 README (<https://github.com/polyformproject/polyform-licenses>, section "License"), which
@@ -88,9 +91,9 @@ license, you must remove all mention of 'PolyForm' and polyformproject.org, as w
 (read from the repository README on 2026-09-16; the section closes with a warranty disclaimer
 for the licence texts, not reproduced here). The draft uses those sentences under that grant.
 The body of the licence text names neither PolyForm nor its domain — PolyForm is named only in
-`[COUNSEL: …]` markers (§2, §13, §14) and in the draft's counsel agenda and revision log
-(§15–§16), none of which is part of the text as it would be published — and the attribution
-lives here. *(Corrected 2026-09-16: until this date this section said
+the draft's counsel agenda and revision log (§15–§16, where the §2, §13 and §14 questions
+live as `[COUNSEL: …]` markers since the second pass on `1.0-draft.4`), none of which is part
+of the text as it would be published — and the attribution lives here. *(Corrected 2026-09-16: until this date this section said
 PolyForm's texts were published under CC BY 4.0. They are not; the grant above is the one that
 applies.)*
 
@@ -112,7 +115,7 @@ attribution and share-alike preserved. Since `1.0-draft.3` (D49, 2026-09-16) the
 draft borrows the proposal's plain wording, adapted to the draft's defined terms, at these
 places: the irrevocability sentence and the inbound default with "contributors keep their
 copyright" (§3); the personal-use sentence (§4); the counting rules and the June-to-June
-CPI-U formula (§5); the 60-days-in-twelve-months cap and "do not vest" (§6); the successor
+CPI-U formula (§5); the 60-days-in-twelve-months cap and the cure-days vesting sentence ("do not vest" until the second pass on `1.0-draft.4`, "These days alone vest nothing" since; §6); the successor
 bound (§8); the 72-hour Waiver rule, the good-faith reliance sentence, the corporate-change
 sentences and the fork-and-import sentences (§9); and the notices cure (§11). The evaluation
 and contribution exception (§4), the contractor and service sentences (§4) and the
@@ -143,6 +146,16 @@ structure is not borrowed; its separate outage permission, its written-notice ma
 its sublicensing clause are not used (D50 R2–R4); and nothing in it is quoted as operative.
 The drafts here are CC BY-SA 4.0 (§2), so the borrowed wording carries the same terms it came
 under; its place in the rights clearance for the finished text is §3.
+
+**The plain-language pass of 17 September 2026** (`1.0-draft.5`, D51) reworded the body
+§1–§14 for the same meaning in simpler words, and the borrowed sentences with it where the
+pass reached them: "irrevocable" reads "cannot be taken back", "licensor" reads
+"contributor", "made available to the public" reads "public", "the earliest of" reads "on
+the first of these days", and long sentences are split. The attributions above stand for the
+adapted wording. The PolyForm "control" and group definitions and the Apache-2.0 §3 patent
+scope ("necessarily infringed by their contribution, alone or combined with the software")
+are unchanged — the last kept on the pass's own verification, which found that the plain
+form tried first narrowed the grant.
 
 ## 5. Trademarks
 

@@ -20,12 +20,13 @@ argued with, and versioned.
 
 A **source-available** software licence with one idea in it: code stays public and free for
 individuals, non-profits, public bodies, education and small organizations, and organizations
-above a size threshold need a recorded credential — bought from the steward organization,
-which passes the funds on to listed charitable recipients with no distributable private
-profit (only the movement's direct costs, capped and published to the invoice, are ever
-charged to those funds); or earned by donating that amount directly to a listed charity; or
-waived by the project. Every licensor grants the Apache-2.0 permissions now, in the licence
-text itself, effective for each publicly available part of the software four years after it
+above a size threshold need a recorded credential — bought from the Purpose Source
+Association (the licence's steward, which the text calls the Association), which passes the
+funds on to listed charitable recipients with no distributable private profit (only the
+movement's direct costs, capped and published to the invoice, are ever charged to those
+funds); or earned by donating that amount directly to a listed charity; or waived by the
+project's maintainers. Every contributor grants the Apache-2.0 permissions now, in the
+licence text itself, effective for each public part of the software four years after it
 first became public — and for every part of a published version no later than four years
 after that version. Nothing more has to happen on that day.
 
@@ -39,7 +40,7 @@ be both false and self-defeating.
 The licence never says anyone must pay. It says what the permissions cover, and permission
 holds **while any one of these four things is true**:
 
-1. **You are not acting for the benefit of a large organization.** Individuals and
+1. **You are not using the software for a large organization.** Individuals and
    organizations below the threshold — fewer than 100 people **and** under USD 1,000,000 of
    latest-completed-tax-year revenue in 2026 dollars, adjusted by a fixed consumer-price-index rule and
    measured across the whole group under common control — need nothing at all. No account,
@@ -52,17 +53,17 @@ holds **while any one of these four things is true**:
    non-production evaluation, security review and preparing or submitting a contribution need
    no coverage, whoever you work for — production use and offering the software's
    functionality to others are what need it (draft §4).
-2. **The organization holds a current Entitlement** recorded in the steward's public registry
-   — the credential it buys, under an ordinary contract that has nothing to do with the
+2. **The organization holds a current Entitlement** recorded in the Association's public
+   Registry — the credential it buys, under an ordinary contract that has nothing to do with the
    licence. An Entitlement covers software by name, or because it covers every work under
    the licence; coverage never depends on a project being registered.
-3. **The organization holds a Waiver** recorded in that registry, granted by the project
-   itself. Waivers are public and free; private exemptions do not exist in the design. A
+3. **The organization holds a Waiver** recorded in that Registry by the project's
+   maintainers. Waivers are public and free; private exemptions do not exist in the design. A
    Waiver gives permission from the day it is recorded, but **nothing vests under it during
    its first 72 hours** — revocation is never retroactive, so that window is the only undo for
    a Waiver recorded by mistake (draft §9).
 4. **The organization holds a Donation Entitlement** — recorded when it donates the schedule
-   amount directly to a listed charity. That money never passes through the steward.
+   amount directly to a listed charity. That money never passes through the Association.
 
 If none of the four is true, there is no permission for the use — it is unlicensed in the
 ordinary copyright sense, with a **60-day cure window** that starts on a defined day (the end
@@ -74,21 +75,22 @@ threshold never makes anyone an overnight infringer. The cure runs only when you
 coverage: days of the free evaluation, security review or contribution that §4 permits never
 start it and never count toward it, so two months of evaluation followed by production means
 the 60 days start on the first production day. The window is capped at 60 such days in any
-twelve months; days the steward's transparency log records as a general outage of its
-issuance service count toward neither 60; and cure days alone vest nothing — though a
+twelve months; days the Association's transparency log records as a general outage of its
+issuing service count toward neither 60; and cure days alone vest nothing — though a
 credential recorded later covers what was published during them, like any other part.
-And whatever an organization was covered for, it keeps: **a part is vested if it was public
-on or before the end of the credential's term**, permanently, whatever happens afterwards to
-the credential, the project, or the steward. Vesting is counted in parts, not releases —
+And whatever an organization was covered for, it keeps: **a part vests when the credential
+covers it and it was public by the end of the credential's term** — vested meaning yours to
+keep for good, whatever happens afterwards to the credential, the project, or the
+Association. Vesting is counted in parts, not releases —
 every public commit, tag, release or package — so a project that never tags a release still
 leaves its covered users with permanent rights; no release is needed. The only exceptions
-are a forged record (one with no genuine issuance behind it), a credential obtained by fraud
+are a forged record (one nobody genuinely issued), a credential obtained by fraud
 or deliberate deception, and a term refunded or charged back in full — even then the use
 during that term, before the refund, stays lawful, and a partial refund, or a refund for the
-steward's own failure, leaves vesting untouched; a genuinely issued record survives a later
-compromise of the signing key, and you may rely on it despite the steward's own error.
-Coverage reaches the beneficiary and the entities it controls, while it controls them — a
-parent or sister company only if the record names it, so a subsidiary's credential never
+Association's own failure, leaves vesting untouched; a genuinely issued record survives a
+later compromise of the signing key, and you may rely on it despite the Association's own
+error. Coverage reaches the organization the credential is recorded for and the entities it
+controls, while it controls them — a parent or sister company only if the record names it, so a subsidiary's credential never
 spreads to the group that buys it (the size test in §5 still counts the whole group; the
 coverage scope is narrower on purpose); an entity that leaves keeps what it vested; a
 business that is sold or merged keeps what it vested for its own operations, not the
@@ -97,9 +99,9 @@ permission, and a contribution first published in a development fork for submiss
 as the project's own once accepted. Vesting is permission from now on; it does not excuse
 use before the credential.
 
-If the steward itself fails, the condition falls away for everyone: on the day the Association
-ceases to exist with no successor, on the day named in its declaration of lapse, or at the end
-of twelve months in which it neither recorded an Entitlement or Donation Entitlement nor
+If the Association itself stops, the condition falls away for everyone: on the day it ceases
+to exist with no successor, on the day named in its declaration of lapse, or at the end of
+twelve months in which it neither recorded an Entitlement or Donation Entitlement nor
 published in its transparency log a dated statement that credentials could be obtained under
 its schedule (draft §8; a project's Waiver keeps no clock running). That twelve-month clock
 starts at the licence's first official publication and runs on through any succession — a
@@ -112,7 +114,7 @@ after a lapse is what Apache asks anyway: notices, patent defence and the name.
 What the licence deliberately does **not** contain: no copyleft, no share-alike, no network
 clause, no disclosure duty, no audit right, no reporting duty, no prices, no governing-law
 clause, and no obligation of any kind on the adopter's own code. The licence's own §10 says
-so in one sentence; the clause-level proof is in [ANNOTATIONS.md](ANNOTATIONS.md).
+so in two sentences; the clause-level proof is in [ANNOTATIONS.md](ANNOTATIONS.md).
 
 ---
 
@@ -172,12 +174,12 @@ required — the licence file is self-sufficient.
 
 | Path | What it is |
 |---|---|
-| [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md) | The licence draft (`1.0-draft.4`, second pass) — the decided architecture in short, plain clauses with no counsel marker between them, a §15 agenda of 14 counsel questions (our position, what counsel confirms), and a revision log. Its body (§1–§14, headings included; markers, rules and fences excluded) is 2,350 words: at the 2,350-word bound set with D50 after the six adoptions of the second pass, above the 2,000-word target set with D49, and longer than Apache-2.0 because the mechanism has more moving parts — what is left is definitions, decided protections and the adopted sentences (the revision log names the last three cuts) |
+| [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md) | The licence draft (`1.0-draft.5`, the plain-language pass of 17 September 2026, D51) — the decided architecture in short, plain clauses with no counsel marker between them, a §15 agenda of 14 counsel questions (our position, what counsel confirms), and a revision log. The same meaning and force as `1.0-draft.4` in simpler words: no sentence over 30 words (17 before), 14 words per sentence on average (18 before), Flesch reading ease 57 (51 before), grade 8.8 (10.6 before), five capitalised terms (nine before). Its body (§1–§14; headings, rules, fences and the Purpose Notice lines excluded) is 2,310 words, or about 2,430 by the method the D49 and D50 counts used (headings and notice constants in) — above the 2,000-word target set with D49 and, by that older method, past the 2,350-word bound of D50: the definitions the pass adds (covered, vested, the maintainers, large organization), the sentence splits (163 sentences where draft.4 had 125, the seventeen over 30 words among them) and two new lists cost more words than the renames save, and every remaining sentence carries a decided element, so the last cut is the operator's to name (draft §16; [decisions/](decisions/), D51) |
 | [drafts/contributor-sign-off.md](drafts/contributor-sign-off.md) | The contributor sign-off draft: right-to-submit warranty, steward-role acceptance, and bounded forward delegation with a six-item immutable core — plus the permanent promise that contributors keep their copyright |
 | [canonical/](canonical/) | The plain-text rendering of each draft — the one text per version everything else points at, produced from the draft by `npm run render:canonical` and re-verified byte-for-byte by CI. Still a draft, banner and all |
 | [ANNOTATIONS.md](ANNOTATIONS.md) | Plain-English walkthrough, clause by clause, the "why" behind each clause, and the proof that the three corporate fears are absent |
 | [FAQ-OSPO.md](FAQ-OSPO.md) | The legal-review pack: what triggers payment, what happens at year four, what if the steward dies, what the fee buys, and whether the licence qualifies as open source (it does not) |
-| [decisions/](decisions/) | The trace from text back to the decisions it implements, including D48, D49 and D50 (the operator decisions of 16 September 2026 — morning, evening and late) |
+| [decisions/](decisions/) | The trace from text back to the decisions it implements, including D48, D49 and D50 (the operator decisions of 16 September 2026 — morning, evening and late) and D51 (the plain-language pass of 17 September 2026, with the map from the licence's words to the statutes', the specification's and the sign-off's) |
 | [placeholders.json](placeholders.json) | Every `{{…}}` constant the drafts still write, with its status and what blocks it. CI fails if a draft uses one that is not listed here, or lists one nothing uses |
 | [copy-lint/banned.txt](copy-lint/banned.txt) | The banned-copy patterns CI enforces over this repository (a hand-synced mirror of the movement's canonical list) |
 | [LICENSE-NOTICE.md](LICENSE-NOTICE.md) | How this repository's own contents are licensed — **not** the Purpose Source License |
@@ -188,6 +190,17 @@ form is decided but whose SPDX listing is not. The Association's name is written
 The finished text has **zero** fill-in fields: one canonical text per version, identical in
 every copy, for every project. The tokens mark undecided constants, never per-project
 parameters.
+
+**The licence's words, since `1.0-draft.5`.** The text keeps five capitalised terms — the
+Association, the Registry, Entitlement, Donation Entitlement and Waiver — and says the rest
+in everyday words: **the maintainers** (whoever holds administrative control of the canonical
+repository, or whoever they name through the Registry's verified claim) where the statutes
+say the repository administration and the sign-off says the Project Steward; **large
+organization**, in lower case, for one that does not meet the §5 threshold; **contributor**
+where earlier drafts said licensor; **covered** and **coverage** for holding a current
+credential; **public** for "made available to the public". "The Purpose Condition" survives
+as the title of §4 only; the body says coverage. The statutes, the specification and the
+sign-off keep their own vocabulary and map onto these words ([decisions/](decisions/), D51).
 
 ---
 

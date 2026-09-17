@@ -20,7 +20,7 @@ A decision is not a legal opinion. Each of these was taken on structural and ado
 grounds, and several are explicitly flagged as needing counsel confirmation before anything
 is published.
 
-**Four entries have a special status.** *D46* (dissolution and steward lapse) is, in the
+**Five entries have a special status.** *D46* (dissolution and steward lapse) is, in the
 register's own words, a *decision candidate* on its own sheet: "It becomes D46 in
 DECISIONS.md once the operator confirms"; the register's D47 lists it as a candidate that
 keeps its number. The drafts already implement it. *D48* (the operator decisions of
@@ -28,7 +28,9 @@ keeps its number. The drafts already implement it. *D48* (the operator decisions
 review proposal) and *D50* (the operator decisions of the same day, late, on the 16 September
 comparison review) were taken by the operator as the assistant's recommendations, amendable
 later; the register entries are written by the orchestrator, and this index traces to them
-by number.
+by number. *D51* (the plain-language pass of 17 September 2026) is the operator's instruction
+to say the same thing in simpler words: it changes no decision, and its register entry is
+likewise the orchestrator's.
 
 ---
 
@@ -47,7 +49,9 @@ resolution of the "never owner" question; the licence text's §2 says "software 
 for others" since 1.0-draft.2, and [../ANNOTATIONS.md](../ANNOTATIONS.md) §2 carries the
 dated note that retired the question; superseded phrase, kept as history: "registrar, never licensor")*.
 
-- **Implemented by:** licence draft §2 (steward definition), §3 (grants), §4 (the condition)
+- **Implemented by:** licence draft §2 (the Association's definition — since `1.0-draft.5`,
+  D51, "does not own or license the code it registers for others", and "contributor" where
+  the text said "licensor"), §3 (grants), §4 (the condition)
 - **Requirements:** LEG-010, LEG-013, LEG-016
 - **Status:** architecture decided; enforceability **untested** — US/CH/DE memos are
   prerequisites for publication (LEG-051)
@@ -211,7 +215,7 @@ Association's one-year bound closes with "a renewal is recorded when its term st
 in advance", so terms cannot be stacked (§2). C4 is a further amendable default on a D46
 limb; D46 stays a candidate sheet.
 
-- **Implemented by:** licence draft §2 ("made available to the public"; the successor limb;
+- **Implemented by:** licence draft §2 ("public" — "made available to the public" until `1.0-draft.5`, D51; the successor limb;
   the Association's own bound), §7, §8
 - **Requirements:** LEG-023, LEG-024, LEG-025
 - **Status:** never reopens for adopted versions; the D46 limbs and the evidentiary handle are
@@ -251,8 +255,9 @@ carries no verified identity. Project Steward delegation happens only through th
 claim flow.
 
 - **Implemented by:** licence draft §1 (the Purpose Notice; the explanation moved to
-  [../ANNOTATIONS.md](../ANNOTATIONS.md) §1 in 1.0-draft.2), §2 (Project Steward definition),
-  §9
+  [../ANNOTATIONS.md](../ANNOTATIONS.md) §1 in 1.0-draft.2), §2 (the definition of the
+  maintainers — the Project Steward of this decision and of the sign-off, renamed in the
+  licence by D51), §9
 - **Requirements:** LEG-027, LEG-039
 - **Status:** optionality never reopens
 
@@ -681,6 +686,122 @@ index only names them):
   where every marker now lives (item 19), and shrink where the text now answers; the
   propagation above is owed; the 2,350-word bound is met at 2,350 and the 2,000-word
   target of D49 is unresolved
+
+### D51 — The plain-language pass of 17 September 2026 (the operator's instruction; no decision changed)
+
+On 17 September 2026 the operator instructed a plain-language pass over the licence body
+§1–§14 under one rule: **same meaning, same legal force, fewer and simpler words.** Nothing
+was to be added, dropped, widened or narrowed — every rule, number, day count, exception,
+actor and defined role of `1.0-draft.4` survives — and every sentence that scopes a
+permission ("apply only while", "simply unlicensed: no promise is broken, there is no
+permission") keeps its scope-of-permission form, never "you must" or "you may not", because
+that form is what makes §4 a licence condition rather than a promise (D6; §15's §4 row). A
+drafter rewrote the text; a meaning-and-force verifier diffed it clause by clause against
+`1.0-draft.4` on a checklist of everything that had to survive; a reader verifier measured
+it; a fixer applied the findings, meaning winning wherever it met readability. The pass
+produced licence revision `1.0-draft.5`. The register entry is written by the orchestrator;
+this index traces to it by number.
+
+**No rule changed.** The verifier's two must-fix findings were restorations of `1.0-draft.4`'s
+meaning, not decisions: the patent grant keeps Apache-2.0 §3's own scope — "the patent
+claims they can license that are necessarily infringed by their contribution, alone or
+combined with the software they contributed it to" — because the plain form tried first
+("that using their contribution would always infringe") keyed the scope to use alone, so a
+claim infringed only by making, importing or transferring fell out of the grant, on which
+§15's §3 row and §7's seamless conversion both rest; and §2 says the §3 permissions for
+software the Association registers for others "come from the software's own contributors",
+as draft.4 said "the software's own licensors". The PolyForm "control" definition and the
+group definition are byte-identical to draft.4 (LEG-018). Every §-cross-reference points
+where it did; section numbers are unchanged; §15's fourteen questions are unchanged.
+
+**The renames.** The licence keeps five capitalised terms — the Association, the Registry,
+Entitlement, Donation Entitlement, Waiver — where draft.4 had nine. The statutes, the
+specification and the contributor sign-off keep their own vocabulary; this table is the map.
+
+| The licence says (since `1.0-draft.5`) | The licence said (`1.0-draft.4`) | The statutes say | The specification, the sign-off and this index say |
+|---|---|---|---|
+| **the Association** — the Purpose Source Association named in §1, or its successor designated under §8; the Purpose Notice line reads "Steward: Purpose Source Association (the Association)" | the Steward Organization (the Association) | the Association — registrar of records and router of funds (Art. 4) | Steward Organization (sign-off §2.2, "which the licence calls the Association"; D46 and D9 above) |
+| **the Registry** — the public record at the registry address, with its transparency log and its mirrors; the Purpose Notice label reads "Registry:" | the Steward Registry | the public registry (Art. 9) | Steward Registry (sign-off §2.2; D9 and D23 above); the registry (`registry-v0`, `spec`) |
+| **the maintainers** — whoever holds administrative control of the software's canonical repository, or whoever they name through the Registry's verified claim, nowhere else | the Project Steward | the repository administration (Art. 4 para. 2, Art. 10, Art. 13 item 5) | Project Steward (sign-off §2.2 and core item 5; D7 and D23 above); project steward, maintainer (`spec`) |
+| **large organization**, lower case, defined once in §5 as an organization that does not meet the threshold below | a Large Organization (defined in §2) | not named; the statutes speak of the threshold | Large Organization (D48 item 1 and the D50 propagation notes above; the coverage lookup) |
+| **covered** / **coverage** — holding a current credential for the software (§2); "the Purpose Condition" survives only as §4's title, "4. The Purpose Condition — when you need coverage" | the Purpose Condition, in the body and the title | the licence's purpose condition (Art. 9 para. 3, Art. 14) | Purpose Condition (sign-off §2.2); coverage (`cov-v1`) |
+| **contributor** — each contributor grants for its own contribution; nobody grants for anyone else | licensor; per-licensor grants | licensor, "per licensor" (Art. 4 para. 1) | licensor (D6, D48, D49 and D50 above; the Entitlement terms) |
+
+Other words, replaced throughout the body: "exercising these permissions" → "using the
+software"; "for the benefit of" → "for" (§4 keeps its definition by cases); "never a
+licensor, sublicensor or rights-holder" → "does not own or license the code it registers for
+others"; "non-exclusive" → "everyone gets the same grants"; "irrevocable" → "cannot be taken
+back, except as these terms say"; "made available to the public" → "public", defined once in
+§2; "vested" defined once in §2 as "yours to keep for good"; "credential's scope" → what the
+credential "covers"; "the earliest of" → "on the first of these days"; "thereafter",
+"herein", "hereby", "notwithstanding", "shall", "pursuant" and "limb" do not appear in
+§1–§14. Section titles in plain words, numbers unchanged: 1 Purpose Notice · 2 Words used
+here · 3 What you may do · 4 The Purpose Condition — when you need coverage · 5 Who counts
+as large · 6 Sixty days to put it right · 7 Apache-2.0 after four years · 8 If the
+Association stops · 9 What you keep · 10 What these terms never ask of you · 11 Notices ·
+12 The name · 13 No warranty · 14 If part of this fails. Inside each section the rule comes
+first, the exception second, the mechanics last; the pass adds lists for §5's public bodies
+and §9's reliance cases, and §13 opens with "This section applies as far as the law allows"
+so that the split disclaimer and exclusion both keep the qualifier.
+
+**Metrics**, measured on the canonical rendering's body §1–§14 with the pass's own
+instrument (scratchpad `readability.py`: headings, section rules and the Purpose Notice
+lines excluded; sentences split at `.`, `;` and `:` before a capital or `(`; list items
+counted as sentences; the Flesch reading-ease and grade formulae as the operator's
+instruction states them):
+
+| | `1.0-draft.4` (second pass) | `1.0-draft.5` | Target |
+|---|---|---|---|
+| Words | 2,250 | 2,310 | ≤ 2,000 — **not met** |
+| Sentences | 125 | 163 | — |
+| Words per sentence | 18.0 | 14.2 | ≤ 17 |
+| Sentences over 30 words | 17 | 0 | none |
+| Flesch reading ease | 51.2 | 57.0 | ≥ 55 |
+| Grade | 10.6 | 8.8 | ≤ 10 |
+| Capitalised defined terms | 9 | 5 | ≤ 5 |
+
+The operator's own baseline for draft.4, taken with a stricter instrument (2,278 words, 109
+sentences, 20.9 words per sentence, 18 over 30, Flesch 45, grade 12.2), differs from the
+drafter's 2,250 / 125 / 18.0 / 17 / 51.2 / 10.6 on the same text only in how sentences are
+split and syllables counted; both columns above come from one instrument, so they compare.
+By the method the D49 and D50 counts used (headings and the Purpose Notice constants in;
+markers, rules and fences out) the body went from about 2,350 to about 2,430 words. **The
+word target is not met, and by that older method the D50 bound is passed:** the four
+definitions the pass adds (covered, vested, the maintainers, large organization), the
+splitting of seventeen sentences (each split adds a subject) and the two new lists cost more
+words than the renames save, and every remaining sentence carries an element from the
+must-survive list, so no drafter could cut further without dropping a decided rule. As under
+D49 and D50, the last cut is the operator's to name. The Flesch margin (57.0 against 55) is
+thin enough that the operator's stricter instrument may land near the line.
+
+**Propagation owed outside this repository** (the register's D51 entry records them; this
+index only names them):
+
+- **The Purpose Notice labels.** §1 now reads "Steward: Purpose Source Association (the
+  Association)" and "Registry:" where draft.4 read "Steward Organization:" and "Steward
+  Registry:". Any kit, example or template in `spec` or `registry-v0` that reproduces the
+  notice block follows the licence; if the notice labels turn out to be frozen there, the
+  "Registry:" label is a one-line revert in the licence and nothing else depends on it.
+- **The coverage lookup and the Entitlement terms** keep their vocabulary (Large
+  Organization, licensor, Project Steward) and map to the licence's words by the table
+  above; no behaviour changes, since no rule changed.
+- **The statutes** (Art. 4, 9, 10, 13) already say "the repository administration" and "the
+  public registry"; no change is owed. The sign-off keeps "Project Steward" and "Steward
+  Registry" in its §2.2 and names the licence's words beside them (`signoff-1.0-draft.4`).
+
+- **Implemented by:** licence draft `1.0-draft.5` throughout (its §16 row lists every rename
+  and replacement, the metrics and the same-day verification pass); the canonical rendering;
+  [../drafts/contributor-sign-off.md](../drafts/contributor-sign-off.md)
+  `signoff-1.0-draft.4` (§2.2's glosses and dated note; §4's trace line);
+  [../README.md](../README.md) (the description of the licence, the draft row, the
+  vocabulary paragraph); [../CONTRIBUTING.md](../CONTRIBUTING.md) (the six-item flag's
+  glosses, the vocabulary paragraph, "per-contributor grants");
+  [../LICENSE-NOTICE.md](../LICENSE-NOTICE.md) §4 (the PolyForm §13 sentence as now carried;
+  the borrowed wording as now spelled); [../ANNOTATIONS.md](../ANNOTATIONS.md) and
+  [../FAQ-OSPO.md](../FAQ-OSPO.md) (quotations and section titles aligned to the new wording;
+  Part 0 carries the metrics); the dated notes under D6 and D23 above
+- **Status:** the operator's instruction, executed; no decision taken or amended; no text
+  reviewed by counsel; the word target open, as under D49 and D50
 
 ---
 

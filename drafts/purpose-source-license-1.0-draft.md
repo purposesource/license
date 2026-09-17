@@ -7,7 +7,7 @@
 
 # Purpose Source License 1.0 — working draft
 
-**Draft status:** pre-counsel working paper · **This draft:** `1.0-draft.4` · **Date of this revision:** 2026-09-16
+**Draft status:** pre-counsel working paper · **This draft:** `1.0-draft.5` · **Date of this revision:** 2026-09-17
 
 ---
 
@@ -17,23 +17,26 @@ These lines are part of the licence text, identical in every copy:
 
 ```
 SPDX-License-Identifier: {{LICENSE_ID}}
-Steward Organization:    Purpose Source Association
+Steward:                 Purpose Source Association (the Association)
 UID:                     {{STEWARD_ORG_UID}}
-Steward Registry:        {{STEWARD_REGISTRY_URL}}
+Registry:                {{STEWARD_REGISTRY_URL}}
 Canonical text:          {{LICENSE_TEXT_URL}}
 ```
 
 ---
 
-## 2. Definitions
+## 2. Words used here
 
-**These terms** are this text; **the software** is the work they come with; **a part** is any
-material in it. A part is **made available to the public** on the first day anyone can obtain
-it under these terms — by a public commit, tag, release or package, never an author's own
-timestamp. **A version** is a release the project (the maintainers of the software's canonical
-repository) identifies as such.
+**These terms** are this text. **The software** is the work they come with. **A part** is any
+material in it. A part is **public** from the day anyone can first obtain it under these
+terms — by a public commit, tag, release or package, never an author's own timestamp.
 
-**You** are the individual or organization exercising these permissions.
+**You** are the individual or organization using the software.
+
+**The maintainers** are whoever holds administrative control of the software's canonical
+repository, or whoever they name through the Registry's verified claim, nowhere else.
+
+**A version** is a release the maintainers identify as such.
 
 **An organization's group** is that organization plus all organizations that have control
 over, are under the control of, or are under common control with it.
@@ -42,95 +45,102 @@ over, are under the control of, or are under common control with it.
 direct its management and policies by vote, contract, or otherwise. Control can be direct or
 indirect.
 
-**A Large Organization** is one that does not meet §5's threshold.
+**The Association** is the Purpose Source Association named in §1, or its successor publicly
+designated under §8. It does not own or license the code it registers for others; the §3
+permissions come from the software's own contributors. For its own software it is an
+ordinary contributor.
 
-**The Steward Organization** — **the Association** — is the Purpose Source Association
-named in §1, or its successor publicly designated under §8. For software it registers for
-others it is never a licensor, sublicensor or rights-holder: the §3 permissions come from the
-software's own licensors. For its own software it is an ordinary licensor.
-
-**The Steward Registry** is the public record the Association keeps at
-{{STEWARD_REGISTRY_URL}}, with its transparency log and the log's public mirrors outside the
-Association's control. A credential is **recorded** when published there, and counts from
-then.
+**The Registry** is the public record the Association keeps at {{STEWARD_REGISTRY_URL}}, with
+its transparency log and the log's public mirrors outside the Association's control. A
+credential is **recorded** when published there, and counts from that day.
 
 **An Entitlement** is a credential the Association records for an organization under a
-separate agreement, which these terms neither create nor price. **A Donation Entitlement** is
-one recorded for an organization that donated the scheduled amount directly to a charity the
-Association lists. The Association issues both only under its published schedule, on the same
-terms for everyone, within its published constitutional commitments on the charitable
-destination of funds and no private profit, and for at most one year at a time; a renewal is
-recorded when its term starts, never in advance. Each covers the software it names, or every
-work under these terms if it says so.
+separate agreement these terms neither create nor price. **A Donation Entitlement** is one
+recorded for an organization that donated the scheduled amount directly to a charity the
+Association lists. The Association issues both only under its published schedule, on the
+same terms for everyone, for at most one year at a time. It issues them only within the
+commitments in its published constitution: that funds go to charity and that there is no
+private profit. A renewal is recorded when its term starts, never in advance. Each covers
+the software it names, or every work under these terms if it says so.
 
-**A Waiver** is the Project Steward's record naming an organization that may use the software
+**A Waiver** is the maintainers' record naming an organization that may use the software
 without an Entitlement.
 
-**A credential** is any of the three; it is **current** throughout its **term**, as the
-Steward Registry records it: for an Entitlement or Donation Entitlement, the start date, end
-date and schedule version, unaltered by any later schedule change; for a Waiver, until
-recorded as revoked or expired.
+**A credential** is any of the three. It is **current** throughout its **term** as the
+Registry records it. For an Entitlement or Donation Entitlement, the term is the start date,
+end date and schedule version, unaltered by any later schedule change. A Waiver's term runs
+until it is recorded as revoked or expired. An organization holding a current credential for
+software is **covered** for it; that is its **coverage**.
 
-**The Project Steward** is whoever holds administrative control of the software's canonical
-repository, or their designee through the Steward Registry's verified claim process, nowhere
-else.
+A part is **vested** when it is yours to keep for good; §9 says when that happens.
 
 ---
 
-## 3. Grants
+## 3. What you may do
 
-Each licensor of the software grants you, subject to §4:
+Each contributor grants you, subject to §4:
 
 - a **copyright licence** under all copyright they hold in their contributions, to do
   everything with the software that would otherwise infringe it; and
-- a **patent licence**, to make, have made, use, offer to sell, sell, import and otherwise
-  transfer the software, under the patent claims they can license that are necessarily
-  infringed by their contributions alone or combined with the software they contributed them
-  to.
+- a **patent licence** to make, have made, use, offer to sell, sell, import and otherwise
+  transfer the software. It is under the patent claims they can license that are
+  necessarily infringed by their contribution, alone or combined with the software they
+  contributed it to.
 
-The grants are per licensor, non-exclusive, and irrevocable except as these terms say. Nobody
-grants on anyone else's behalf. Unless the contributor clearly says otherwise, a contribution
-intentionally submitted to the project is offered under these terms. Contributors keep their
-copyright.
+Each grant is per contributor; nobody grants for anyone else. Everyone gets the same grants,
+and they cannot be taken back, except as these terms say. A contribution intentionally
+submitted to the project is offered under these terms unless the contributor clearly says
+otherwise. Contributors keep their copyright.
 
-**Patent defence.** If you or a member of your group files patent litigation (including a
-cross-claim or counterclaim) alleging that the software or a contribution in it infringes or
-contributes to infringing a patent, every patent licence you or your group hold under these
-terms for that software ends that day. Your copyright licences and vested parts are
-unaffected.
+**Patent defence.** Every patent licence you or your group hold under these terms for the
+software ends the day you or a member of your group files patent litigation about it. That
+means alleging that the software or a contribution in it infringes a patent, or contributes
+to infringing one; a cross-claim or counterclaim counts. Your copyright licences and vested
+parts are unaffected.
 
 ---
 
-## 4. The Purpose Condition
+## 4. The Purpose Condition — when you need coverage
 
 The permissions in §3 apply only while one of these is true:
 
-- **(a)** you are not exercising them for the benefit of a Large Organization;
-- **(b)** the Large Organization you exercise them for holds a current Entitlement covering
-  the software;
+- **(a)** you are not using the software for a large organization (§5);
+- **(b)** the large organization you use it for holds a current Entitlement covering the
+  software;
 - **(c)** it holds a current Waiver for the software; or
 - **(d)** it holds a current Donation Entitlement covering the software.
 
-The permissions in §3 also apply, with no credential, to non-production evaluation, security
-review, and preparing and submitting contributions to the project; not to production use or
-offering the software's functionality to others.
+With no credential, the permissions in §3 also apply to non-production evaluation, security
+review, and preparing and submitting contributions to the project. That does not include
+production use, or offering the software's functionality to others.
 
-You exercise permissions **for the benefit of** an organization when you use the software as
-that organization, or in work for it as its employee, contractor or service provider. A
-client's coverage, or its meeting the threshold, also covers work others do solely for it. A
-general service for many customers is your own use; a dedicated deployment for one customer
-is work for that customer. Incidental benefit and merely passing the software on do not
-count. Personal use, unrelated to such work, needs no coverage.
+You use the software **for** an organization when you use it as that organization, or in
+work for it as its employee, contractor or service provider. A client's coverage, or its
+meeting the threshold, also covers work others do solely for it. A general service for many
+customers is your own use; a dedicated deployment for one customer is work for that customer.
+Incidental benefit and merely passing the software on do not count. Personal use, unrelated
+to such work, needs no coverage.
 
 Use while none of (a) to (d) is true is simply unlicensed: no promise is broken, there is no
-permission. These terms oblige nobody to pay; §6 is their only grace.
+permission. These terms require nobody to pay; §6 is the only grace period.
 
 ---
 
-## 5. The threshold
+## 5. Who counts as large
+
+A **large organization** is an organization that does not meet the threshold below.
 
 An organization meets the threshold if, across its whole group, for each member's latest
 completed tax year, headcount was under 100 **and** revenue was below the revenue limit.
+
+**Non-profits, education and public bodies** meet the threshold whatever their size:
+
+- a non-profit or public-benefit body under the law it is organized under;
+- a public educational institution; or
+- a public body performing public functions.
+
+A commercial organization such a body controls is measured like any other. Work for a
+commercial client is judged by that client under §4.
 
 **Counting.** Headcount is the average month-end number of employees and individual
 contractors with ongoing engagements, each counted once, part-time included. Revenue excludes
@@ -141,163 +151,163 @@ currencies at a published central-bank or IMF average rate for the period, chose
 consistently.
 
 **The revenue limit** is USD 1,000,000 for 2026. For each later calendar year it is that
-amount multiplied by the preceding June's value of the US BLS CPI-U series CUUR0000SA0
-divided by its June 2026 value, rounded to the nearest USD 1,000. It never falls below the
-previous year's. If a value is unavailable, the previous year's limit stands; an officially
-linked successor series replaces a discontinued one. A tax year's limit is the one for the
-calendar year in which it ended. The Association publishes each year's limit for
+amount times a ratio, rounded to the nearest USD 1,000. The ratio is the preceding June's
+value of US BLS CPI-U series CUUR0000SA0 over its June 2026 value. The limit never falls
+below the previous year's. If a value is unavailable, the previous year's limit stands. An
+officially linked successor series replaces a discontinued one. A tax year's limit is the one
+for the calendar year it ended in. The Association publishes each year's limit for
 information; the calculation governs.
 
-**Non-profits, education and public bodies** meet the threshold whatever their size: a
-non-profit or public-benefit body under the law it is organized under, a public educational
-institution, or a public body performing public functions. A commercial organization such a
-body controls is measured like any other; work for a commercial client is judged by that
-client under §4.
-
 You assess the threshold yourself. **Nobody may audit you under these terms**: neither a
-licensor nor the Association may demand your books, headcount or any certification.
+contributor nor the Association may demand your books, headcount or any certification.
 
 ---
 
-## 6. Cure
+## 6. Sixty days to put it right
 
 When your use needs coverage and none of (a) to (d) in §4 is true, the permissions in §3
 still continue for 60 days from:
 
-- **(a)** where an organization grew past the threshold, the end of the tax year in which it
-  first did;
-- **(b)** the day a change of control made an organization a Large Organization;
+- **(a)** the end of the tax year in which an organization first grew past the threshold;
+- **(b)** the day a change of control made an organization a large organization;
 - **(c)** the day a credential's term ended or a Waiver was recorded as revoked;
 - **(d)** where reliable figures later show the threshold was exceeded, the day you knew or
   should reasonably have known, even if (a) gives an earlier day; or
 - **(e)** otherwise, the first day of such use.
 
-If one becomes true again within the 60 days, the permissions continue uninterrupted; if none
-does, they end after the 60th day and resume, for use from then on, when one does. It applies
-afresh to any later failure, for at most 60 such days in any twelve months. These days alone
-vest nothing; a later credential may cover that code under §9. Days its transparency log
-records as a general outage of the Association's issuance service do not count toward either
-60. Days of use the evaluation and contribution rule in §4 permits do not count. Vested parts
-need no cure.
+If one of (a) to (d) in §4 becomes true again within the 60 days, the permissions continue
+uninterrupted. Otherwise they end after the 60th day and resume, for use from then on, when
+one does. This applies again to any later failure, for at most 60 such days in any twelve
+months. These days alone vest nothing; a later credential may cover that code under §9. Days
+the transparency log records as a general outage of the Association's issuing service do not
+count toward either 60. Days of use the §4 evaluation and contribution rule permits do not
+count. Vested parts need none of this.
 
 ---
 
-## 7. These terms become Apache-2.0
+## 7. Apache-2.0 after four years
 
-Each licensor also grants you, now, the copyright and patent permissions of the Apache
-License, Version 2.0, for each part of the software, effective four years after that part was
-first made available to the public under these terms, in any form. Nothing more is needed on
-that day, and §4 no longer restricts that part.
+Each contributor also grants you, now, the copyright and patent permissions of the Apache
+License, Version 2.0, for each part of the software. That grant takes effect four years after
+the part was first public under these terms, in any form. Nothing more is needed on that day,
+and §4 no longer restricts that part.
 
-Each part has its own clock, and material added later its own; forking or repackaging a part
-never restarts one. Every part in a version converts no later than four years after that
-version was first made available to the public; earlier dates stand.
+Each part has its own clock, and material added later has its own. Forking or repackaging a
+part never restarts one. Every part in a version converts no later than four years after that
+version was first public; earlier dates stand.
 
-Nobody can extend this for anything already public.
+Nobody can extend the four years for anything already public.
 
 ---
 
-## 8. If the Association lapses
+## 8. If the Association stops
 
-The Purpose Condition in §4 lapses — the permissions in §3 then apply without it, for
-everyone — on the earliest of:
+The condition in §4 lapses — the permissions in §3 then apply without it, for everyone — on
+the first of these days:
 
 - **(a)** the day the Association ceases to exist with no successor publicly designated;
 - **(b)** the last day of any 12 consecutive months in which the Association neither recorded
-  an Entitlement or Donation Entitlement nor published in its transparency log, within that
-  period, a dated statement that credentials could be obtained under its schedule; or
-- **(c)** the day named in a **declaration of lapse**: a signed record, published in the
-  Steward Registry and its transparency log, naming the day the Association stops issuing
-  Entitlements and Donation Entitlements; it cannot be withdrawn, nor its day moved later.
+  an Entitlement or Donation Entitlement nor published a dated statement as described below;
+  or
+- **(c)** the day named in a **declaration of lapse**. That is a signed record, published in
+  the Registry and its transparency log, naming the day the Association stops issuing
+  Entitlements and Donation Entitlements. It cannot be withdrawn, nor its day moved later.
 
-The clock in (b) starts at this text's first official publication and runs on through any
-succession. A Waiver is the Project Steward's record and keeps nothing in (b) running. The
-transparency log and its mirrors show whether one of these days has come. Lapse does not
-bring §7's conversion forward.
+The statement in (b) is one the Association publishes in its transparency log within those
+months, dated, saying that credentials could be obtained under its schedule. The clock in (b)
+starts at this text's first official publication and runs on through any succession. A
+Waiver is the maintainers' record and keeps nothing in (b) running. The transparency log and
+its mirrors show whether one of these days has come. Lapse does not bring §7's conversion
+forward.
 
 A successor is **publicly designated** only by a signed record published the same way. It
 must name a non-profit that has accepted in writing these terms, every recorded credential
-and the commitments in §2. From that day it is the Steward Organization for every purpose
-here, measured by the same clock.
+and the commitments in §2. From that day it is the Association for every purpose here,
+measured by the same clock.
 
 ---
 
-## 9. Recorded credentials, and what stays yours
+## 9. What you keep
 
-A current credential satisfies §4 for the software it covers, for every licensor's grant. It
-also vests parts permanently, for a Waiver as the next paragraph says: **a part is vested for
-an organization if it is within its credential's scope and was made available to the public
-on or before the end of that term.** Once vested, nothing takes a part away.
+A current credential satisfies §4 for the software it covers, for every contributor's grant.
+It also vests parts; for a Waiver, the next paragraph says how. **A part vests for an
+organization when its credential covers the part and the part was public by the end of the
+credential's term.** Once a part has vested, nothing takes it away.
 
 **Waivers.** A Waiver gives permission from the day it is recorded and vests nothing in its
-first 72 hours. If it is still active then — the transparency log shows whether it was, not a
-copy saved at issue — every part then public within its scope vests, and later parts as they
-are made public while it stays active. Revocation never makes earlier permitted use unlawful.
+first 72 hours. If it is still active then, every part then public that it covers vests, and
+later parts as they become public while it stays active. The transparency log, not a copy
+saved at issue, shows whether it was still active. Revocation never makes earlier permitted
+use unlawful.
 
-**The only exceptions.** A forged record — one with no genuine issuance behind it — vests
-nothing. A credential obtained by fraud or deliberate deception vests nothing. A term refunded
-or charged back in full vests nothing; use during it before the refund stays lawful. A partial
+**The only exceptions.** A forged record — one nobody genuinely issued — vests nothing. A
+credential obtained by fraud or deliberate deception vests nothing. A term refunded or
+charged back in full vests nothing; use during it before the refund stays lawful. A partial
 refund, or a refund for the Association's own failure, leaves vesting untouched. You may rely
-on a genuinely issued record despite the Association's error, an honest under-certification, a
-later compromise of the signing key or the record's later removal.
+on a genuinely issued record despite any of these:
 
-**Groups and forks.** A credential covers its beneficiary and the entities the beneficiary
-controls, while it controls them. A parent or sister company is covered only if the record
-names it. An entity that leaves its control keeps what it vested. A covered business sold or merged takes
-its vested coverage with it, for its own operations, not the buyer's; coverage cannot be sold
-on its own. Vested code stays vested in forks and modified copies; what others add needs its
-own permission. Coverage of named software reaches contributions first offered under these
-terms through that project, not code imported from elsewhere; one first published in a fork
-or branch for submission counts as the project's once accepted. Forking gives no power to
-waive conditions on upstream code.
+- the Association's error;
+- an honest under-certification;
+- a later compromise of the signing key; or
+- the record's later removal.
+
+**Groups and forks.** A credential covers the organization it is recorded for and the
+entities that organization controls, while it controls them. A parent or sister company is
+covered only if the record names it. An entity that leaves its control keeps what it vested.
+A covered business sold or merged takes its vested coverage with it, for its own operations,
+not the buyer's. Coverage cannot be sold on its own. Vested code stays vested in forks and
+modified copies; what others add needs its own permission. Coverage of named software reaches
+contributions first offered under these terms through that project, not code imported from
+elsewhere. A contribution first published in a fork or branch for submission counts as the
+project's once accepted. Forking gives no power to waive conditions on upstream code.
 
 Vesting is permission from now on, never forgiveness for earlier use.
 
-Everyone who licenses contributions on these terms accepts that recorded credentials satisfy
-§4 for their grant. The Project Steward may record a Waiver free of charge and revoke it
-going forward.
+Every contributor, by licensing on these terms, accepts that recorded credentials satisfy §4
+for their grant. The maintainers may record a Waiver free of charge and revoke it going
+forward.
 
 ---
 
-## 10. What these terms do not require
+## 10. What these terms never ask of you
 
-These terms require nothing of your own software, no disclosure, no network duty, no
-share-alike, no audit and no report.
+These terms ask nothing of your own software. They require no disclosure, no network duty,
+no share-alike, no audit and no report.
 
 ---
 
 ## 11. Notices
 
-The permissions in §3 cover a copy or substantial portion of the software you distribute only
-if it keeps these terms and every copyright, patent and attribution notice you received with
-it; if you leave one out, putting it back restores the permission from then on.
-Material that came to the project under other terms stays under them, with its notices;
-these terms cover the contributions made under them.
+The permissions in §3 apply to a copy or substantial portion of the software you distribute
+only if it keeps these terms and the notices. The notices are every copyright, patent and
+attribution notice you received with it. If you leave one out, putting it back restores the
+permission from then on. Material that came to the project under other terms stays under
+them, with its notices. These terms govern the contributions made under them.
 
 ---
 
 ## 12. The name
 
-The names of these terms and of the Association are its trademarks. You may say
-software is licensed under these terms only if the text you distribute with it is this text,
-unchanged, as the Association published it. Nothing here grants any other right in those
-trademarks or restricts describing the software factually.
+The names of these terms and of the Association are the Association's trademarks. You may
+say software is licensed under these terms only if the text you distribute with it is this
+text, unchanged, as the Association published it. Nothing here grants any other right in
+those trademarks, or restricts describing the software factually.
 
 ---
 
-## 13. No warranty, no liability
+## 13. No warranty
 
-As far as the law allows, the software comes as is, without any warranty or condition, and no
-licensor will be liable to you for any damages arising out of these terms or the use or
-nature of the software, under any kind of legal claim. These terms exclude nothing the law
-says cannot be excluded.
+This section applies as far as the law allows. The software comes as is, without any
+warranty or condition. No contributor will be liable to you for any damages arising out of
+these terms or the software's use or nature, under any kind of legal claim. These terms
+exclude nothing the law says cannot be excluded.
 
 ---
 
-## 14. Interpretation
+## 14. If part of this fails
 
-If any part of these terms cannot be enforced, the rest still applies. Nobody loses a right
-here by not enforcing it at once.
+If any of these terms cannot be enforced, the rest still apply. Nobody loses a right here by
+not enforcing it at once.
 
 ---
 
@@ -345,3 +355,4 @@ not its output.
 | `1.0-draft.3` | 2026-09-16 | The operator decisions of 2026-09-16 evening on the 16 September review proposal (recorded as D49), one line each. (A1) §3: the grants are irrevocable except as these terms say. (A2) §2: an Entitlement or Donation Entitlement is issued only under the published schedule, on the same terms for everyone, for at most one year at a time. (A3) §4: evaluation, security review and contribution need no credential; production use and offering the software's functionality to others do. (A4) §4: contractor and service rule — a client's coverage or exemption covers work done solely for it; a general service is your own use, a dedicated deployment is the customer's; personal use needs no coverage. (A5) §5: counting rules as operator defaults — average month-end headcount, part-time included, each counted once; each member's latest completed tax year; intra-group transactions excluded; no completed tax year: current headcount and annualized revenue since formation; group changes when they occur; investment is not revenue; central-bank or IMF average rate chosen consistently. (A6) §5: the revenue limit is the June-to-June CPI-U formula, base June 2026, nearest USD 1,000, never below the previous year's; the limit for a tax year is the one for the calendar year in which it ended. (A7) §6: at most 60 cure days in any twelve months; versions published during cure days do not vest. (A8) §9: Waiver cooling — permission from recording, nothing vests in the first 72 hours, vesting thereafter while active, revocation never retroactive (amends D48 item 15). (A9) §9: exceptions corrected — a forged record vests nothing, a genuinely issued record survives a later key compromise, good-faith reliance protected; fraud and refunds unchanged (amends D48 item 16). (A10) §9: corporate changes — group members covered while in the group, a leaver keeps what it vested, a sold or merged business keeps its vested coverage for its own operations only, coverage cannot be sold alone. (A11) §9: forks and imports — vested code stays vested in forks, additions need their own permission, named-software coverage reaches contributions first offered through that project, forking gives no waiver power over upstream code. (A12) §7: every part in a published version converts no later than four years after that version's publication. (A13) §8: lapse limb (b) also requires that no published schedule was kept under which a credential could be obtained. (A14) §8: a successor must be a non-profit that accepts these terms, every recorded credential and the published commitments on charitable destination and no private profit. (A15) §11: putting a notice back restores the permission from then on. (A16) §3: a contribution intentionally submitted is offered under these terms unless the contributor clearly says otherwise; contributors keep their copyright. Cuts toward the 2,000-word target for the body §1–§14 (markers excluded): §10 reduced to one sentence (its list lives in ANNOTATIONS Part 1 and the README); §2's availability and version definitions merged and the designation sentence folded into the Project Steward definition; §5's calendar-average mechanic replaced; §8's successor paragraph tightened; every section reworded shorter with no decided element dropped. The §5, §6 and §9 markers shrink to confirmation of the operator's defaults; the §4, §8 and §9 markers gain the new questions (the evaluation exception's scope, limb (b)'s determinability from the log, the successor bound, the 72-hour rule's formation); agenda rows 4, 5, 6, 8 and 9 follow. Same-day verification pass: §9's vesting rule now says it applies to a Waiver as the Waiver paragraph says, so the 72-hour rule controls; the A3 exception is written as a widening of the §3 permissions ("The permissions in §3 also apply, with no credential, to …") rather than as a remark outside the grant; §9's three exceptions are three sentences; the reliance sentence says "the record's later removal"; §6 says "do not vest under §9"; the §2 issuance, §3 patent-defence, §6 transition and §8 successor sentences are split; the §9 marker asks which of A2's one-year bound and A9's reliance rule controls for a genuinely issued over-long record, and the §8 marker asks whether the successor's twelve-month test should mirror limb (b) (agenda rows 8 and 9 follow); descriptive sentences cut with no decided element dropped (the registry's no-account sentence in §2, the money-flow clause in §4, the no-prices sentence in §5, "fixed and licence-wide" in §7, the log's full name in §8). The body ends at about 2,330 words, above the target: what remains is definitions other sections use, decided protections and the adopted sentences themselves, so the last cut is the operator's to name. No text reviewed by counsel. |
 | `1.0-draft.4` | 2026-09-16 | The operator decisions of 2026-09-16 late on the 16 September comparison review (recorded as D50), one line each. (B1) §2, §3, §6, §9: the vesting unit is the part made available to the public, not a named release — a part is vested if it is within the credential's scope and was public on or before the end of the term; "vested versions" become "vested parts" throughout, the Waiver vests "every part then public within its scope", and the defined term "version" survives only for §7's release-level bound. (B2) §7: the Apache-2.0 conversion is a present grant, now, of the copyright and patent permissions for each part, effective four years after that part's first public availability; nothing more is needed on that day; the marker shrinks to confirmation. (B3) §8: the clock in (b) starts at this text's first official publication and runs on through any succession; a successor is measured by the same clock, so no fresh clock can be read in; limb (b) drops "with no successor so designated", redundant since §2 defines the Association to include its designated successor; lapse does not bring §7's conversion forward (D9). (B4) §5 and §6: reasonable provisional figures may be used until reliable ones exist; a fifth cure trigger (d) — the day you knew or should reasonably have known that reliable figures show the threshold was exceeded — with "otherwise" renumbered to (e). (B5) §9: a contribution first published in a development fork or branch for submission counts as originating in the project once accepted. (B6) §9: a term refunded or charged back in full vests nothing; a partial refund, or a refund for the Association's own failure, leaves vesting untouched. (B7) §6: days the transparency log records as a general outage of the Association's issuance service do not count toward the 60. (B8) §3: the patent defence trigger reaches litigation by any member of your group and ends the group's patent licences; copyright licences and vested parts unaffected. (B9) §9: whether a Waiver was still active after 72 hours is shown by the transparency log, not by a copy saved at issue. (B10) §2 and §8: the Association issues credentials only under its published schedule and within its published constitutional commitments on the charitable destination of funds and no private profit; the successor bound in §8 points to those commitments, so nothing is said twice. Markers: §3, §5, §6, §7, §8 and §9 ask the new questions (the group-wide trigger and pre-conversion litigation, provisional-figures reliance, outage-day evidence, the licensor's estate, the Association's own bound and a credential issued in breach, the log as proof of a Waiver's survival, the refund distinction) and shrink where the text now answers (the present grant, the never-issued clock, the successor's twelve-month test, "still active"); agenda rows 2, 5, 6, 7, 8 and 9 follow. §2 and §8 tightened as the decision asks, and every other section reworded shorter, to hold the body §1–§14 (markers excluded) at or under 2,350 words; no decided element or defined term dropped. Same-day verification pass: §6(d) says it controls "even if (a) gives an earlier day", and outage days count toward "either 60" — the continuation and the cap; §5 names the CPI-U series by its BLS code alone; §13 keeps PolyForm's "will be liable", as LICENSE-NOTICE §4 attributes it; §12 says "as the Association published it", so the defined term "version" is used only by §7; §9's refund sentence says "a refund for the Association's own failure" and §2 says "designee"; the §6, §8 and §9 markers ask whether (d) should control where (a) also fits, whether "this text" in §8 reads as any version of these terms so that a later version cannot move the clock's start, and whether a full refund for the Association's own failure leaves vesting untouched as intended (agenda rows 6, 8 and 9 follow). The body ends at 2,348 words (headings included; markers, rules and fences excluded). No text reviewed by counsel. |
 | `1.0-draft.4` (second pass) | 2026-09-16 | The operator decisions of 2026-09-16 late on the third review note (recorded as D50 items 13–18), one line each. (C1) §6: cure runs only when your use needs coverage, so permitted evaluation never starts the clock; days of use the §4 evaluation and contribution rule permits do not count. (C2) §6: cure days alone vest nothing, but a later credential may cover that code under §9. (C3) §9: a credential covers its beneficiary and the entities it controls, while it controls them; a parent or sister company only if the record names it; the §5 group test, which keeps parents and siblings, is deliberately wider than the coverage scope. (C4) §8: lapse limb (b) requires a dated statement in the transparency log, within the period, that credentials could be obtained under the schedule — a price schedule alone no longer stops the clock. (C5) §9: a full refund or chargeback vests nothing, but use during the term before the refund stays lawful. (C6) §2: a renewal is recorded when its term starts, never in advance, so years cannot stack. Rejected, unchanged from D49 and D50: a separate outage permission, a 30-day written-notice cure for notices, refunds keeping vesting. Markers: every inline marker leaves §1–§14, which now carry none; §15 becomes a three-column agenda — section, our position as drafted, what counsel confirms — with one row per former marker, the confirmation written as a marker so the honesty gate still counts it; the §8 row's determinability question shrinks to whether a false limb (b) statement is actionable and how a successor inherits the clock. Cuts toward the 2,350-word bound, no decided element dropped: §3 drops "nothing here assigns it" (said by "keep their copyright"); §5 drops "so it is not a Large Organization" (§2 defines it); §6 uses B7's shorter outage wording; §9 drops the patent-litigation sentence §3 already states and shortens the fork-origination sentence; §2 loses "and says so" and one word in the credential definition. C1–C6 add about seventy words and the markers were never counted, so after those cuts the body stood at 2,381 words, 31 above the bound. Same-day verification pass: three more cuts that drop no decided element — §9's "once vested" example list (the events it named are kept in the FAQ and ANNOTATIONS; the rule needs no list), §7's "no project, no licensor, not the Association" aside ("nobody" already means them), and "copying" and "re-releasing" in §7's restart sentence (D48 item 4 decides forks and repackaging) — bring the body to 2,350 words (headings included; markers, rules and fences excluded), at the bound. No text reviewed by counsel. |
+| `1.0-draft.5` | 2026-09-17 | The plain-language pass (recorded as D51): the body §1–§14 rewritten for the same meaning and legal force in fewer and simpler words — no rule, number, day count, exception, actor or defined role added, dropped, widened or narrowed, and every scope-of-permission sentence kept in scope form. Renames, carried through every section: "Steward Organization" → "the Association" (the Purpose Notice line reads "Steward: Purpose Source Association (the Association)"); "Steward Registry" → "the Registry" (the notice label reads "Registry:"); "Large Organization" → "large organization", defined once in §5 as an organization that does not meet the threshold below; "Project Steward" → "the maintainers", defined in §2 as whoever holds administrative control of the canonical repository or whoever they name through the Registry's verified claim; "Purpose Condition" survives only in §4's title, the body says "coverage", and §2 defines "covered" as holding a current credential for the software. Word replacements: exercising permissions → using the software; for the benefit of → for; licensor → contributor (each contributor grants for itself); "never a licensor, sublicensor or rights-holder" → "does not own or license the code it registers for others"; non-exclusive → "shared with everyone"; irrevocable → "cannot be taken back"; "necessarily infringed by their contributions" stays as Apache-2.0 §3's "necessarily infringed by their contribution" on the verifier's flag — the plain form tried first ("claims … that using their contribution … would always infringe") keyed the scope to use alone, so a claim infringed only by making, importing or transferring the contribution fell out of the grant, and §15's §3 row and §7's conversion both rest on the Apache scope; "vested" defined once in §2 as yours to keep for good; "made available to the public" → "public" after its §2 definition; "credential's scope" → "covers"; "the earliest of" → "on the first of these days". Plain section titles, numbers and cross-references unchanged. Every sentence over 30 words split; inside each section the rule first, the exception second, the mechanics last; lists for three or more items (§5's public-body rule, §9's reliance cases); §13 opens with "This section applies as far as the law allows" so the split disclaimer and exclusion both keep the qualifier. Metrics on the body §1–§14 (headings, rules and Purpose Notice lines excluded; scratchpad readability.py with the spec's Flesch and grade formulae): before — 2,250 words, 125 sentences, 18.0 words per sentence, 17 sentences over 30 words, Flesch reading ease 51.2, grade 10.6, nine capitalised defined terms; after — 2,310 words, 163 sentences, 14.2 words per sentence, none over 30, Flesch reading ease 57.0, grade 8.8, five capitalised defined terms (the Association, the Registry, Entitlement, Donation Entitlement, Waiver). The 2,000-word target is not met: every remaining sentence carries a decided element from the spec's must-survive list, and the definitions the pass adds (covered, vested, maintainers, large organization) and the sentence splits cost more words than the renames save, so the last cut is the operator's to name. §15 unchanged (it names no section title). Same-day verification pass, meaning over readability where they met: §2 says the §3 permissions for software the Association registers for others come from the software's own contributors (the earlier "its contributors" could be read as the Association's); §2 defines the maintainers before the word is first used and gives the term sentence an explicit subject; §3 keeps the Apache patent scope as above and says "everyone gets the same grants" for non-exclusive; §4 says "the only grace period"; §5 states the never-falls rule and the unavailable-value rule as two sentences; §7 says "the four years"; §9's Waiver "gives permission" from the day it is recorded, "once a part has vested, nothing takes it away", and a forged record is "one nobody genuinely issued"; §10 is two sentences. No rule, number, day count, exception, actor or defined role changed. No text reviewed by counsel. |

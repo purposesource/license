@@ -35,9 +35,11 @@ may never change any of six things:
 3. the charity destination and the no-private-profit rule;
 4. the Association's character as registrar, never a licensor of code it registers for others
    (scoped 2026-09-05 per movement decision D29 §6.3 and written into licence §2 as "for
-   others" on 2026-09-16 — see [ANNOTATIONS.md](ANNOTATIONS.md) §2; superseded phrase, kept as
-   history: "registrar, never licensor");
-5. the existence of the project steward's free-of-charge waiver power;
+   others" on 2026-09-16 — see [ANNOTATIONS.md](ANNOTATIONS.md) §2; since `1.0-draft.5` the
+   licence's §2 puts it as "does not own or license the code it registers for others";
+   superseded phrase, kept as history: "registrar, never licensor");
+5. the existence of the project steward's free-of-charge waiver power (the statutes'
+   repository administration; the licence, since `1.0-draft.5`, says "the maintainers");
 6. the steward-lapse backstop — its existence, and its clock, which may only ever be
    **shortened** (added 2026-09-16, D46).
 
@@ -70,12 +72,12 @@ are dealing with:
   what you do not hold.
 - **Code you copied from a permissively licensed project** — keep its licence and its
   notices with it. Licence §11 says such material stays under the terms it came with; the
-  Purpose Source License covers only the contributions made under it.
+  Purpose Source License governs only the contributions made under it.
 - **Dependencies whose licences do not fit** — that is not the licence's job to solve. It is
   the project's job, in its own dependency policy, before the code is merged.
 
 **Two things the licence itself says, since `1.0-draft.3` (D49, 2026-09-16).** First, you
-need no coverage to contribute: licence §4 lets anyone — an employee of a Large Organization
+need no coverage to contribute: licence §4 lets anyone — an employee of a large organization
 included — evaluate the software outside production, review its security, and prepare and
 submit a contribution without a credential; production use and offering the software's
 functionality to others are what need one. Second, licence §3 carries an inbound default in
@@ -91,6 +93,18 @@ fork or branch for submission counts as the project's own once it is accepted (l
 so coverage of the project by name reaches it like any other
 contribution. Its four-year conversion clock still starts on the day it first became public,
 fork included — forking never restarts a clock (licence §7).
+
+**And the words, since `1.0-draft.5` (D51, 2026-09-17).** The licence now says what it always
+said in fewer and simpler words — no rule changed. Where this file and the sign-off say
+"Project Steward", the licence says **the maintainers**; where they say "Steward Registry",
+it says **the Registry**; where they say "Steward Organization", it says **the Association**;
+"Large Organization" is now the lower-case **large organization** (§5); "licensor" is
+**contributor**, each contributor granting for its own contribution; and holding a current
+credential is being **covered**. "The Purpose Condition" survives as §4's title only. The
+sign-off keeps its role names — the decision record's, which the specification also uses —
+and names the licence's words beside them in its §2.2; the statutes say "the repository
+administration" and "the public registry" for the same roles (see
+[decisions/README.md](decisions/README.md), D51).
 
 **None of this applies to contributions to *this* repository**, which is documentation and
 scripts under the terms in [LICENSE-NOTICE.md](LICENSE-NOTICE.md). No sign-off is asked for
@@ -138,8 +152,10 @@ pre-registered for revisit, and the register records the disputes rather than hi
 - permission scoped by a **condition**, never a payment obligation in the licence;
 - the Association as **registrar, never a licensor of code it registers for others**
   (scoped 2026-09-05 per movement decision D29 §6.3 and written into licence §2 as "for others"
-  on 2026-09-16 — see [ANNOTATIONS.md](ANNOTATIONS.md) §2);
-- **per-licensor** grants;
+  on 2026-09-16 — see [ANNOTATIONS.md](ANNOTATIONS.md) §2; since `1.0-draft.5`, "does not own
+  or license the code it registers for others");
+- **per-contributor** grants — each contributor grants for its own contribution, nobody for
+  anyone else (the text said "per-licensor" until `1.0-draft.5`);
 - the dual AND threshold, group-consolidated, self-assessed, with **no audit clause**; the
   non-profit, education and public-body limb; no investment prong (D48, 2026-09-16);
 - the **fixed four-year** Apache-2.0 conversion, granted now with deferred effect and attached

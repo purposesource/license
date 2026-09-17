@@ -10,7 +10,7 @@
 Written for the person who has to write an internal recommendation about an unfamiliar
 licence, and who will be held responsible for it. Answers describe the **draft** in
 [drafts/purpose-source-license-1.0-draft.md](drafts/purpose-source-license-1.0-draft.md),
-revision `1.0-draft.4` of 2026-09-16. Nothing here is legal advice and nothing here is final
+revision `1.0-draft.5` of 2026-09-17. Nothing here is legal advice and nothing here is final
 — the licence has not been drafted by counsel and has never been published, so no clock has
 started and no project uses it.
 
@@ -29,12 +29,19 @@ discovering them from a critic.
 | **Who needs a credential?** | Organizations above the threshold: 100 or more people **or** revenue at or above the limit in the latest completed tax year (USD 1,000,000 for 2026, indexed yearly to US CPI-U), measured group-wide. Never non-profits, public educational institutions or public bodies, whatever their size. Nobody else — and nobody at all for evaluation, security review or contributing (question 19). |
 | **What triggers payment?** | Nothing in the licence: it contains no payment obligation. Use for a large organization without a recorded credential is simply unlicensed, after a 60-day cure — at most 60 cure days in any twelve months; days the issuance service was down, and days of permitted evaluation, not counted; cure days alone vest nothing, though a later credential covers that code like any other (question 19). |
 | **Can we be audited?** | No. There is no audit clause and there never will be. |
-| **What happens at four years?** | Each licensor grants the Apache-2.0 permissions now, for each part of the software, effective four years after that part was first made public under these terms — and everything in a release no later than four years after that release. Nothing more is needed on the day; forks never restart the clock (question 4). |
-| **What if the steward organization disappears?** | On the day the Association ceases to exist with no designated successor; after twelve months in which it neither recorded an Entitlement or Donation Entitlement nor published in its transparency log a dated statement that credentials could be obtained under its schedule (one clock, started at the licence's first official publication and never restarted by a successor; a project's Waiver keeps no clock running; question 22) — or earlier, on the day a published declaration of lapse names — the condition lapses and the licence becomes permissive. |
+| **What happens at four years?** | Each contributor grants the Apache-2.0 permissions now, for each part of the software, taking effect four years after that part was first public under these terms — and everything in a release no later than four years after that release. Nothing more is needed on the day; forks never restart the clock (question 4). |
+| **What if the Association disappears?** | On the day the Association ceases to exist with no designated successor; after twelve months in which it neither recorded an Entitlement or Donation Entitlement nor published in its transparency log a dated statement that credentials could be obtained under its schedule (one clock, started at the licence's first official publication and never restarted by a successor; a project's Waiver keeps no clock running; question 22) — or earlier, on the day a published declaration of lapse names — the condition lapses and the licence becomes permissive. |
 | **What do we keep if we stop paying?** | Every part of the software made public on or before the recorded end of the term — every public commit, tag, release or package within scope, whether or not the project ever tags a release (question 24). Permanently, with exactly three narrow exceptions — a forged record, a credential obtained by fraud, and a term refunded or charged back in full, and even then the use before the refund stays lawful (question 6). |
 | **Is there a copyright assignment for contributors?** | No — permanently, by design. Contributors keep their copyright. |
 | **Which law governs?** | The licence is silent, like Blue Oak and PolyForm. Conflict-of-laws rules decide; the Entitlement contract picks its own. |
 | **Scanner status?** | The identifier is `LicenseRef-PurposeSource-1.0`, valid SPDX for an unlisted licence. Expect "unknown licence" flags until list inclusion is requested and granted (question 12). |
+| **Can a non-lawyer read it?** | Since `1.0-draft.5`, the plain-language pass of 2026-09-17: the body §1–§14 is 2,310 words in 163 sentences, 14.2 words per sentence, none over 30, Flesch reading ease 57.0, grade 8.8, five capitalised defined terms (the Association, the Registry, Entitlement, Donation Entitlement, Waiver) — against 18.0 words per sentence, 17 sentences over 30, Flesch 51.2, grade 10.6 and nine terms in `1.0-draft.4`, with no rule, number or exception changed. |
+
+One vocabulary note for readers of the other documents: the licence now calls the roles **the
+Association**, **the Registry** and **the maintainers**, and says **large organization** in
+lower case; the statutes, the registry specification and the contributor sign-off keep the
+older names — Steward Organization, Steward Registry, Project Steward, Large Organization —
+for the same roles.
 
 ---
 
@@ -60,8 +67,8 @@ to consume, pin, and eventually contribute.
 **Nothing in the licence — because the licence contains no payment obligation.**
 
 This is the part most reviewers have to read twice. The licence grants permissions *while* one
-of four facts is true: you are not acting for the benefit of a Large Organization; or the
-benefiting organization holds a recorded Entitlement, a recorded Waiver, or a recorded
+of four facts is true: you are not using the software for a large organization; or the large
+organization you use it for holds a current Entitlement, a current Waiver, or a current
 Donation Entitlement covering the software. If none is true, there is no permission — the
 use is unlicensed, in the ordinary copyright sense, once the 60-day cure in §6 has run. There
 is no clause anywhere obliging anyone to pay anybody. And none of this touches evaluation,
@@ -70,13 +77,14 @@ security review or contributing, which need no coverage at all (question 19).
 Two consequences for your analysis:
 
 1. **No third-party-beneficiary question arises**, because nothing in the licence promises the
-   steward organization anything.
+   Association anything.
 2. **Non-compliance is a copyright matter, not a contract matter**, and the counterparties are
    the project's contributors — each of whom licensed their own part. Nobody can settle on
    their behalf unless they separately choose to authorize it.
 
-Buying a credential is an ordinary bilateral contract with the steward organization — the
-Purpose Source Association, "the Association" in the text: offer, price, invoice, VAT. It is
+Buying a credential is an ordinary bilateral contract with the Association — the Purpose
+Source Association, "the Association" in the text and the Steward Organization in its
+statutes: offer, price, invoice, VAT. It is
 not a licence to the code, and it is not marketed as one. A credential counts from the day it
 is recorded in the public registry. There is no renewal grace in the licence — the 60-day
 cure is the only grace it knows, capped at 60 cure days in any twelve months. The one other
@@ -91,10 +99,10 @@ Precisely three things:
    your group — for the software the credential names, or for **every work under these
    terms** if you hold the network-wide Pass. Coverage attaches to the licence, not to
    registration: a Pass covers a project under these terms whether or not that project ever
-   registered with the steward. The licence also binds the seller: a credential is issued only
-   under the Association's published schedule, on the same terms for everyone, for at most
-   one year at a time, and within the Association's published constitutional commitments on
-   the charitable destination of funds and no private profit. A renewal is recorded when its
+   registered with the Association. The licence also binds the seller: a credential is issued
+   only under the Association's published schedule, on the same terms for everyone, for at
+   most one year at a time, and "only within the commitments in its published constitution:
+   that funds go to charity and that there is no private profit". A renewal is recorded when its
    term starts, never in advance, so years cannot be stacked: the longest coverage on the
    record at any moment is one year. There is no private price, no side term and no
    century-long deal for anyone — in one piece or in ten — and the licence itself says where
@@ -110,9 +118,9 @@ And precisely what it does **not** buy, stated because overstating this is the f
 - It is **not a warranty** that the covered code is free of third-party rights. The credential
   says the condition is satisfied; it says nothing about the rights chain in the code. Treat
   your usual provenance diligence as unchanged.
-- It is **not a licence from the steward organization**. The Association holds no rights in
-  code it registers for others and cannot grant any. (Where it owns a registered project of
-  its own, it is an ordinary licensor of that project, disclosed as steward-owned.)
+- It is **not a licence from the Association**, which "does not own or license the code it
+  registers for others" and so cannot grant any. (Where it owns a registered project of its
+  own, it is an ordinary contributor to that project, disclosed as steward-owned.)
 - The amnesty covenants **do not cover claims the steward does not hold**. Individual
   contributors' claims for past use can only be released by those contributors, through a
   separate opt-in mandate that does not exist yet. Any marketing implying total retroactive
@@ -121,13 +129,13 @@ And precisely what it does **not** buy, stated because overstating this is the f
 
 ## 4. What happens at year four?
 
-Each licensor **grants you, now**, the copyright and patent permissions of **Apache License
-2.0** for each **part** of the software, effective four years after the day that part was
-first made available to the public under these terms — a public commit, tag, release or
-package, never a date an author typed into a file. Nothing more is needed on that day.
-Material added later has its own clock. **Forking or repackaging an existing part never
-restarts its clock** — nor does copying or re-releasing it. Nobody — not the steward, not the
-project, not any licensor — can extend it for anything already public.
+Each contributor **grants you, now**, the copyright and patent permissions of **Apache
+License 2.0** for each **part** of the software; that grant takes effect four years after
+the part was first public under these terms — a public commit, tag, release or package,
+never a date an author typed into a file. Nothing more is needed on that day. Material added
+later has its own clock. **Forking or repackaging an existing part never restarts its
+clock** — nor does copying or re-releasing it. "Nobody can extend the four years for anything
+already public" — not the Association, not the project, not any contributor.
 
 The words "grants you, now" are new in `1.0-draft.4` and they matter for a review. The
 previous draft said each part "becomes available" under Apache-2.0 at four years, which left
@@ -139,8 +147,8 @@ touch it. Counsel confirms the form; the operative words no longer wait for coun
 them.
 
 If you would rather not compute a date per line, the draft gives you one per release: **every
-part in a version converts no later than four years after that version was first made
-available to the public**; parts that were public earlier convert earlier. Read the release
+part in a version converts no later than four years after that version was first public**;
+parts that were public earlier convert earlier. Read the release
 date, add four years, and everything in that release is Apache-2.0 by then.
 
 For a review, the practical reading is: **the maximum exposure of adopting a dependency under
@@ -154,17 +162,18 @@ does not depend on trusting anyone. A later licence version can only ever *short
 for contributions already made under the sign-off's delegation; lengthening it would need
 each contributor's fresh consent, or reach future contributions only.
 
-## 5. What if the steward organization ceases to exist?
+## 5. What if the Association ceases to exist?
 
-The licence carries a backstop (§8): the Purpose Condition **lapses** and the permissions
-apply without it — the licence degrades to permissive, for everyone — on the earliest of:
+The licence carries a backstop (§8, "If the Association stops"): the condition in §4
+**lapses** and the permissions apply without it — the licence degrades to permissive, for
+everyone — on the first of these days:
 
 - the day the Association ceases to exist with no publicly designated successor;
 - the last day of **twelve consecutive months** in which it neither recorded an Entitlement or
   a Donation Entitlement nor published in its transparency log, within that period, a dated
   statement that credentials could be obtained under its schedule (a project's Waiver keeps
-  no clock running — it is the project's record, not the steward's; question 22 explains the
-  log statement); or
+  no clock running — it is the maintainers' record, not the Association's; question 22
+  explains the log statement); or
 - the day named in a signed, published **declaration of lapse**, which the steward's wind-down
   protocol is designed to issue on the day it stops selling. It cannot be withdrawn and the day
   cannot be moved later.
@@ -177,8 +186,8 @@ conversion forward.
 
 A successor is designated only by a signed, published record, and only a **non-profit that
 has accepted in writing these terms, every recorded credential and the commitments in §2** —
-the published constitutional commitments on the charitable destination of funds and no
-private profit, which the licence now places on the Association itself (question 3) — can be
+the commitments in its published constitution, that funds go to charity and that there is no
+private profit, which the licence places on the Association itself (question 3) — can be
 one. A successor is measured by the same clock: a paper successor cannot reset it, and nobody
 can hand the registry to a buyer who would run it for profit.
 
@@ -198,10 +207,11 @@ Two honest caveats:
 
 ## 6. If we stop paying, do we have to rip it out?
 
-**No.** The rule is one line: **a part is vested if it is within your credential's scope and
-was made available to the public on or before the end of your credential's recorded term.**
-"Made available to the public" means a public commit, tag, release or package — the unit is
-the code that is public, not a release someone named (question 24). Everything vested stays
+**No.** The rule is one line: **"A part vests for an organization when its credential covers
+the part and the part was public by the end of the credential's term."** "Public" means a
+public commit, tag, release or package — the unit is the code that is public, not a release
+someone named (question 24). Vested means "yours to keep for good" (§2's definition), and §9
+says it again: "Once a part has vested, nothing takes it away." Everything vested stays
 usable permanently.
 
 That means:
@@ -219,14 +229,14 @@ That means:
   deployed. Your term is the start date, end date and schedule version recorded at issue; a
   later schedule change never alters it.
 - Under a **Waiver**, permanence starts after 72 hours: a Waiver gives permission from the day
-  it is recorded, and if it is still active 72 hours later every part then public within its
-  scope vests, with later parts vesting as they are made public while it stays active. Whether
+  it is recorded, and if it is still active 72 hours later every part then public that it
+  covers vests, with later parts vesting as they become public while it stays active. Whether
   it was still active is what the transparency log shows, not a copy saved at issue
   (question 21).
 
 **The only exceptions**, all in §9, all narrow:
 
-1. a **forged record** — one with no genuine issuance behind it — vests nothing;
+1. a **forged record** — "one nobody genuinely issued" — vests nothing;
 2. a credential **obtained by fraud or deliberate deception** vests nothing;
 3. a term **refunded or charged back in full** vests nothing (question 23 says why) — but the
    use during that term, before the refund, stays lawful: you lose permanence, not your
@@ -242,8 +252,9 @@ That means:
 2. **patent litigation** (question 18) ends only your patent licence, never your vested
    parts.
 
-**Corporate changes.** A credential covers its beneficiary and the entities the beneficiary
-controls, while it controls them. A parent or sister company is covered only if the record
+**Corporate changes.** A credential covers the organization it is recorded for and the
+entities that organization controls, while it controls them. A parent or sister company is
+covered only if the record
 names it — coverage runs down from the buyer of the credential, never up or sideways. An
 entity that leaves keeps what it vested. When a covered business is sold or merged, its
 vested coverage goes with that business for its own operations — not for the buyer's other
@@ -277,8 +288,9 @@ kind — not source, not architecture, not deployment, not customers. The condit
 the licensed software and travels no further. Your modifications are yours, subject to keeping
 the software's notices and to the condition continuing to be satisfied for the licensed parts.
 
-The licence says this in one sentence (§10: nothing of your own software, no disclosure, no
-network duty, no share-alike, no audit and no report). The five-line version, item by item,
+The licence says this in two sentences (§10, "What these terms never ask of you": "These
+terms ask nothing of your own software. They require no disclosure, no network duty, no
+share-alike, no audit and no report."). The five-line version, item by item,
 is in Part 1 of [ANNOTATIONS.md](ANNOTATIONS.md), which also carries the clause-level
 walkthrough.
 
@@ -300,7 +312,7 @@ wrong is exactly what §9 says, and nothing more:
   credential was never honestly obtained.
 
 There is no "bad faith" standard floating between those two. The other thing that vests
-nothing is a **forged record** — a record with no genuine issuance behind it, which is not a
+nothing is a **forged record** — one nobody genuinely issued, which is not a
 certification problem at all. A genuinely issued record survives even a later compromise of
 the Association's signing key: your rights come from the issuance, not from the key. Whether
 that reliance rule holds against a record the registry later marks void is a counsel
@@ -335,9 +347,9 @@ policies by vote, contract or otherwise (the PolyForm "control" definition, verb
   period, chosen consistently.
 
 **The revenue limit** is USD 1,000,000 for 2026. For each later calendar year it is
-USD 1,000,000 multiplied by the preceding June's value of the US CPI-U series (all urban
-consumers, U.S. city average, all items, not seasonally adjusted) divided by its June 2026
-value, rounded to the nearest USD 1,000. That means every year's limit is known by mid-July
+USD 1,000,000 times a ratio — the preceding June's value of the US CPI-U series (all urban
+consumers, U.S. city average, all items, not seasonally adjusted) over its June 2026 value —
+rounded to the nearest USD 1,000. That means every year's limit is known by mid-July
 of the year before. The limit never falls below the previous year's; if a value is
 unavailable the previous year's limit stands; an officially linked successor series replaces a
 discontinued one. The limit for your tax year is the one for the calendar year in which that
@@ -350,8 +362,10 @@ educational institution, or a public body performing public functions. A commerc
 such a body controls does not inherit that; and work a non-profit does for a commercial
 client is judged by the client (question 16).
 
-So a small subsidiary of a large group is **not** below the threshold. That is intentional; the
-alternative makes the threshold decorative. And there is **no "capital raised" test**: the
+So a small subsidiary of a large group is **not** below the threshold — it is a large
+organization in the licence's words, "an organization that does not meet the threshold below"
+(§5, "Who counts as large"). That is intentional; the alternative makes the threshold
+decorative. And there is **no "capital raised" test**: the
 record once recommended a prong counting an organization as large if it had raised more than
 USD 1,000,000 in five years, and the operator decided against it on 2026-09-16. Adding one
 later would narrow the threshold, which a later version may not do to existing contributions
@@ -359,9 +373,10 @@ without each contributor's fresh consent.
 
 ## 10. Who can grant us an exemption, and can we negotiate one privately?
 
-A **Waiver** may be recorded by the project's steward — whoever holds administrative control
-of the canonical repository, or their designee through the registry's verified claim process
-— and it is **public, gratis and scoped to that software**. There are no private exemptions
+A **Waiver** may be recorded by the project's maintainers — "whoever holds administrative
+control of the software's canonical repository, or whoever they name through the Registry's
+verified claim, nowhere else" (the statutes and the sign-off call this role the Project
+Steward) — and it is **public, gratis and scoped to that software**. There are no private exemptions
 in the design: a waiver that is not in the public registry does not exist, and selling
 exemptions privately is a delisting offence for a project. A Waiver gives permission the day it
 is recorded; its permanence starts 72 hours later (question 21). A Waiver may be revoked going
@@ -369,9 +384,9 @@ forward; what you vested under it stays yours, and use during its active days st
 
 Nor can you negotiate a private deal with the Association: the licence says credentials are
 issued only under the published schedule, on the same terms for everyone, for at most one
-year at a time — a renewal is recorded when its term starts, never in advance — and within
-the Association's published constitutional commitments on the charitable destination of
-funds and no private profit.
+year at a time — a renewal is recorded when its term starts, never in advance — and "only
+within the commitments in its published constitution: that funds go to charity and that
+there is no private profit".
 
 The reason is self-protective as well as ethical: private side deals would make the coverage
 question unanswerable, and the registry's whole value is that one lookup answers it.
@@ -396,8 +411,10 @@ core** that a successor version applied through that delegation may never change
 1. the free-tier threshold — it may only ever be **widened**;
 2. the conversion delay — it may only ever be **shortened**;
 3. the charity destination and the no-private-profit rule;
-4. the Association's character as registrar, never a licensor of code it registers for others;
-5. the existence of the project steward's free-of-charge waiver power;
+4. the Association's character as registrar, never a licensor of code it registers for others
+   (the licence's words: it "does not own or license the code it registers for others");
+5. the existence of the project steward's free-of-charge waiver power (the maintainers', in
+   the licence's words);
 6. the steward-lapse backstop — its existence and its clock, which may only ever be
    **shortened** (added 2026-09-16 under D46; the statutes' Art. 13 carries the same six).
 
@@ -462,15 +479,19 @@ infringers.
 
 ## 15. What is the status of everything on this page?
 
-- **The licence:** working draft, pre-counsel — revision `1.0-draft.4`, which applied the
-  operator's decisions on the 16 September 2026 review proposal and, later the same day, on
-  the comparison review that followed it and on the reviewer's third note (question 23 lists
-  what was turned down, each time). Since that last pass the licence body carries no inline
+- **The licence:** working draft, pre-counsel — revision `1.0-draft.5`, the plain-language
+  pass of 2026-09-17 on `1.0-draft.4`, which had applied the operator's decisions on the
+  16 September 2026 review proposal and, later the same day, on the comparison review that
+  followed it and on the reviewer's third note (question 23 lists what was turned down, each
+  time). The plain-language pass changed words, titles and the names of four roles, and no
+  rule (the short version above has the numbers). Since draft.4's last pass the licence body
+  carries no inline
   counsel marker: every open legal question is in the draft's own §15 agenda, one row per
   question, and the honesty gate counts them there. Not published. No version exists, so no
   conversion clock runs.
-- **The steward organization:** the Purpose Source Association held its founding assembly on
-  2026-09-16. Its commercial-register entry and enterprise identifier are pending.
+- **The Association (the steward organization):** the Purpose Source Association held its
+  founding assembly on 2026-09-16. Its commercial-register entry and enterprise identifier are
+  pending.
 - **The registry:** a first, public version with curated entries exists. **Credentials and the
   coverage lookup:** not built; nothing can be bought or verified today.
 - **Demand evidence:** the movement's spend-follows-evidence gate passed on 2026-09-14 (D39,
@@ -482,18 +503,19 @@ infringers.
 - **This page:** an argument about a draft, published so that the argument can be attacked
   early. If you can break it, please do — [how to comment](README.md#how-to-comment).
 
-## 16. Our contractors use it for us. Our customers use it on our platform. Who is "acting for the benefit of" whom?
+## 16. Our contractors use it for us. Our customers use it on our platform. Who is using it "for" whom?
 
-The rule in §4 is short: you exercise permissions for the benefit of an organization when you
-use the software *as* that organization, or in work you do *for* it as its employee,
-contractor or service provider. Then three rules that settle the usual arguments: **a
+The rule in §4 is short: "You use the software for an organization when you use it *as* that
+organization, or in work *for* it as its employee, contractor or service provider." (Until
+`1.0-draft.5` the phrase was "for the benefit of"; the test is the same.) Then three rules
+that settle the usual arguments: **a
 client's coverage, or its meeting the threshold, also covers work others do solely for it; a
 general service for many customers is your own use; a dedicated deployment for one customer
 is work for that customer.** Incidental benefit does not count, and neither does merely
 passing the software on. Personal use, unrelated to such work, needs no coverage.
 Applied:
 
-**Covered — the Large Organization needs a credential:**
+**Covered — the large organization needs a credential:**
 
 - its own use, on its own machines or in its own cloud account;
 - its employees using the software in their work for it;
@@ -510,12 +532,12 @@ Applied:
 
 - being an ordinary customer of a general service that happens to run the software. If a
   large bank uses a small SaaS company's multi-tenant product and that product is built on
-  the software, the SaaS company is the one exercising permissions — it is judged by its own
+  the software, the SaaS company is the one using the software — it is judged by its own
   size, not by its customers';
 - a package mirror, a registry, a distributor or a CDN passing the software on;
 - an employee's personal or hobby project, even on a work laptop, if it is not work for the
   employer;
-- an academic or research collaboration in which the Large Organization is not the one using
+- an academic or research collaboration in which the large organization is not the one using
   the software;
 - any benefit that is merely incidental — your supplier's supplier runs it, a partner's
   demo used it once.
@@ -530,8 +552,8 @@ The licence says nothing about either, by decision — the same choice Blue Oak 
 PolyForm licences make. Two consequences, stated carefully:
 
 - **Which law applies to the licence** is decided by the conflict-of-laws rules of whatever
-  court hears a dispute. It is *not* true that "each licensor's own law applies" — that would
-  be a rule the licence would have to state, and it does not.
+  court hears a dispute. It is *not* true that "each contributor's own law applies" — that
+  would be a rule the licence would have to state, and it does not.
 - **The Entitlement agreement** — the contract under which a credential is bought — is a
   separate document and chooses its own governing law and forum. That choice cannot be read
   into the licence.
@@ -545,16 +567,17 @@ consumers in several jurisdictions.
 
 Two things, both familiar from Apache-2.0:
 
-- **You receive a patent licence** from each contributor, covering the claims they can license
-  that are necessarily infringed by their contribution alone or in combination with the
-  software — the Apache-2.0 §3 scope, so that nothing about patents changes when a part
-  converts to Apache-2.0 at year four. The grant, like the copyright grant, is irrevocable
-  except as the licence itself says.
+- **You receive a patent licence** from each contributor, "under the patent claims they can
+  license that are necessarily infringed by their contribution, alone or combined with the
+  software they contributed it to" — the Apache-2.0 §3 scope, kept word for word through the
+  plain-language pass so that nothing about patents changes when a part converts to
+  Apache-2.0 at year four. The grant, like the copyright grant, "cannot be taken back, except
+  as these terms say" — Apache's "irrevocable", in plain words.
 - **If you, or any member of your group, file patent litigation** (including a cross-claim
   or counterclaim) alleging that the software or a contribution in it infringes a patent or
-  contributes to infringing one, every patent licence you or your group hold under these
-  terms for that software ends on the day of filing. Your copyright licences and your vested
-  parts are untouched, and nothing else in the licence is affected.
+  contributes to infringing one, "every patent licence you or your group hold under these
+  terms for the software ends the day" of filing. "Your copyright licences and vested parts
+  are unaffected", and nothing else in the licence is affected.
 
 The group reach is new in `1.0-draft.4`. Apache's own trigger is per licensee, which leaves a
 group free to keep its patent licences in the operating company and sue from an affiliate
@@ -569,8 +592,8 @@ per-licensor grant reaches claims held by a contributor's employer is a counsel 
 
 ## 19. Can we evaluate before buying?
 
-**Yes, and you need nothing to do it.** §4 says: "The permissions in §3 also apply, with no
-credential, to non-production evaluation, security review, and preparing and submitting
+**Yes, and you need nothing to do it.** §4 says: "With no credential, the permissions in §3
+also apply to non-production evaluation, security review, and preparing and submitting
 contributions to the project." That is the same shape as the Business Source License's
 exception, adopted on 2026-09-16 after the review debate. Three things are free for an
 organization of any size:
@@ -581,26 +604,26 @@ organization of any size:
   vulnerability;
 - **contributing** — preparing and submitting patches, whatever the size of your employer.
 
-The same sentence draws the fence: the permissions extend "not to production use or offering
-the software's functionality to others". A staged rollout, a pilot with real users or an
+The next sentence draws the fence: "That does not include production use, or offering the
+software's functionality to others." A staged rollout, a pilot with real users or an
 internal tool people rely on every day is production, not evaluation, and needs coverage from
 its first day of use. The §4 row of the counsel agenda asks counsel to confirm that the words
 are determinable enough to keep those cases out.
 
 Two practical notes. **The exception has no clock**, and the text now says so in §6 itself:
-the cure runs only "when your use needs coverage", and "days of use the evaluation and
-contribution rule in §4 permits do not count". So evaluate for two months, or six, and go to
+the cure runs only "when your use needs coverage", and "days of use the §4 evaluation and
+contribution rule permits do not count". So evaluate for two months, or six, and go to
 production on the day after: the cure's 60 days start on that first production day, not on
 the first day you tried the software. (On draft.4's first-pass words the 60 days could have
 been argued to have run out during the evaluation, before you had used the software in
 production at all; the second pass closed that.) And the exception is distinct from the
-60-day cure in §6: if you start production use as a Large Organization with no credential,
+60-day cure in §6: if you start production use as a large organization with no credential,
 §6(e) gives you 60 days from that first day — but those are cure days, they count against the
 60-in-twelve-months cap, and by themselves they vest nothing. They do not block vesting
 either: a part published during your cure days vests under the credential you then record,
-like any other part public before that term ends. One thing does not eat cure days: days the
-transparency log records as a general outage of the Association's issuance service do not
-count toward either 60 — an outage on the steward's side never costs you cure days and never
+like any other part public before that term ends. One thing does not eat cure days: "Days the
+transparency log records as a general outage of the Association's issuing service do not
+count toward either 60" — an outage on the Association's side never costs you cure days and never
 counts against the cap. Evaluate freely; the day you go to production, get the credential.
 
 ## 20. Can a contractor work for a covered client?
@@ -622,7 +645,7 @@ exemption also covers work others do solely for it. So:
   hundreds of customers is judged by its own headcount and revenue, not by its largest
   customer's.
 
-Personal use, unrelated to work for a Large Organization, needs no coverage at all. The longer
+Personal use, unrelated to work for a large organization, needs no coverage at all. The longer
 list of worked cases is question 16; the reasoning is under §4 in
 [ANNOTATIONS.md](ANNOTATIONS.md).
 
@@ -631,18 +654,20 @@ list of worked cases is question 16; the reasoning is under §4 in
 Because a Waiver's revocation only works forwards, and without a short delay a mistaken Waiver
 could never be undone.
 
-A Waiver is the project maintainer's free, public exemption for a named organization. Under
+A Waiver is the maintainers' free, public exemption for a named organization ("the
+maintainers' record naming an organization that may use the software without an
+Entitlement", §2). Under
 the previous draft, everything the Waiver covered vested the moment it was recorded — the
 whole back catalogue, permanently — and revocation, which is prospective by decision (D14),
 could not take any of that back. One typo in an organization name, one hijacked maintainer
 account, one maintainer talked into it at a conference, and a very large company held the
 entire back catalogue for ever.
 
-So §9 now says: a Waiver gives permission from the day it is recorded; nothing vests under it
-during its first 72 hours; if it is still active after 72 hours, every part then public
-within its scope vests, and later parts vest as they are made public while it stays active;
-and revocation never makes earlier permitted use unlawful. Whether it was still active is
-what the transparency log shows, not a copy saved at issue: a signed copy of the Waiver
+So §9 says: "A Waiver gives permission from the day it is recorded and vests nothing in its
+first 72 hours. If it is still active then, every part then public that it covers vests, and
+later parts as they become public while it stays active." And: "Revocation never makes
+earlier permitted use unlawful." Whether it was still active is what "the transparency log,
+not a copy saved at issue", shows: a signed copy of the Waiver
 downloaded at hour one proves it was issued and nothing more — it cannot show a revocation at
 hour 48 — so the log's status history is the evidence, and the licence says so since
 `1.0-draft.4`.
@@ -788,7 +813,7 @@ they were missed. Both lists count from 1; the licence's records call them D49 a
    counts and from when; the registry's specification says how the clock reads. Detail of
    that kind belongs there, where it can be corrected without a new licence version.
 7. **Patent claims held "now or later".** Turned down, and its own author withdrew it: the
-   grant covers the claims a licensor can license that are necessarily infringed by their
+   grant covers the claims a contributor can license that are necessarily infringed by their
    contribution, in Apache's shape, and an after-acquired-claims sentence would have been one
    more place where the two texts diverge, for no gain.
 
@@ -818,16 +843,17 @@ the draft's §15 agenda (question 15).
 
 ## 24. We never tag releases — what vests?
 
-**Everything within scope that was public by the end of your term.** The vesting rule counts
-*parts made available to the public* — a public commit, tag, release or package — not
-releases the project has named. A project that publishes to its main branch and never cuts a
-version is covered by the same words as one that tags weekly: on the last day of your
-credential's term, every part of that project within your credential's scope that is public
-on that day is yours permanently.
+**Everything your credential covers that was public by the end of your term.** The vesting
+rule counts *parts that are public* — a public commit, tag, release or package — not releases
+the project has named. A project that publishes to its main branch and never cuts a version
+is covered by the same words as one that tags weekly: on the last day of your credential's
+term, every part of that project that your credential covers and that is public on that day
+is yours permanently.
 
 This was a real gap until `1.0-draft.4`. The four-year conversion (question 4) has counted
 public parts since the previous draft, but the vesting rule still said "version", and a
-version was defined as a release the project identifies as such. Take an organization that
+version was defined as a release the project — now "the maintainers" — identifies as such.
+Take an organization that
 pays for a year and runs public commits from a project that never identifies a release: its
 code would convert to Apache-2.0 after four years like anyone's, but on the old words nothing
 vested when its paid year ended, because there was no "version published on or before" the
