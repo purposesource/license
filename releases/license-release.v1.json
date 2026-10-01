@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "versionId": "PurposeSource-1.0",
+  "title": "Purpose Source License 1.0",
+  "status": "issued",
+  "publishedAt": "2026-10-01",
+  "spdxStatus": "requested",
+  "textPath": "canonical/PurposeSource-1.0.txt",
+  "textSha256": "126d2dee88892d47ea03d71f7e6b805bd4d51b7f642c7a3dd9927f89ccbea00c"
+}
