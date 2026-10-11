@@ -1,5 +1,5 @@
 * text=auto eol=lf
 
-# The licence text is hash-pinned: its bytes never change.
+# The licence text is hash-pinned: from its first public use its bytes never change.
 LICENSE -text
 canonical/*.txt -text
